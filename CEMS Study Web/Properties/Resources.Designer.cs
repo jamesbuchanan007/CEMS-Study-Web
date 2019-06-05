@@ -79,5 +79,15 @@ namespace CEMS_Study_Web.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap power_station_374097_1920 {
+            get {
+                object obj = ResourceManager.GetObject("power_station_374097_1920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

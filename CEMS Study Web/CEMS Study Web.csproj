@@ -143,6 +143,7 @@
     <None Include="Resources\CEMS_Study_Icon.ico" />
     <None Include="Resources\icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\AppLogo.png" />
+    <None Include="Resources\power-station-374097_1920.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
