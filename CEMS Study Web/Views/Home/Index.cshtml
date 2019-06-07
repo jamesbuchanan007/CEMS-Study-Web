@@ -1,5 +1,7 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+
+
 }
 
 <style>
@@ -7,36 +9,271 @@
         width: 100%;
         background-size: 100% 100%;
     }
+
+    .form-control {
+        max-width: 100%;
+    }
 </style>
 <div>
 
-    <img id="MainPageImage" src="~/Resources/power-station-374097_1920.jpg"/>
+    <img id="MainPageImage" src="~/Resources/power-station-374097_1920.jpg" />
 </div>
 
 <div class="row">
     <div class="col-md-8">
         <h2>CEMS</h2>
         <p>
-            Continuous Emissions Monitoring Systems (<a href="https://en.wikipedia.org/wiki/Continuous_emissions_monitoring_system">CEMS</a>) are used to gather valuable data from power plant <a href="https://en.wikipedia.org/wiki/Flue_gas">flue gas</a> as a way to comply with the <a href="https://www.epa.gov/">United States Environmental Protection Agency's</a> <a href="https://www.epa.gov/airmarkets/acid-rain-program">Acid Rain Program</a> and other federal and state emission program/standards.
+            Continuous Emissions Monitoring Systems (<a href="https://en.wikipedia.org/wiki/Continuous_emissions_monitoring_system">CEMS</a>) are tools used to gather valuable data from power plant <a href="https://en.wikipedia.org/wiki/Flue_gas">flue gas</a> as a way to comply with the <a href="https://www.epa.gov/">United States Environmental Protection Agency's</a> <a href="https://www.epa.gov/airmarkets/acid-rain-program">Acid Rain Program</a> and other federal and state emission program/standards.
         </p>
-        
-        <h2>Objective</h2>
+
+        <h2>Goal</h2>
         <p>
-            The purpose of CEMS Study&trade; is to provide valuable quick-reference material for those who work in the CEMS industry ranging from technicians working in the field who need to verify regulation specifications to systems analysts who need quick access to formulas.  Reference material range from <a href="https://www.epa.gov/laws-regulations/regulations">40 CFR</a> regulations to <a href="https://ecmps.camdsupport.com/learn_intro.shtml">Emissions Collection and Monitoring Plan Systems (ECMPS)</a>.
+            The purpose of CEMS Study&trade; is to provide valuable quick-reference material for individuals ranging from savvy CEMS professionals to the occasional environmentalist or CEMS newcomer.  Reference materials range from <a href="https://www.epa.gov/laws-regulations/regulations">40 CFR</a> regulations to <a href="https://ecmps.camdsupport.com/learn_intro.shtml">Emissions Collection and Monitoring Plan Systems (ECMPS)</a>.
         </p>
 
         <h2>Contact</h2>
         <p>
             If you wish to see any other CEMS-related information added to this site, please use the Contact link to submit your suggestions.  As always, your recommendations are greatly appreciated.
         </p>
-        <p><a class="btn btn-default" href="#">Contact &raquo;</a></p>
+        <p>
+            @*TRIGGER CONTACT MODAL*@
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ContactModal">Contact &raquo;</button>
+        </p>
     </div>
-   
+
     <div class="col-md-4 well">
         <h2>Advertise your CEMS Business Here!!</h2>
         <p>
-            Use the Marketing link to inquire about sponsoring your business here!!
+            If you would like to advertise your CEMS business on this site, please submit a request via the Marketing link.
         </p>
-        <p><a class="btn btn-default" href="#">Marketing &raquo;</a></p>
+        <p>
+            @*TRIGGER CONTACT MODAL*@
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MarketingModal">Marketing &raquo;</button>
+        </p>
+    </div>
+</div>
+
+<!--MODAL SECTION-->
+<!-- Contact Modal -->
+<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="~/Resources/AppLogo.png" class="img-rounded" alt="Home" width="200" />
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="modal-title" id="ContactModalLabel" style="margin-top: 10px">
+                        Contact Form
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="contact-firstName">First Name:</label>
+                        <input type="text" class="form-control" id="contact-firstName" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-lastName">Last Name:</label>
+                        <input type="text" class="form-control" id="contact-lastName" placeholder="Enter Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email:</label>
+                        <input type="text" class="form-control" id="contact-email" placeholder="Enter Email">
+                        <small id="emailHelp" class="text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-textarea">Message</label>
+                        <textarea class="form-control" id="contact-textarea" rows="3" placeholder="Enter Message"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Marketing Modal -->
+<div class="modal fade" id="MarketingModal" tabindex="-1" role="dialog" aria-labelledby="MarketingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="~/Resources/AppLogo.png" class="img-rounded" alt="Home" width="200" />
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="modal-title" id="ContactModalLabel" style="margin-top: 10px">
+                        Marketing
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <h3 class="text-center">Contact</h3>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-firstName">First Name:</label>
+
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-firstName" placeholder="Enter Contact First Name" required="required">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-lastName">Last Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-lastName" placeholder="Enter Contact Last Name">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-phone">Phone:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-phone" placeholder="Enter Contact Phone">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"  style="margin-top: 10px">
+                            <label for="marketing-email">Email:</label>
+                        </div>
+
+                        <div class="input-group col-md-9">
+                           
+
+                            <span class="input-group-addon">
+                                <i class="fa fa-envelope-square"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-email" placeholder="Enter Contact Email">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <small id="emailHelp" class="text-muted">** We'll never share your email with anyone else.</small>
+
+                    </div>
+                    <hr />
+
+                    <h3 class="text-center">Business</h3>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessName">Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessName" placeholder="Enter Business Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"  style="margin-top: 10px">
+                            <label for="marketing-businessAddress1">Address 1:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessAddress1" placeholder="Enter Business Address 1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3"  style="margin-top: 10px">
+                            <label for="marketing-businessAddress2">Address 2:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessAddress2" placeholder="Enter Business Address 2">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-city">City:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-city" placeholder="Enter Business City">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-state">State:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-state" placeholder="Enter Business State">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-postalCode">Postal:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-postalCode" placeholder="Enter Business Postal Code/ZIP">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessPhone">Phone:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessPhone" placeholder="Enter Business Phone">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessWebsite">Website:</label>
+                        </div>
+
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-globe"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessWebsite" placeholder="Enter Business Website">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Inquire</button>
+            </div>
+        </div>
     </div>
 </div>

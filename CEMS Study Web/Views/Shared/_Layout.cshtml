@@ -6,6 +6,8 @@
     <title>CEMS Study</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -39,7 +41,6 @@
                         <li><a href="#" title="40 CFR Part 60 Appendix B">Part 60 Appendix B</a></li>
                         <li><a href="#" title="40 CFR Part 60 Appendix F">Part 60 Appendix F</a></li>
                         <li><a href="#" title="40 CFR Part 63 Subpart UUUUU">Part 63 Subpart UUUUU</a></li>
-                        <li><a href="#" title="40 CFR Part 63 Subpart UUUUU">Part 63 Subpart UUUUU</a></li>
 
                     </ul>
                 </li>
@@ -56,9 +57,8 @@
 
                     </ul>
                 </li>
-                <li><a href="#" style="pointer-events: none">|</a></li>
-                <li><a href="#" title="Contact">Contact</a></li>
-                <li><a href="#" title="Marketing">Marketing</a></li>
+                <li><a href="#" title="Contact" data-toggle="modal" data-target="#ContactModal">Contact</a></li>
+                <li><a href="#" title="Marketing" data-toggle="modal" data-target="#MarketingModal">Marketing</a></li>
             </ul>
         </div>
 
@@ -69,10 +69,10 @@
     <hr/>
     <footer>
         <div class="col-md-6">
-            <p>&copy; @DateTime.Now.Year - CEMS Study</p>
+            <p>&copy; @DateTime.Now.Year - CEMS Study - Pensacola, Florida - USA</p>
         </div>
         <div class="col-md-6">
-            <p style="text-align: right">James K. Buchanan</p>
+            <p style="text-align: right">J. Buchanan</p>
         </div>
 
     </footer>
