@@ -5,18 +5,58 @@
 }
 
 <style>
-    #MainPageImage {
+    .carousel-item {
         width: 100%;
+        min-height: 1279px;
         background-size: 100% 100%;
     }
 
     .form-control {
         max-width: 100%;
     }
+    /* Fade transition for carousel items */
+    .carousel .item {
+        left: 0 !important;
+        -webkit-transition: opacity .4s; /*adjust timing here */
+        -moz-transition: opacity .4s;
+        -o-transition: opacity .4s;
+        transition: opacity .4s;
+    }
+    .carousel-control {
+        background-image: none !important; /* remove background gradients on controls */
+    }
+    /* Fade controls with items */
+    .next.left,
+    .prev.right {
+        opacity: 1;
+        z-index: 1;
+    }
+    .active.left,
+    .active.right {
+        opacity: 0;
+        z-index: 2;
+    }
 </style>
 <div>
-
-    <img id="MainPageImage" src="~/Resources/power-station-374097_1920.jpg" />
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+       
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/Resources/coal-fired-power-plant-3767893_1920.jpg" />
+            </div>
+            <div class="item">
+                <img src="~/Resources/fan-3645379_1920.jpg" />
+            </div>
+            <div class="item">
+                <img src="~/Resources/industry-1761801_1920.jpg" />
+            </div>
+            <div class="item">
+                <img src="~/Resources/power-station-374097_1920.jpg" />
+            </div>
+        </div>
+       
+    </div>
+    @*<img id="MainPageImage" src="~/Resources/power-station-374097_1920.jpg" />*@
 </div>
 
 <div class="row">
@@ -25,12 +65,12 @@
         <p>
             Continuous Emissions Monitoring Systems (<a href="https://en.wikipedia.org/wiki/Continuous_emissions_monitoring_system">CEMS</a>) are tools used to gather valuable data from power plant <a href="https://en.wikipedia.org/wiki/Flue_gas">flue gas</a> as a way to comply with the <a href="https://www.epa.gov/">United States Environmental Protection Agency's</a> <a href="https://www.epa.gov/airmarkets/acid-rain-program">Acid Rain Program</a> and other federal and state emission program/standards.
         </p>
-
+        <hr />
         <h2>Goal</h2>
         <p>
             The purpose of CEMS Study&trade; is to provide valuable quick-reference material for individuals ranging from savvy CEMS professionals to the occasional environmentalist or CEMS newcomer.  Reference materials range from <a href="https://www.epa.gov/laws-regulations/regulations">40 CFR</a> regulations to <a href="https://ecmps.camdsupport.com/learn_intro.shtml">Emissions Collection and Monitoring Plan Systems (ECMPS)</a>.
         </p>
-
+        <hr />
         <h2>Contact</h2>
         <p>
             If you wish to see any other CEMS-related information added to this site, please use the Contact link to submit your suggestions.  As always, your recommendations are greatly appreciated.
@@ -40,17 +80,34 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ContactModal">Contact &raquo;</button>
         </p>
     </div>
-
-    <div class="col-md-4 well">
-        <h2>Advertise your CEMS Business Here!!</h2>
-        <p>
-            If you would like to advertise your CEMS business on this site, please submit a request via the Marketing link.
-        </p>
-        <p>
-            @*TRIGGER CONTACT MODAL*@
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MarketingModal">Marketing &raquo;</button>
-        </p>
+    <div class="col-md-4">
+        <div class="well">
+            <h3>Business 1</h3>
+            <p>
+                Business 1 Image Link here
+            </p>
+        </div>
+        <div class="well">
+            <h3>Business 2</h3>
+            <p>
+                Business 2 Image Link here
+            </p>
+        </div>
+        <div class="well">
+            <h2>Advertise your CEMS Business Here!!</h2>
+            <p>
+                If you would like to advertise your CEMS business on this site, please submit a request via the Marketing link.
+            </p>
+            <p>
+                @*TRIGGER CONTACT MODAL*@
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MarketingModal">Marketing &raquo;</button>
+            </p>
+        </div>
     </div>
+
+</div>
+<div class="well">
+    <h2 class="text-center">Google Ads Here</h2>
 </div>
 
 <!--MODAL SECTION-->
@@ -71,21 +128,46 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="contact-firstName">First Name:</label>
-                        <input type="text" class="form-control" id="contact-firstName" placeholder="Enter First Name">
+                        <div class="col-md-3">
+                            <label for="contact-firstName" style="margin-top: 10px">First Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="contact-firstName" placeholder="First Name">
+                        </div>
+
                     </div>
                     <div class="form-group">
-                        <label for="contact-lastName">Last Name:</label>
-                        <input type="text" class="form-control" id="contact-lastName" placeholder="Enter Last Name">
+                        <div class="col-md-3">
+                            <label for="contact-lastName" style="margin-top: 10px">Last Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="contact-lastName" placeholder="Last Name">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="contact-email">Email:</label>
-                        <input type="text" class="form-control" id="contact-email" placeholder="Enter Email">
-                        <small id="emailHelp" class="text-muted">We'll never share your email with anyone else.</small>
+                        <div class="col-md-3">
+                            <label for="contact-email" style="margin-top: 10px">Email:</label>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="contact-email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <small id="emailHelp" class="text-muted">** We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
+
                         <label for="contact-textarea">Message</label>
-                        <textarea class="form-control" id="contact-textarea" rows="3" placeholder="Enter Message"></textarea>
+                        <textarea class="form-control" id="contact-textarea" rows="3" placeholder="Message"></textarea>
                     </div>
                 </form>
             </div>
@@ -117,15 +199,13 @@
                     <div class="form-group">
                         <div class="col-md-3" style="margin-top: 10px">
                             <label for="marketing-firstName">First Name:</label>
-
                         </div>
                         <div class="input-group col-md-9">
                             <span class="input-group-addon">
                                 <i class="fa fa-user"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-firstName" placeholder="Enter Contact First Name" required="required">
+                            <input type="text" class="form-control" id="marketing-firstName" placeholder="First Name" required="required">
                         </div>
-
                     </div>
                     <div class="form-group">
                         <div class="col-md-3" style="margin-top: 10px">
@@ -135,9 +215,8 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-user"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-lastName" placeholder="Enter Contact Last Name">
+                            <input type="text" class="form-control" id="marketing-lastName" placeholder="Last Name">
                         </div>
-
                     </div>
                     <div class="form-group">
                         <div class="col-md-3" style="margin-top: 10px">
@@ -147,27 +226,22 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-phone"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-phone" placeholder="Enter Contact Phone">
-
+                            <input type="text" class="form-control" id="marketing-phone" placeholder="(xxx) xxx-xxxx">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-3"  style="margin-top: 10px">
+                        <div class="col-md-3" style="margin-top: 10px">
                             <label for="marketing-email">Email:</label>
                         </div>
-
                         <div class="input-group col-md-9">
-                           
-
                             <span class="input-group-addon">
                                 <i class="fa fa-envelope-square"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-email" placeholder="Enter Contact Email">
+                            <input type="email" class="form-control" id="marketing-email" placeholder="YourEmail@Domain.com">
                         </div>
                     </div>
                     <div class="text-center">
                         <small id="emailHelp" class="text-muted">** We'll never share your email with anyone else.</small>
-
                     </div>
                     <hr />
 
@@ -180,30 +254,29 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-businessName" placeholder="Enter Business Name">
+                            <input type="text" class="form-control" id="marketing-businessName" placeholder="Business Name">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-3"  style="margin-top: 10px">
+                        <div class="col-md-3" style="margin-top: 10px">
                             <label for="marketing-businessAddress1">Address 1:</label>
                         </div>
                         <div class="input-group col-md-9">
                             <span class="input-group-addon">
                                 <i class="fa fa-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-businessAddress1" placeholder="Enter Business Address 1">
+                            <input type="text" class="form-control" id="marketing-businessAddress1" placeholder="Business Address 1">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-3"  style="margin-top: 10px">
+                        <div class="col-md-3" style="margin-top: 10px">
                             <label for="marketing-businessAddress2">Address 2:</label>
                         </div>
                         <div class="input-group col-md-9">
                             <span class="input-group-addon">
                                 <i class="fa fa-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-businessAddress2" placeholder="Enter Business Address 2">
-
+                            <input type="text" class="form-control" id="marketing-businessAddress2" placeholder="Business Address 2">
                         </div>
                     </div>
                     <div class="form-group">
@@ -214,8 +287,7 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-city" placeholder="Enter Business City">
-
+                            <input type="text" class="form-control" id="marketing-city" placeholder="Business City">
                         </div>
                     </div>
                     <div class="form-group">
@@ -226,46 +298,45 @@
                             <span class="input-group-addon">
                                 <i class="fa fa-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-state" placeholder="Enter Business State">
-
+                            <select class="form-control" id="marketing-state" style="width: 100px">
+                                <option>AA</option>
+                                <option>BB</option>
+                                <option>CC</option>
+                                <option>DD</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-3" style="margin-top: 10px">
                             <label for="marketing-postalCode">Postal:</label>
                         </div>
-                        <div class="input-group col-md-9">
+                        <div class="input-group col-md-5 col-sm-6 col-xs-12" >
                             <span class="input-group-addon">
                                 <i class="fa fa-building"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-postalCode" placeholder="Enter Business Postal Code/ZIP">
-
+                            <input type="text" class="form-control" id="marketing-postalCode" placeholder="Business ZIP Code">
                         </div>
                     </div>
-
                     <div class="form-group">
                         <div class="col-md-3" style="margin-top: 10px">
                             <label for="marketing-businessPhone">Phone:</label>
                         </div>
-                        <div class="input-group col-md-9">
+                        <div class="input-group col-md-5 col-sm-6 col-xs-12">
                             <span class="input-group-addon">
                                 <i class="fa fa-phone"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-businessPhone" placeholder="Enter Business Phone">
-
+                            <input type="text" class="form-control" id="marketing-businessPhone" placeholder="(xxx) xxx-xxxx">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-3" style="margin-top: 10px">
                             <label for="marketing-businessWebsite">Website:</label>
                         </div>
-
                         <div class="input-group col-md-9">
                             <span class="input-group-addon">
                                 <i class="fa fa-globe"></i>
                             </span>
-                            <input type="text" class="form-control" id="marketing-businessWebsite" placeholder="Enter Business Website">
-
+                            <input type="url" class="form-control" id="marketing-businessWebsite" placeholder="www.YourWebsite.com">
                         </div>
                     </div>
                 </form>
