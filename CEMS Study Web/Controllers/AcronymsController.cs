@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace CEMS_Study_Web.Controllers
 {
-    public class HomeController : Controller
+    public class AcronymsController : Controller
     {
+        // GET: Acronyms
         public ActionResult Index()
         {
             return View();

@@ -123,7 +123,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AcronymsController.cs" />
+    <Compile Include="Controllers\DefinitionsController.cs" />
+    <Compile Include="Controllers\ECMPSController.cs" />
+    <Compile Include="Controllers\FormulasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegulationsController.cs" />
+    <Compile Include="Controllers\UnitsOfMeasureController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,6 +161,26 @@
     <None Include="Resources\icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\AppLogo.png" />
     <Content Include="icons8_factory_64_QmM_icon.ico" />
+    <Content Include="Views\Acronyms\Index.cshtml" />
+    <Content Include="Views\Definitions\Index.cshtml" />
+    <Content Include="Views\UnitsOfMeasure\Index.cshtml" />
+    <Content Include="Views\Formulas\Index.cshtml" />
+    <Content Include="Views\Regulations\Index.cshtml" />
+    <Content Include="Views\ECMPS\Index.cshtml" />
+    <Content Include="Views\Regulations\Part75.cshtml" />
+    <Content Include="Views\Regulations\Part75PlainEnglish.cshtml" />
+    <Content Include="Views\Regulations\Part75FieldAudit.cshtml" />
+    <Content Include="Views\Regulations\Part75AppendixD.cshtml" />
+    <Content Include="Views\Regulations\Part75AppendixB.cshtml" />
+    <Content Include="Views\Regulations\Part75AppendixF.cshtml" />
+    <Content Include="Views\Regulations\Part60SubpartUUUUU.cshtml" />
+    <Content Include="Views\ECMPS\MonitoringReporting.cshtml" />
+    <Content Include="Views\ECMPS\QAReporting.cshtml" />
+    <Content Include="Views\ECMPS\EmissionsReporting.cshtml" />
+    <Content Include="Views\ECMPS\PGV.cshtml" />
+    <Content Include="Views\ECMPS\GHG.cshtml" />
+    <Content Include="Views\ECMPS\MATSTransition.cshtml" />
+    <Content Include="Views\ECMPS\MATSGuidance.cshtml" />
     <Resource Include="Resources\industry-1827884_1920.jpg" />
     <Resource Include="Resources\power-plant-97119_1920.jpg" />
     <Resource Include="Resources\industry-406905_1920.jpg" />
@@ -209,8 +235,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

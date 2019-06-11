@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace CEMS_Study_Web.Controllers
 {
-    public class HomeController : Controller
+    public class FormulasController : Controller
     {
+        // GET: Formulas
         public ActionResult Index()
         {
             return View();

@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace CEMS_Study_Web.Controllers
 {
-    public class HomeController : Controller
+    public class DefinitionsController : Controller
     {
+        // GET: Definitions
         public ActionResult Index()
         {
             return View();
