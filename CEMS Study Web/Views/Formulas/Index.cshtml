@@ -9,9 +9,15 @@
     <hr />
     <div class="row">
         <div class="col-md-9">
-            <img class="img-responsive" src="~/Resources/water-316625_1280.jpg" style="background-color:ghostwhite"/>
-
+            <img class="img-responsive" src="~/Resources/water-316625_1280.jpg"/>
             <hr />
+            <!--BREADCRUMB-->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Formulas</li>
+                </ol>
+            </nav>
             <div class="form-group col-md-4">
                 <label for="FormulasList">Formulas List</label>
                 <select class="form-control form-control-static" id="FormulasList">
@@ -24,8 +30,10 @@
             </div>
 
             <div class="form-group col-md-8">
-                <label for="FormulaTextArea">Formula Meaning</label>
-                <textarea class="form-control" id="FormulaTextArea" rows="3" style="min-width: 100%"></textarea>
+                <label for="Formula1">Formula</label>
+                <textarea class="form-control" id="Formula1" rows="3" style="min-width: 100%" placeholder="box 1"></textarea>
+                <textarea class="form-control" id="Formula2" rows="3" style="min-width: 100%; display: none" placeholder="box 2"></textarea>
+                <button class="btn btn-default form-control" onclick="myFunction()">Click Me</button>
             </div>
             <hr />
 
@@ -66,4 +74,19 @@
     </div>
 </div>
 
-
+<script>
+    function myFunction() {
+        var x = document.getElementById("Formula1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        var x = document.getElementById("Formula2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    } 
+</script>
