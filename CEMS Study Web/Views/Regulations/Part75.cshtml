@@ -2,23 +2,98 @@
 
 @{
     ViewBag.Title = "title";
+    var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div>
-    <h1>Part 75</h1>
-</div>
-<div id="sidebar">
-    <h3>Table of Contents</h3>
-
-    <nav class="navbar">
-        <div>
-
-            <ul class="nav">
-                <li><a href="~/Acronyms/Index" title="Acronyms">Acronyms</a></li>
-                <li><a href="~/Definitions/Index" title="Definitions">Definitions</a></li>
-                <li><a href="~/Formulas/Index" title="Formulas">Formulas</a></li>
-                <li><a href="~/UnitsOfMeasure/Index" title="Units of Measure">Units of Measure</a></li>
-            </ul>
+<div class="container-fluid">
+    <!--NAME OF FILE-->
+    <h1>| Part 75</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-9">
+            @* <img class="img-responsive" src="~/Resources/definition-390785_1280.jpg" />*@
+            @*<hr />*@
+            <!--BREADCRUMB-->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Part 75</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                            Table of Contents
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9" style="max-height: 750px; overflow: auto">
+                    <h3>Section 1</h3>
+                    <p>
+                        Congue eleifend augue aptent nibh eget cursus tellus lorem ante porttitor potenti. Lacus varius sit odio rutrum turpis venenatis dis magna dictumst parturient blandit. Molestie euismod adipiscing cum class odio nostra bibendum habitasse eros pretium nec egestas. Mauris fusce ipsum fermentum natoque inceptos suspendisse. Ultrices nam mus libero ultrices. Sociosqu euismod nibh tempus cum dolor dui natoque! Aenean ornare, ornare augue? Tellus lobortis est venenatis! Tempor vestibulum lorem.
+                    </p>
+                    <h3>Section 2</h3>
+                    <p>
+                        Eget vel imperdiet sem est hendrerit faucibus leo. Suspendisse mattis non ut interdum mauris lobortis interdum et amet enim litora commodo. Rutrum nam ultricies aliquam, id purus leo fringilla aliquam. Tincidunt pretium semper varius dis sit facilisis morbi. Eu fames eleifend libero tempor sem sollicitudin vulputate molestie adipiscing. Ipsum amet congue consectetur habitant. Facilisis feugiat torquent et felis tellus ante etiam elementum! Nostra tristique ut, ultrices erat risus mus quis convallis duis tempus vulputate. Lectus, pharetra suscipit magnis magna integer ultrices!
+                    </p>
+                    <p>
+                        Suscipit quisque phasellus senectus felis inceptos primis suspendisse molestie? Facilisis habitant urna enim id molestie sit nunc erat cras parturient? Aliquam potenti blandit placerat vel diam molestie. Vel eu tempus placerat. Elit porttitor iaculis orci felis dictum? Morbi integer et duis integer! Class tempor fermentum inceptos montes nullam cum. Venenatis magnis hac quis ullamcorper neque metus? Rutrum orci nullam quisque. Ut posuere turpis nisi parturient vestibulum dolor metus porta viverra magna? Rhoncus taciti maecenas torquent enim ac tempus facilisi aptent donec vulputate consectetur aenean. Aptent dictumst tincidunt tincidunt hendrerit. Felis facilisi leo et leo lacus a cras velit.
+                    </p>
+                    <p>
+                        Pharetra sodales hac lacus luctus tristique dapibus lorem. In molestie vestibulum class cubilia suspendisse rutrum. Euismod felis; urna ridiculus sociis amet. Interdum mus rhoncus eget tincidunt aenean proin class faucibus rhoncus. Viverra curae; nulla mi conubia ad nascetur. Sociosqu mi blandit quam eget placerat faucibus. Amet et primis ornare praesent suscipit erat aptent euismod habitant fringilla.
+                    </p>
+                    <p>
+                        Tortor litora cras vulputate primis viverra vestibulum dictum primis mattis tristique? Sed ante pharetra rutrum duis netus. Ad vulputate sollicitudin sit id interdum nec gravida adipiscing fusce ad fermentum. Platea dictumst, sodales facilisi vivamus habitasse tempor in fames. Rhoncus consectetur, cras malesuada ante. Potenti montes, mauris suspendisse fermentum erat magna montes velit varius. Consectetur amet.
+                    </p>
+                </div>
+            </div>
         </div>
-    </nav>
+
+
+
+
+
+        <!--SIDE WELL FOR SPONSORED / GOOGLE ADS-->
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading"><p class="text-center">Sponsored Listings / Google Ads</p></div>
+                <div class="panel-body text-center">
+                    <a href="#" style="text-decoration: none">
+                        <img class="img-thumbnail" src="@site" alt="Business 1" title="Business 1" />
+                    </a>
+                    <a href="#" style="font: white; text-decoration: none">
+                        <img class="img-thumbnail" src="@site" alt="Business 2" title="Business 2" />
+                    </a>
+                    <a href="#" style="font: white; text-decoration: none">
+                        <img class="img-thumbnail" src="@site" alt="Business 3" title="Business 3" />
+                    </a>
+                </div>
+                <div class="panel panel-footer">
+                    <p>
+                        If you would like to advertise your CEMS business on this site, please submit a request via the Marketing link.
+                    </p>
+                    <p>
+                        @*TRIGGER CONTACT MODAL*@
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MarketingModal">Marketing &raquo;</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+    <!--GOOGLE ADDS BOTTOM OF PAGE-->
+    <div class="well text-center">
+        <h2>Google Ads Here</h2>
+    </div>
+
+
+
 </div>
