@@ -162,6 +162,7 @@
     <None Include="Resources\AppLogo.png" />
     <Content Include="icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\battleship-389274_1280.jpg" />
+    <None Include="Resources\water-316625_1280.jpg" />
     <Content Include="Views\Acronyms\Index.cshtml" />
     <Content Include="Views\Definitions\Index.cshtml" />
     <Content Include="Views\UnitsOfMeasure\Index.cshtml" />
@@ -211,7 +212,6 @@
     <Resource Include="Resources\keyboard-70506_1280.jpg" />
     <Resource Include="Resources\definition-390785_1280.jpg" />
     <Resource Include="Resources\chemistry-2938901_1280.jpg" />
-    <Resource Include="Resources\thermometer-1917500_1280.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -258,6 +258,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>

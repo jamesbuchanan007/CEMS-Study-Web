@@ -205,9 +205,6 @@
   <data name="power_plant_97119_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\power-plant-97119_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UoM_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thermometer-1917500_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="windrader_1508073_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\windrader-1508073_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -216,5 +213,8 @@
   </data>
   <data name="battleship_389274_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\battleship-389274_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="water_316625_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\water-316625_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
