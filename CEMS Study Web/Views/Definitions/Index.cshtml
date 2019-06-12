@@ -1,12 +1,13 @@
 ﻿@model dynamic
 
 @{
+    ViewBag.Title = "Definitions";
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="container-fluid">
     <!--NAME OF FILE-->
-    <h1>| Definitions</h1>
+    <h1>| @ViewBag.Title</h1>
     <hr />
     <div class="row">
         <div class="col-md-9">
@@ -16,7 +17,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Definitions</li>
+                    <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
                 </ol>
             </nav>
             <div class="form-group">
