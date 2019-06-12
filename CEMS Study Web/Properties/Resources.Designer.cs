@@ -103,6 +103,16 @@ namespace CEMS_Study_Web.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap battleship_389274_1280 {
+            get {
+                object obj = ResourceManager.GetObject("battleship_389274_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bosnia_1367314_1920 {
             get {
                 object obj = ResourceManager.GetObject("bosnia_1367314_1920", resourceCulture);

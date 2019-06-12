@@ -161,6 +161,7 @@
     <None Include="Resources\icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\AppLogo.png" />
     <Content Include="icons8_factory_64_QmM_icon.ico" />
+    <None Include="Resources\battleship-389274_1280.jpg" />
     <Content Include="Views\Acronyms\Index.cshtml" />
     <Content Include="Views\Definitions\Index.cshtml" />
     <Content Include="Views\UnitsOfMeasure\Index.cshtml" />
