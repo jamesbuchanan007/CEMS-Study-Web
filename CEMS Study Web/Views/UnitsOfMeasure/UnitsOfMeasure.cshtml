@@ -1,17 +1,17 @@
 ﻿@model dynamic
 
 @{
-    ViewBag.Title = "Definitions";
+    ViewBag.Title = "Units of Measure";
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="container-fluid">
     <!--NAME OF FILE-->
-    <h1>| @ViewBag.Title</h1>
+    <h1>| @ViewBag.Title (UoM)</h1>
     <hr />
     <div class="row">
         <div class="col-md-9">
-            <img class="img-responsive" src="~/Resources/definition-390785_1280.jpg" />
+            <img class="img-responsive" src="~/Resources/battleship-389274_1280.jpg" />
             <hr />
             <!--BREADCRUMB-->
             <nav aria-label="breadcrumb">
@@ -20,9 +20,9 @@
                     <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
                 </ol>
             </nav>
-            <div class="form-group">
-                <label for="DefinitionsList">Definitions List</label>
-                <select class="form-control form-control-static" id="DefinitionsList" style="min-width: 100%">
+            <div class="form-group col-md-4">
+                <label for="UnitsOfMeasureList">Units of Measure List</label>
+                <select class="form-control form-control-static" id="UnitsOfMeasureList">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -31,9 +31,9 @@
                 </select>
             </div>
 
-            <div class="form-group">
-                <label for="DefinitionTextArea">Definition</label>
-                <textarea class="form-control" id="DefinitionTextArea" rows="3" style="min-width: 100%"></textarea>
+            <div class="form-group col-md-8">
+                <label for="UnitsOfMeasureTextArea">Unit of Measure</label>
+                <textarea class="form-control" id="UnitsOfMeasureTextArea" rows="3" style="min-width: 100%">Unit of Measure Meaning</textarea>
             </div>
         </div>
 
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <hr />
     <!--GOOGLE ADDS BOTTOM OF PAGE-->
     <div class="well text-center">

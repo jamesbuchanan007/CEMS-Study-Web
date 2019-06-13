@@ -9,7 +9,7 @@ namespace CEMS_Study_Web.Controllers
     public class DefinitionsController : Controller
     {
         // GET: Definitions
-        public ActionResult Index()
+        public ActionResult Definitions()
         {
             return View();
         }

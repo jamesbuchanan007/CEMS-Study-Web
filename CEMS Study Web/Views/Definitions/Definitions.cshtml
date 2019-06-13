@@ -1,10 +1,9 @@
 ﻿@model dynamic
 
 @{
-    ViewBag.Title = "Acronyms";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Definitions";
     var site = "http://placeimg.com/180/150/any";
-
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="container-fluid">
     <!--NAME OF FILE-->
@@ -12,7 +11,7 @@
     <hr />
     <div class="row">
         <div class="col-md-9">
-            <img class="img-responsive" src="~/Resources/keyboard-70506_1280.jpg" />
+            <img class="img-responsive" src="~/Resources/definition-390785_1280.jpg" />
             <hr />
             <!--BREADCRUMB-->
             <nav aria-label="breadcrumb">
@@ -21,9 +20,9 @@
                     <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
                 </ol>
             </nav>
-            <div class="form-group col-md-4">
-                <label for="AcronymList">Acronyms List</label>
-                <select class="form-control form-control-static" id="AcronymList">
+            <div class="form-group">
+                <label for="DefinitionsList">Definitions List</label>
+                <select class="form-control form-control-static" id="DefinitionsList" style="min-width: 100%">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -32,14 +31,11 @@
                 </select>
             </div>
 
-            <div class="form-group col-md-8">
-                <label for="AcronymTextArea">Acronym Meaning</label>
-                <textarea class="form-control" id="AcronymTextArea" rows="3" style="min-width: 100%"></textarea>
+            <div class="form-group">
+                <label for="DefinitionTextArea">Definition Word</label>
+                <textarea class="form-control" id="DefinitionTextArea" rows="3" style="min-width: 100%">This is the definition</textarea>
             </div>
-            <hr />
-            
         </div>
-        
 
         <!--SIDE WELL FOR SPONSORED / GOOGLE ADS-->
         <div class="col-md-3">
@@ -58,7 +54,7 @@
                 </div>
                 <div class="panel panel-footer">
                     <p>
-                        If you would like to advertise your CEMS business here, please inquire via the Marketing link.
+                        If you would like to advertise your CEMS business on this site, please submit a request via the Marketing link.
                     </p>
                     <p>
                         @*TRIGGER CONTACT MODAL*@
@@ -67,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <hr />
     <!--GOOGLE ADDS BOTTOM OF PAGE-->
     <div class="well text-center">

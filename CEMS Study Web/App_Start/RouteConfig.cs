@@ -12,11 +12,45 @@ namespace CEMS_Study_Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            routes.MapRoute(
+                name: "Regulations",
+                url: "40CFR/{action}/{id}",
+                defaults: new { controller = "Regulations", action = "Part75", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "ECMPS",
+                url: "ECMPS/{action}/{id}",
+                defaults: new { controller = "ECMPS", action = "EmissionsReporting", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Home",
+                url: "Home",
+                defaults: new { controller = "Home", action = "Home", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Acronyms",
+                url: "Acronyms",
+                defaults: new { controller = "Acronyms", action = "Acronyms", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Definitions",
+                url: "Definitions",
+                defaults: new { controller = "Definitions", action = "Definitions", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "UnitsOfMeasure",
+                url: "UnitsOfMeasure",
+                defaults: new { controller = "UnitsOfMeasure", action = "UnitsOfMeasure", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Formulas",
+                url: "Formulas",
+                defaults: new { controller = "Formulas", action = "Formulas", id = UrlParameter.Optional }
+            );
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{id}",
+                defaults: new { controller = "Home", action = "Home", id = UrlParameter.Optional }
             );
         }
     }

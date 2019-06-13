@@ -9,7 +9,7 @@ namespace CEMS_Study_Web.Controllers
     public class UnitsOfMeasureController : Controller
     {
         // GET: UnitsOfMeasure
-        public ActionResult Index()
+        public ActionResult UnitsOfMeasure()
         {
             return View();
         }
