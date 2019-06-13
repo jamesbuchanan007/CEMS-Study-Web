@@ -9,10 +9,6 @@ namespace CEMS_Study_Web.Controllers
     public class RegulationsController : Controller
     {
         // GET: Regulations
-        public ActionResult Index()
-        {
-            return View();
-        }
         public ActionResult Part75()
         {
             return View();
@@ -29,15 +25,15 @@ namespace CEMS_Study_Web.Controllers
         {
             return View();
         }
-        public ActionResult Part75AppendixB()
+        public ActionResult Part60AppendixB()
         {
             return View();
         }
-        public ActionResult Part75AppendixF()
+        public ActionResult Part60AppendixF()
         {
             return View();
         }
-        public ActionResult Part60SubpartUUUUU()
+        public ActionResult Part63SubpartUUUUU()
         {
             return View();
         }

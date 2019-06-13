@@ -9,10 +9,6 @@ namespace CEMS_Study_Web.Controllers
     public class ECMPSController : Controller
     {
         // GET: ECMPS
-        public ActionResult Index()
-        {
-            return View();
-        }
         public ActionResult MonitoringReporting()
         {
             return View();
