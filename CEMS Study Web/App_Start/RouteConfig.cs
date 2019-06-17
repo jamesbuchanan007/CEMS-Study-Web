@@ -13,10 +13,15 @@ namespace CEMS_Study_Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
-                name: "Regulations",
-                url: "40CFR/{action}/{id}",
-                defaults: new { controller = "Regulations", action = "Part75", id = UrlParameter.Optional }
+                name: "Part75",
+                url: "Part75/{action}/{id}",
+                defaults: new { controller = "Part75", action = "Part75", id = UrlParameter.Optional }
             );
+            //routes.MapRoute(
+            //    name: "Regulations",
+            //    url: "40CFR/{action}/{id}",
+            //    defaults: new { controller = "Regulations", action = "Part75", id = UrlParameter.Optional }
+            //);
             routes.MapRoute(
                 name: "ECMPS",
                 url: "ECMPS/{action}/{id}",

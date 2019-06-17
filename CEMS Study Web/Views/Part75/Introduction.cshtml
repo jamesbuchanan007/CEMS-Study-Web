@@ -1,15 +1,16 @@
-﻿@model CEMS_Study_Web.RegulationsViewModel.RegualtionsViewModel 
+﻿@model CEMS_Study_Web.RegulationsViewModel.Part75ViewModel
 
 
 @{
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var sectionNumber = "Introduction";
 }
 <div class="container-fluid">
 
     <!--NAME OF FILE-->
-    <h1>| @Model.SectionName - @Model.SectionNumber</h1>
-    <hr/>
+    <h1>| @Model.SectionName - @sectionNumber</h1>
+    <hr />
     <div class="row">
         <div class="col-md-9">
 
@@ -18,7 +19,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
                     <li class="breadcrumb-item">@Model.SectionName</li>
-                    <li class="breadcrumb-item" aria-current="page">@Model.SectionNumber</li>
+                    <li class="breadcrumb-item" aria-current="page">@sectionNumber</li>
                 </ol>
             </nav>
             <div class="dropdown">
@@ -27,17 +28,20 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="~/40CFR/Regulations/Part75/Part75.cshtml">Full Regulation</a></li>
+                    <li><a href="~/40CFR/Part75">Full Regulation</a></li>
                     <li class="divider"></li>
                     @foreach (var item in @Model.TableOfContents)
                     {
-                        <li><a href="~/40CFR/Introduction">@item</a></li>
+                        if (item != @sectionNumber)
+                        {
+                            <li><a href="~/40CFR/Part75/Part75/{Introduction.cshtml}">@item</a></li>
+                        }
                     }
-                   
+
                 </ul>
             </div>
             <div style="max-height: 650px; overflow: auto; margin-top: 10px" id="home1">
-                <h3>Introduction File</h3>
+                <h3>INTRODUCTION</h3>
                 <p>
                     In order to reduce acid rain in the United States and Canada, Title IV of the Clean Air
                     Act Amendments of 1990 established the Acid Rain Program. The program has substantially
@@ -96,25 +100,25 @@
                     (www.epa.gov/airmarkets).
                 </p>
             </div>
-            
+
             <!--BACK TO TOP BUTTON-->
             <button onclick="topFunction()" type="button" class="btn btn-default">Back to Top</button>
         </div><!--END LEFT COLUMN-->
-
         <!--RIGHT COLUMN - SIDE WELL FOR SPONSORED / GOOGLE ADS-->
         <div class="col-md-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <p class="text-center">Sponsored Listings / Google Ads</p></div>
+                    <p class="text-center">Sponsored Listings / Google Ads</p>
+                </div>
                 <div class="panel-body text-center">
                     <a href="#" style="text-decoration: none">
-                        <img class="img-thumbnail" src="@site" alt="Business 1" title="Business 1"/>
+                        <img class="img-thumbnail" src="@site" alt="Business 1" title="Business 1" />
                     </a>
                     <a href="#" style="font: white; text-decoration: none">
-                        <img class="img-thumbnail" src="@site" alt="Business 2" title="Business 2"/>
+                        <img class="img-thumbnail" src="@site" alt="Business 2" title="Business 2" />
                     </a>
                     <a href="#" style="font: white; text-decoration: none">
-                        <img class="img-thumbnail" src="@site" alt="Business 3" title="Business 3"/>
+                        <img class="img-thumbnail" src="@site" alt="Business 3" title="Business 3" />
                     </a>PGP
                 </div>
                 <div class="panel panel-footer">
@@ -130,7 +134,7 @@
         </div>
     </div>
 
-    <hr/>
+    <hr />
     <!--GOOGLE ADDS BOTTOM OF PAGE-->
     <div class="well text-center">
         <h2>Google Ads Here</h2>
@@ -143,5 +147,5 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         $("#home1").animate({ scrollTop: 0 }, "slow");
-    } 
+    }
 </script>

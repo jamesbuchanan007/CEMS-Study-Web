@@ -12,24 +12,24 @@ namespace CEMS_Study_Web.Controllers
     public class RegulationsController : Controller
     {
         // GET: Regulations
-        public ActionResult Part75()
-        {
-            RegualtionsViewModel vm = new RegualtionsViewModel
-            {
-                SectionNumber = "Full Regulation",
-                SectionName = "Part 75",
-                TableOfContents =  new List<string>(),
-                SiteAddress = "~/CEMS Study Web/CEMS Study Web/Views/Regulations/Part75Pages/Part75Introduction.cshtml"
-                //NEED SECTION PAGE NAME FOR ROUTING
-            };
+        //public ActionResult Part75()
+        //{
+        //    RegualtionsViewModel vm = new RegualtionsViewModel
+        //    {
+        //        SectionNumber = "Full Regulation",
+        //        SectionName = "Part 75",
+        //        TableOfContents =  new List<string>(),
+        //        SiteAddress = "~/CEMS Study Web/CEMS Study Web/Views/Regulations/Part75Pages/Part75Introduction.cshtml"
+        //        //NEED SECTION PAGE NAME FOR ROUTING
+        //    };
 
-            vm.TableOfContents.Add("Introduction");
-            vm.TableOfContents.Add("Section 1.1 - General - Time-Shared Analysers");
-            vm.TableOfContents.Add("Section 1.2 - General - Acceptable Monitors");
-            vm.TableOfContents.Add("Section 2 - SO2 Monitoring");
+        //    vm.TableOfContents.Add("Introduction");
+        //    vm.TableOfContents.Add("Section 1.1 - General - Time-Shared Analysers");
+        //    vm.TableOfContents.Add("Section 1.2 - General - Acceptable Monitors");
+        //    vm.TableOfContents.Add("Section 2 - SO2 Monitoring");
 
-            return View(vm);
-        }
+        //    return View(vm);
+        //}
 
         public ActionResult Part75PlainEnglish()
         {

@@ -2,7 +2,7 @@
 
 namespace CEMS_Study_Web.RegulationsViewModel
 {
-    public class RegualtionsViewModel
+    public class Part75ViewModel
     {
         public string SectionNumber { get; set; }
         public string SectionName { get; set; }

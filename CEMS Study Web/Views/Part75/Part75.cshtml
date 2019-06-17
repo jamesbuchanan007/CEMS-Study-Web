@@ -1,15 +1,14 @@
-﻿@model CEMS_Study_Web.RegulationsViewModel.RegualtionsViewModel
+﻿@model CEMS_Study_Web.RegulationsViewModel.Part75ViewModel
 
 
 @{
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var sectionNumber = "Introduction";
 }
 <div class="container-fluid">
 
     <!--NAME OF FILE-->
-    <h1>| @Model.SectionName - @sectionNumber</h1>
+    <h1>| @Model.SectionName - @Model.SectionNumber</h1>
     <hr />
     <div class="row">
         <div class="col-md-9">
@@ -19,7 +18,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
                     <li class="breadcrumb-item">@Model.SectionName</li>
-                    <li class="breadcrumb-item" aria-current="page">@sectionNumber</li>
+                    <li class="breadcrumb-item" aria-current="page">@Model.SectionNumber</li>
                 </ol>
             </nav>
             <div class="dropdown">
@@ -28,20 +27,17 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="~/40CFR/Part75">Full Regulation</a></li>
+                    <li><a href="~/Part75">Full Regulation</a></li>
                     <li class="divider"></li>
                     @foreach (var item in @Model.TableOfContents)
                     {
-                        if (item != @sectionNumber)
-                        {
-                            <li><a href="~/40CFR/Part75/Part75/Introduction">@item</a></li>
-                        }
+                        <li><a href="~/Part75/Part75File/Introduction">@item</a></li>
                     }
 
                 </ul>
             </div>
             <div style="max-height: 650px; overflow: auto; margin-top: 10px" id="home1">
-                <h3>INTRODUCTION</h3>
+                <h3>Introduction File</h3>
                 <p>
                     In order to reduce acid rain in the United States and Canada, Title IV of the Clean Air
                     Act Amendments of 1990 established the Acid Rain Program. The program has substantially
