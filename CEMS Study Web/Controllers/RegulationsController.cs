@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
+using CEMS_Study_Web.RegulationsViewModel;
+using Microsoft.Ajax.Utilities;
 
 namespace CEMS_Study_Web.Controllers
 {
@@ -11,8 +14,22 @@ namespace CEMS_Study_Web.Controllers
         // GET: Regulations
         public ActionResult Part75()
         {
-            return View();
+            RegualtionsViewModel vm = new RegualtionsViewModel
+            {
+                SectionNumber = "Full Regulation",
+                SectionName = "Part 75",
+                TableOfContents =  new List<string>()
+                //NEED SECTION PAGE NAME FOR ROUTING
+            };
+
+            vm.TableOfContents.Add("Introduction");
+            vm.TableOfContents.Add("Section 1.1 - General - Time-Shared Analysers");
+            vm.TableOfContents.Add("Section 1.2 - General - Acceptable Monitors");
+            vm.TableOfContents.Add("Section 2 - SO2 Monitoring");
+
+            return View(vm);
         }
+
         public ActionResult Part75PlainEnglish()
         {
             return View();

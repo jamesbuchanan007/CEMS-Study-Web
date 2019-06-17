@@ -1,14 +1,14 @@
-﻿@model dynamic
+﻿@model CEMS_Study_Web.RegulationsViewModel.RegualtionsViewModel 
+
 
 @{
-    ViewBag.Title = "Part 75";
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="container-fluid">
 
     <!--NAME OF FILE-->
-    <h1>| @ViewBag.Title</h1>
+    <h1>| @Model.SectionName - @Model.SectionNumber</h1>
     <hr/>
     <div class="row">
         <div class="col-md-9">
@@ -17,8 +17,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
-                    <li class="breadcrumb-item">@ViewBag.Title</li>
-                    <li class="breadcrumb-item" aria-current="page">Full Regulation</li>
+                    <li class="breadcrumb-item">@Model.SectionName</li>
+                    <li class="breadcrumb-item" aria-current="page">@Model.SectionNumber</li>
                 </ol>
             </nav>
             <div class="dropdown">
@@ -29,8 +29,11 @@
                 <ul class="dropdown-menu">
                     <li><a href="~/Regulations/Part75">Full Regulation</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#test">JavaScript</a></li>
+                    @foreach (var item in @Model.TableOfContents)
+                    {
+                        <li><a href="#">@item</a></li>
+                    }
+                   
                 </ul>
             </div>
             <div style="max-height: 650px; overflow: auto; margin-top: 10px" id="home1">
@@ -88,7 +91,7 @@
                     </a>
                     <a href="#" style="font: white; text-decoration: none">
                         <img class="img-thumbnail" src="@site" alt="Business 3" title="Business 3"/>
-                    </a>
+                    </a>PGP
                 </div>
                 <div class="panel panel-footer">
                     <p>
