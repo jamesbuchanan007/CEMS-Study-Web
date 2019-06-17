@@ -1,0 +1,151 @@
+﻿@model CEMS_Study_Web.RegulationsViewModel.RegualtionsViewModel
+
+
+@{
+    var site = "http://placeimg.com/180/150/any";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var sectionNumber = "Introduction";
+}
+<div class="container-fluid">
+
+    <!--NAME OF FILE-->
+    <h1>| @Model.SectionName - @sectionNumber</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-9">
+
+            <!--BREADCRUMB-->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
+                    <li class="breadcrumb-item">@Model.SectionName</li>
+                    <li class="breadcrumb-item" aria-current="page">@sectionNumber</li>
+                </ol>
+            </nav>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Table of Contents
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="~/40CFR/Part75">Full Regulation</a></li>
+                    <li class="divider"></li>
+                    @foreach (var item in @Model.TableOfContents)
+                    {
+                        if (item != @sectionNumber)
+                        {
+                            <li><a href="~/40CFR/Part75/Part75/Introduction">@item</a></li>
+                        }
+                    }
+
+                </ul>
+            </div>
+            <div style="max-height: 650px; overflow: auto; margin-top: 10px" id="home1">
+                <h3>INTRODUCTION</h3>
+                <p>
+                    In order to reduce acid rain in the United States and Canada, Title IV of the Clean Air
+                    Act Amendments of 1990 established the Acid Rain Program. The program has substantially
+                    reduced sulfur dioxide emissions and nitrogen oxide emissions from electric utility plants. These
+                    emissions reductions have been achieved at low cost to society, by employing both traditional
+                    regulatory techniques and innovative, market-based approaches. The centerpiece of the program
+                    is the allowance trading system, under which affected utility units are allocated "allowances"
+                    (each "allowance" permits a utility to emit one ton of SO2) based on historical fuel consumption
+                    and specified emission rates. The allowances can be traded as commodities.
+                </p>
+                <p>
+                    To ensure that allowances are consistently valued and to ensure that all of the projected
+                    emission reductions are in fact achieved, it is necessary that actual emissions from each affected
+                    utility unit be accurately determined. To fulfill this function, Title IV requires that affected units
+                    continuously measure and record their SO2 mass emissions. Most plants will fulfill these
+                    requirements by using continuous emission monitoring systems (CEMS). The EPA initially
+                    promulgated regulations for Acid Rain Program continuous emission monitoring (CEM)
+                    requirements at 40 CFR Part 75 on January 11, 1993 (58 FR 3590) and has published numerous
+                    revisions to Part 75 since then. The most recent revisions were published on January 24, 2008
+                    (73 FR 4312).
+                </p>
+                <p>
+                    In the past, this manual addressed only policy questions involving the implementation of
+                    the Acid Rain CEM, and was entitled the "Acid Rain Program Policy Manual." However, since
+                    the Manual was first published, Part 75 monitoring has been adopted by other emissions trading
+                    programs, including the NOx Budget Program, and, most recently, the Clean Air Interstate
+                    Regulation (CAIR). As a result, we changed the title of the manual to "Part 75 Emissions
+                    Monitoring Policy Manual."
+                </p>
+                <p>
+                    This manual provides a series of Questions and Answers that can be used on a nationwide
+                    basis to ensure that Part 75 emissions monitoring and reporting requirements are applied
+                    consistently for all affected sources. The manual is organized into sections by subject matter.
+                    Each section has its own table of contents, which provides page references for the applicable
+                    Questions and Answers. The manual is intended to be a living document. The EPA will issue
+                    new Questions and Answers and will revise previously issued Questions and Answers as
+                    necessary.
+                </p>
+                <p>
+                    Note that the purpose of this manual is to clarify the regulations and to facilitate program
+                    implementation. This document is not intended, nor can it be relied upon, to create any rights
+                    enforceable by any party in litigation with the United States. EPA may decide to follow the
+                    guidance provided in this document, or to act at variance with this guidance, based on its analysis
+                    of the specific facts presented. This guidance may be revised without public notice to reflect
+                    changes in EPA's approach to implementation, or to clarify and update rule text.
+                </p>
+                <p>
+                    The contents of this manual are available to the general public through the Internet on the
+                    Clean Air Markets homepage. The electronic version is provided in an Adobe Acrobat file (PDF format). Updates to the manual will be issued as separate Adobe Acrobat files. Periodically,
+                    EPA will reissue a complete manual that incorporates the updates.
+                </p>
+                <p>
+                    If after reviewing the Part 75 regulation and the supplementary guidance provided in this
+                    manual, you still have an unresolved issue, contact EPA Headquarters or the EPA Regional
+                    Office. You can find a list of contact persons on the Clean Air Markets Division website
+                    (www.epa.gov/airmarkets).
+                </p>
+            </div>
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" type="button" class="btn btn-default">Back to Top</button>
+        </div><!--END LEFT COLUMN-->
+        <!--RIGHT COLUMN - SIDE WELL FOR SPONSORED / GOOGLE ADS-->
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p class="text-center">Sponsored Listings / Google Ads</p>
+                </div>
+                <div class="panel-body text-center">
+                    <a href="#" style="text-decoration: none">
+                        <img class="img-thumbnail" src="@site" alt="Business 1" title="Business 1" />
+                    </a>
+                    <a href="#" style="font: white; text-decoration: none">
+                        <img class="img-thumbnail" src="@site" alt="Business 2" title="Business 2" />
+                    </a>
+                    <a href="#" style="font: white; text-decoration: none">
+                        <img class="img-thumbnail" src="@site" alt="Business 3" title="Business 3" />
+                    </a>PGP
+                </div>
+                <div class="panel panel-footer">
+                    <p>
+                        If you would like to advertise your CEMS business on this site, please submit a request via the Marketing link.
+                    </p>
+                    <p>
+                        @*TRIGGER CONTACT MODAL*@
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MarketingModal">Marketing &raquo;</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+    <!--GOOGLE ADDS BOTTOM OF PAGE-->
+    <div class="well text-center">
+        <h2>Google Ads Here</h2>
+    </div>
+</div>
+
+<script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        $("#home1").animate({ scrollTop: 0 }, "slow");
+    }
+</script>

@@ -18,7 +18,8 @@ namespace CEMS_Study_Web.Controllers
             {
                 SectionNumber = "Full Regulation",
                 SectionName = "Part 75",
-                TableOfContents =  new List<string>()
+                TableOfContents =  new List<string>(),
+                SiteAddress = "~/CEMS Study Web/CEMS Study Web/Views/Regulations/Part75Pages/Part75Introduction.cshtml"
                 //NEED SECTION PAGE NAME FOR ROUTING
             };
 

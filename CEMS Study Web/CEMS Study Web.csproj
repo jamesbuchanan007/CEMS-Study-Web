@@ -168,7 +168,7 @@
     <Content Include="Views\Definitions\Definitions.cshtml" />
     <Content Include="Views\UnitsOfMeasure\UnitsOfMeasure.cshtml" />
     <Content Include="Views\Formulas\Formulas.cshtml" />
-    <Content Include="Views\Regulations\Part75.cshtml" />
+    <Content Include="Views\Regulations\Part75\Part75.cshtml" />
     <Content Include="Views\Regulations\Part75PlainEnglish.cshtml" />
     <Content Include="Views\Regulations\Part75FieldAudit.cshtml" />
     <Content Include="Views\Regulations\Part75AppendixD.cshtml" />
@@ -182,6 +182,7 @@
     <Content Include="Views\ECMPS\GHG.cshtml" />
     <Content Include="Views\ECMPS\MATSTransition.cshtml" />
     <Content Include="Views\ECMPS\MATSGuidance.cshtml" />
+    <Content Include="Views\Regulations\Part75\Introduction.cshtml" />
     <Resource Include="Resources\industry-1827884_1920.jpg" />
     <Resource Include="Resources\power-plant-97119_1920.jpg" />
     <Resource Include="Resources\industry-406905_1920.jpg" />
@@ -252,7 +253,6 @@
     <Folder Include="Views\Regulations\Part63SubUUUUUPages\" />
     <Folder Include="Views\Regulations\Part75AppDPages\" />
     <Folder Include="Views\Regulations\Part75FieldAuditPages\" />
-    <Folder Include="Views\Regulations\Part75Pages\" />
     <Folder Include="Views\Regulations\Part75PEPages\" />
   </ItemGroup>
   <ItemGroup>
