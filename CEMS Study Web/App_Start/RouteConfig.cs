@@ -17,6 +17,11 @@ namespace CEMS_Study_Web
                 url: "Part75/{action}/{id}",
                 defaults: new { controller = "Part75", action = "Part75", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Part75Files",
+                url: "Part75/Part75File/{id}",
+                defaults: new { controller = "Part75", action = "Part75Files", id = UrlParameter.Optional }
+            );
             //routes.MapRoute(
             //    name: "Regulations",
             //    url: "40CFR/{action}/{id}",
