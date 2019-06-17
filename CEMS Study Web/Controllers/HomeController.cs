@@ -8,7 +8,7 @@ namespace CEMS_Study_Web.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Home()
         {
             return View();
         }

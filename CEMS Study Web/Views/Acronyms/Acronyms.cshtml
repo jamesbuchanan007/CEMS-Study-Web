@@ -1,17 +1,18 @@
 ﻿@model dynamic
 
 @{
-    ViewBag.Title = "Units of Measure";
-    var site = "http://placeimg.com/180/150/any";
+    ViewBag.Title = "Acronyms";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var site = "http://placeimg.com/180/150/any";
+
 }
 <div class="container-fluid">
     <!--NAME OF FILE-->
-    <h1>| @ViewBag.Title (UoM)</h1>
+    <h1>| @ViewBag.Title</h1>
     <hr />
     <div class="row">
         <div class="col-md-9">
-            <img class="img-responsive" src="~/Resources/battleship-389274_1280.jpg" />
+            <img class="img-responsive" src="~/Resources/keyboard-70506_1280.jpg" />
             <hr />
             <!--BREADCRUMB-->
             <nav aria-label="breadcrumb">
@@ -20,9 +21,11 @@
                     <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
                 </ol>
             </nav>
-            <div class="form-group col-md-4">
-                <label for="UnitsOfMeasureList">Units of Measure List</label>
-                <select class="form-control form-control-static" id="UnitsOfMeasureList">
+            
+            <!--ACRONYM-->
+            <div class="form-group col-md-3">
+                <label for="AcronymList">Acronyms List</label>
+                <select class="form-control form-control-static" id="AcronymList">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -30,12 +33,15 @@
                     <option>5</option>
                 </select>
             </div>
-
-            <div class="form-group col-md-8">
-                <label for="UnitsOfMeasureTextArea">Unit of Measure Meaning</label>
-                <textarea class="form-control" id="UnitsOfMeasureTextArea" rows="3" style="min-width: 100%"></textarea>
+            <!--ACRONYM MEANING-->
+            <div class="form-group col-md-9">
+                <label for="AcronymTextArea">Acronym Name</label>
+                <textarea class="form-control" id="AcronymTextArea" rows="3" style="min-width: 100%">This is the meaning of the acronym</textarea>
             </div>
+            <hr />
+            
         </div>
+        
 
         <!--SIDE WELL FOR SPONSORED / GOOGLE ADS-->
         <div class="col-md-3">
@@ -54,7 +60,7 @@
                 </div>
                 <div class="panel panel-footer">
                     <p>
-                        If you would like to advertise your CEMS business on this site, please submit a request via the Marketing link.
+                        If you would like to advertise your CEMS business here, please inquire via the Marketing link.
                     </p>
                     <p>
                         @*TRIGGER CONTACT MODAL*@

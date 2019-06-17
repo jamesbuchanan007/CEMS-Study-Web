@@ -164,10 +164,10 @@
     <Content Include="icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\battleship-389274_1280.jpg" />
     <None Include="Resources\water-316625_1280.jpg" />
-    <Content Include="Views\Acronyms\Index.cshtml" />
-    <Content Include="Views\Definitions\Index.cshtml" />
-    <Content Include="Views\UnitsOfMeasure\Index.cshtml" />
-    <Content Include="Views\Formulas\Index.cshtml" />
+    <Content Include="Views\Acronyms\Acronyms.cshtml" />
+    <Content Include="Views\Definitions\Definitions.cshtml" />
+    <Content Include="Views\UnitsOfMeasure\UnitsOfMeasure.cshtml" />
+    <Content Include="Views\Formulas\Formulas.cshtml" />
     <Content Include="Views\Regulations\Part75.cshtml" />
     <Content Include="Views\Regulations\Part75PlainEnglish.cshtml" />
     <Content Include="Views\Regulations\Part75FieldAudit.cshtml" />
@@ -235,7 +235,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
