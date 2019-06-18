@@ -23,25 +23,9 @@
           <Property Name="Part75EMPTableOfContentsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Object" Type="varchar(max)" />
         </EntityType>
-        <Association Name="FK_Part75EMP_ToPart75EMPTableOfContents">
-          <End Role="Part75EMPTableOfContents" Type="Self.Part75EMPTableOfContents" Multiplicity="1" />
-          <End Role="Part75EMP" Type="Self.Part75EMP" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="Part75EMPTableOfContents">
-              <PropertyRef Name="Part75EMPTableOfContentsId" />
-            </Principal>
-            <Dependent Role="Part75EMP">
-              <PropertyRef Name="Part75EMPId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="CEMSStudyWebDbModelStoreContainer">
           <EntitySet Name="Part75EMP" EntityType="Self.Part75EMP" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Part75EMPTableOfContents" EntityType="Self.Part75EMPTableOfContents" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_Part75EMP_ToPart75EMPTableOfContents" Association="Self.FK_Part75EMP_ToPart75EMPTableOfContents">
-            <End Role="Part75EMPTableOfContents" EntitySet="Part75EMPTableOfContents" />
-            <End Role="Part75EMP" EntitySet="Part75EMP" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->

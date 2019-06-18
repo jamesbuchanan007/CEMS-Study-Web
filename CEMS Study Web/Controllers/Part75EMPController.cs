@@ -13,6 +13,7 @@ namespace CEMS_Study_Web.Controllers
         CEMSStudyWebDbEntities _db = new CEMSStudyWebDbEntities();
 
         // GET: Part75
+        [Route("Part75EMP")]
         public ActionResult Part75EMP()
         {
             //GET OBJECT
@@ -27,7 +28,6 @@ namespace CEMS_Study_Web.Controllers
                 SectionName = firstRow.SectionName,
                 Content = firstRow.Content,
                 TableOfContents = new List<string>()
-                
             };
 
             //GET TABLE OF CONTENTS
@@ -42,6 +42,38 @@ namespace CEMS_Study_Web.Controllers
             Dispose();
             return View(vm);
         }
+
+        [Route("Part75EMP/{fileId:int}")]
+        public ActionResult Part75EMP(int fileId)
+        {
+            //GET OBJECT
+            var firstRow = _db.Part75EMP.First(x => x.Part75EMPId == fileId+1);
+
+            //LOAD VIEW MODEL
+            Part75ViewModel vm = new Part75ViewModel
+            {
+                Regulation = firstRow.Regulation,
+                SectionHeading = firstRow.SectionHeading,
+                SectionNumber = firstRow.SectionNumber,
+                SectionName = firstRow.SectionName,
+                Content = firstRow.Content,
+                TableOfContents = new List<string>()
+
+            };
+
+            //GET TABLE OF CONTENTS
+            var tableOfContentsObjects = _db.Part75EMPTableOfContents.ToList();
+
+            //LOAD TABLE OF CONTENTS TO VIEW MODEL
+            foreach (var item in tableOfContentsObjects)
+            {
+                vm.TableOfContents.Add(item.Object);
+            }
+
+            Dispose();
+            return View(vm);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
