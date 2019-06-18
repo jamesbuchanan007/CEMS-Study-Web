@@ -1,14 +1,15 @@
-﻿@model CEMS_Study_Web.RegulationsViewModel.Part75ViewModel
+﻿@model Part75ViewModel
 
 
 @{
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var sectionNumber = Model.SectionName == "Introduction" ? "- Introduction" : "- " + Model.SectionNumber;
 }
 <div class="container-fluid">
 
     <!--NAME OF FILE-->
-    <h1>| @Model.SectionName - @Model.SectionNumber</h1>
+    <h1>| @Model.Regulation @sectionNumber</h1>
     <hr />
     <div class="row">
         <div class="col-md-9">
@@ -17,8 +18,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
-                    <li class="breadcrumb-item">@Model.SectionName</li>
-                    <li class="breadcrumb-item" aria-current="page">@Model.SectionNumber</li>
+                    <li class="breadcrumb-item">@Model.Regulation</li>
+                    <li class="breadcrumb-item" aria-current="page">@sectionNumber</li>
                 </ol>
             </nav>
             <div class="dropdown">
@@ -31,13 +32,13 @@
                     <li class="divider"></li>
                     @foreach (var item in @Model.TableOfContents)
                     {
-                        <li><a href="~/Part75/Part75File/Introduction">@item</a></li>
+                        <li><a href="~/Part75File">@item</a></li>
                     }
 
                 </ul>
             </div>
             <div style="max-height: 650px; overflow: auto; margin-top: 10px" id="home1">
-                <h3>Introduction File</h3>
+                <h3>Introduction</h3>
                 <p>
                     In order to reduce acid rain in the United States and Canada, Title IV of the Clean Air
                     Act Amendments of 1990 established the Acid Rain Program. The program has substantially
@@ -95,6 +96,7 @@
                     Office. You can find a list of contact persons on the Clean Air Markets Division website
                     (www.epa.gov/airmarkets).
                 </p>
+
             </div>
 
             <!--BACK TO TOP BUTTON-->
