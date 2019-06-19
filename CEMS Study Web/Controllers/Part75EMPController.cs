@@ -82,11 +82,5 @@ namespace CEMS_Study_Web.Controllers
             }
             base.Dispose(disposing);
         }
-
-        //public ActionResult Part75File(string url)
-        //{
-
-        //    return View();
-        //}
     }
 }
