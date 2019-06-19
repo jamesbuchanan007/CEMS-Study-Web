@@ -43,11 +43,12 @@ namespace CEMS_Study_Web.Controllers
             return View(vm);
         }
 
+        //GETTING FILE FROM DB
         [Route("Part75EMP/{fileId:int}")]
         public ActionResult Part75EMP(int fileId)
         {
             //GET OBJECT
-            var firstRow = _db.Part75EMP.First(x => x.Part75EMPId == fileId+1);
+            var firstRow = _db.Part75EMP.First(x => x.Part75EMPId == fileId+1); //+1 BECAUSE COMBOBOX IS ZERO-INDEXED AND DB PRIMARY ID STARTS AT 1
 
             //LOAD VIEW MODEL
             Part75ViewModel vm = new Part75ViewModel
@@ -58,7 +59,6 @@ namespace CEMS_Study_Web.Controllers
                 SectionName = firstRow.SectionName,
                 Content = firstRow.Content,
                 TableOfContents = new List<string>()
-
             };
 
             //GET TABLE OF CONTENTS
