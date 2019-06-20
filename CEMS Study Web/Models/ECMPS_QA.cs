@@ -12,11 +12,13 @@ namespace CEMS_Study_Web.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Part75EMPTableOfContents
+    public partial class ECMPS_QA
     {
-        public int Part75EMPTableOfContentsId { get; set; }
-        public string Object { get; set; }
-    
-        public virtual Part75EMP Part75EMP { get; set; }
+        public int ECMPS_QAId { get; set; }
+        public string Regulation { get; set; }
+        public string SectionHeading { get; set; }
+        public string SectionName { get; set; }
+        public string SectionNumber { get; set; }
+        public string Content { get; set; }
     }
 }

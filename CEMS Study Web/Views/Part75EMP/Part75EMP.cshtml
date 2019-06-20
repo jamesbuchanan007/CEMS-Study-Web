@@ -4,12 +4,12 @@
 @{
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var sectionNumber = Model.SectionName == "Introduction" ? "Introduction" : "- " + Model.SectionNumber;
+    var heading = Model.SectionNumber == "1" ? "Introduction" : Model.SectionNumber;
 }
 <div class="container-fluid">
   
     <!--NAME OF FILE-->
-    <h1>| @Model.Regulation | @sectionNumber</h1>
+    <h1>| @Model.Regulation | @heading</h1>
     <hr />
     <div class="row">
         <div class="col-md-9">
@@ -19,7 +19,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
                     <li class="breadcrumb-item">@Model.Regulation</li>
-                    <li class="breadcrumb-item" aria-current="page">@sectionNumber</li>
+                    <li class="breadcrumb-item" aria-current="page">@heading</li>
                 </ol>
             </nav>
             <div class="dropdown">
@@ -28,10 +28,22 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    
-                    @for (var i = 0; i < @Model.TableOfContents.Count; i++)
+
+                    @for (var i = 0; i < @Model.SectionHeadingList.Count; i++)
                     {
-                        <li><a href="~/Part75EMP/@i">@Model.TableOfContents[i]</a></li>
+                        if (Model.SectionNumberList[i] == "Full Regulation")
+                        {
+                            <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i]</a></li>
+                            continue;
+                        }
+
+                        if (Model.SectionNumberList[i] == "1")
+                        {
+                            <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SectionHeadingList[i]</a></li>
+                            continue;
+                        }
+
+                        <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SectionHeadingList[i] - @Model.SectionNameList[i]</a></li>
                     }
 
                 </ul>

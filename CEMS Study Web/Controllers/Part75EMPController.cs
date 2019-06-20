@@ -10,14 +10,14 @@ namespace CEMS_Study_Web.Controllers
 {
     public class Part75EMPController : Controller
     {
-        CEMSStudyWebDbEntities _db = new CEMSStudyWebDbEntities();
+        CEMSStudyWebDbEntities1 db = new CEMSStudyWebDbEntities1();
 
         // GET: Part75
         [Route("Part75EMP")]
         public ActionResult Part75EMP()
         {
             //GET OBJECT
-            var firstRow = _db.Part75EMP.First(x => x.Part75EMPId == 1);
+            var firstRow = db.Part75EMP.First(x => x.SectionNumber == "Full Regulation");
 
             //LOAD VIEW MODEL
             Part75ViewModel vm = new Part75ViewModel
@@ -27,27 +27,24 @@ namespace CEMS_Study_Web.Controllers
                 SectionNumber = firstRow.SectionNumber,
                 SectionName = firstRow.SectionName,
                 Content = firstRow.Content,
-                TableOfContents = new List<string>()
+                SectionNumberList = new List<string>(),
+                SectionHeadingList = new List<string>(),
+                SectionNameList = new List<string>(),
             };
 
-            //GET TABLE OF CONTENTS
-            var tableOfContentsObjects = _db.Part75EMPTableOfContents.ToList();
-
-            //LOAD TABLE OF CONTENTS TO VIEW MODEL
-            foreach (var item in tableOfContentsObjects)
-            {
-                vm.TableOfContents.Add(item.Object);
-            }
+            vm.SectionHeadingList = db.Part75EMP.Select(x => x.SectionHeading).ToList();
+            vm.SectionNumberList = db.Part75EMP.Select(x => x.SectionNumber).ToList();
+            vm.SectionNameList = db.Part75EMP.Select(x => x.SectionName).ToList();
 
             Dispose();
             return View(vm);
         }
 
-        [Route("Part75EMP/{fileId:int}")]
-        public ActionResult Part75EMP(int fileId)
+        [Route("Part75EMP/{sectionNumber?}")]
+        public ActionResult Part75EMP(string sectionNumber)
         {
             //GET OBJECT
-            var firstRow = _db.Part75EMP.First(x => x.Part75EMPId == fileId+1);
+            var firstRow = db.Part75EMP.First(x => x.SectionNumber == sectionNumber);
 
             //LOAD VIEW MODEL
             Part75ViewModel vm = new Part75ViewModel
@@ -57,18 +54,14 @@ namespace CEMS_Study_Web.Controllers
                 SectionNumber = firstRow.SectionNumber,
                 SectionName = firstRow.SectionName,
                 Content = firstRow.Content,
-                TableOfContents = new List<string>()
-
+                SectionNumberList = new List<string>(),
+                SectionHeadingList = new List<string>(),
+                SectionNameList = new List<string>(),
             };
 
-            //GET TABLE OF CONTENTS
-            var tableOfContentsObjects = _db.Part75EMPTableOfContents.ToList();
-
-            //LOAD TABLE OF CONTENTS TO VIEW MODEL
-            foreach (var item in tableOfContentsObjects)
-            {
-                vm.TableOfContents.Add(item.Object);
-            }
+            vm.SectionHeadingList = db.Part75EMP.Select(x => x.SectionHeading).ToList();
+            vm.SectionNumberList = db.Part75EMP.Select(x => x.SectionNumber).ToList();
+            vm.SectionNameList = db.Part75EMP.Select(x => x.SectionName).ToList();
 
             Dispose();
             return View(vm);
@@ -78,15 +71,9 @@ namespace CEMS_Study_Web.Controllers
         {
             if (disposing)
             {
-                _db.Dispose();
+                db.Dispose();
             }
             base.Dispose(disposing);
         }
-
-        //public ActionResult Part75File(string url)
-        //{
-
-        //    return View();
-        //}
     }
 }

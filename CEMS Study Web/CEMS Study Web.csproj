@@ -141,26 +141,62 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CEMSStudyDbEntitiyModel.Context.cs">
+    <Compile Include="Models\CEMSStudyDbEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CEMSStudyDbEntitiyModel.Context.tt</DependentUpon>
+      <DependentUpon>CEMSStudyDbEntities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CEMSStudyDbEntitiyModel.cs">
+    <Compile Include="Models\CEMSStudyDbEntities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CEMSStudyDbEntitiyModel.tt</DependentUpon>
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CEMSStudyDbEntitiyModel.Designer.cs">
+    <Compile Include="Models\CEMSStudyDbEntities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CEMSStudyDbEntitiyModel.edmx</DependentUpon>
+      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ECMPSEmission.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ECMPSMonitoringPlan.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ECMPS_GHG.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ECMPS_PGV.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ECMPS_QA.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MATSGuidance.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MATSTransition.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Part60AppB.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Part60AppF.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Part63SubUUUUU.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Part75AppD.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Part75EMP.cs">
-      <DependentUpon>CEMSStudyDbEntitiyModel.tt</DependentUpon>
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Part75EMPTableOfContents.cs">
-      <DependentUpon>CEMSStudyDbEntitiyModel.tt</DependentUpon>
+    <Compile Include="Models\Part75FAM.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Part75PE.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Part75ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -191,12 +227,12 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <EntityDeploy Include="Models\CEMSStudyDbEntitiyModel.edmx">
+    <EntityDeploy Include="Models\CEMSStudyDbEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CEMSStudyDbEntitiyModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>CEMSStudyDbEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\CEMSStudyDbEntitiyModel.edmx.diagram">
-      <DependentUpon>CEMSStudyDbEntitiyModel.edmx</DependentUpon>
+    <Content Include="Models\CEMSStudyDbEntities.edmx.diagram">
+      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
     </Content>
     <None Include="Resources\CEMS_Study_Icon.ico" />
     <None Include="Resources\icons8_factory_64_QmM_icon.ico" />
@@ -204,15 +240,15 @@
     <Content Include="icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\battleship-389274_1280.jpg" />
     <None Include="Resources\water-316625_1280.jpg" />
-    <Content Include="Models\CEMSStudyDbEntitiyModel.Context.tt">
+    <Content Include="Models\CEMSStudyDbEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CEMSStudyDbEntitiyModel.Context.cs</LastGenOutput>
-      <DependentUpon>CEMSStudyDbEntitiyModel.edmx</DependentUpon>
+      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
+      <LastGenOutput>CEMSStudyDbEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\CEMSStudyDbEntitiyModel.tt">
+    <Content Include="Models\CEMSStudyDbEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CEMSStudyDbEntitiyModel.edmx</DependentUpon>
-      <LastGenOutput>CEMSStudyDbEntitiyModel.cs</LastGenOutput>
+      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
+      <LastGenOutput>CEMSStudyDbEntities.cs</LastGenOutput>
     </Content>
     <Content Include="Views\Acronyms\Acronyms.cshtml" />
     <Content Include="Views\Definitions\Definitions.cshtml" />

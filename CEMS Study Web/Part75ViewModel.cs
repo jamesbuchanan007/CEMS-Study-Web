@@ -9,7 +9,9 @@ namespace CEMS_Study_Web
         public string SectionNumber { get; set; }
         public string SectionName { get; set; }
         public string SectionHeading { get; set; }
-        public List<string> TableOfContents { get; set; }
         public string Content { get; set; }
+        public List<string> SectionNameList { get; set; }
+        public List<string> SectionHeadingList { get; set; }
+        public List<string> SectionNumberList { get; set; }
     }
 }

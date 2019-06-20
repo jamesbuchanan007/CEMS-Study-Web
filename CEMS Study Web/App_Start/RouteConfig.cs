@@ -13,6 +13,7 @@ namespace CEMS_Study_Web
         {
             routes.MapMvcAttributeRoutes();
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+           
             routes.MapRoute(
                 name: "Part75EMP",
                 url: "Part75EMP/{action}/{id}",

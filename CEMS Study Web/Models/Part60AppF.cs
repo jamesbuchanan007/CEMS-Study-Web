@@ -12,13 +12,14 @@ namespace CEMS_Study_Web.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Part75EMP
+    public partial class Part60AppF
     {
-        public int Part75EMPId { get; set; }
+        public int Part60AppFId { get; set; }
+        public string Regulation { get; set; }
         public string SectionHeading { get; set; }
         public string SectionName { get; set; }
         public string SectionNumber { get; set; }
+        public string SectionSubName { get; set; }
         public string Content { get; set; }
-        public string Regulation { get; set; }
     }
 }
