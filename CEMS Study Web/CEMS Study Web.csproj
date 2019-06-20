@@ -331,12 +331,6 @@
     <Folder Include="Views\ECMPS\MonitoringReportingPages\" />
     <Folder Include="Views\ECMPS\PGVPages\" />
     <Folder Include="Views\ECMPS\QAReportingPages\" />
-    <Folder Include="Views\Regulations\Part60AppBPages\" />
-    <Folder Include="Views\Regulations\Part60AppFPages\" />
-    <Folder Include="Views\Regulations\Part63SubUUUUUPages\" />
-    <Folder Include="Views\Regulations\Part75AppDPages\" />
-    <Folder Include="Views\Regulations\Part75FieldAuditPages\" />
-    <Folder Include="Views\Regulations\Part75PEPages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
