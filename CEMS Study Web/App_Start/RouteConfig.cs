@@ -11,7 +11,9 @@ namespace CEMS_Study_Web
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            //ACCESS METHOD ENABLED SO THAT ROUTE ATTRIBUTES IN CONTROLLER
             routes.MapMvcAttributeRoutes();
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
            
             routes.MapRoute(
