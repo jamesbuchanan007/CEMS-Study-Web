@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace CEMS_Study_Web.Controllers
 {
-    public class HomeController : Controller
+    public class TemplateController : Controller
     {
-        public ActionResult Home()
+        // GET: Template
+        public ActionResult Index()
         {
             return View();
         }
-
     }
 }

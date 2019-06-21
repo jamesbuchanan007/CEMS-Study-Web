@@ -52,6 +52,11 @@ namespace CEMS_Study_Web
                 defaults: new { controller = "Formulas", action = "Formulas", id = UrlParameter.Optional }
             );
             routes.MapRoute(
+                name: "Template",
+                url: "Template",
+                defaults: new { controller = "Template", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{id}",
                 defaults: new { controller = "Home", action = "Home", id = UrlParameter.Optional }
