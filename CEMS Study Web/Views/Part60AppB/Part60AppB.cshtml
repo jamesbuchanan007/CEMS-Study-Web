@@ -1,4 +1,4 @@
-﻿@model Part75EMPViewModel
+﻿@model Part60AppBViewModel
 
 
 @{
@@ -7,7 +7,7 @@
     var heading = Model.SectionNumber == "1" ? "Introduction" : Model.SectionNumber;
 }
 <div class="container-fluid">
-  
+
     <!--NAME OF FILE-->
     <h1>| @Model.Regulation | @heading</h1>
     <hr />
@@ -33,17 +33,17 @@
                     {
                         if (Model.SectionNumberList[i] == "Full Regulation")
                         {
-                            <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i]</a></li>
+                            <li><a href="~/Part60AppB/@Model.SectionNumberList[i]">@Model.SectionNumberList[i]</a></li>
                             continue;
                         }
 
                         if (Model.SectionNumberList[i] == "1")
                         {
-                            <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SectionHeadingList[i]</a></li>
+                            <li><a href="~/Part60AppB/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SectionHeadingList[i]</a></li>
                             continue;
                         }
 
-                        <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SectionHeadingList[i] - @Model.SectionNameList[i]</a></li>
+                        <li><a href="~/Part60AppB/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SectionHeadingList[i] - @Model.SectionNameList[i]</a></li>
                     }
 
                 </ul>

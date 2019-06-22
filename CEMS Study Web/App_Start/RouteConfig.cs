@@ -22,6 +22,11 @@ namespace CEMS_Study_Web
                 defaults: new { controller = "Part75EMP", action = "Part75EMP", id = UrlParameter.Optional }
             );
             routes.MapRoute(
+                name: "Part60AppB",
+                url: "Part60AppB/{action}/{id}",
+                defaults: new { controller = "Part60AppB", action = "Part60AppB", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
                 name: "ECMPS",
                 url: "ECMPS/{action}/{id}",
                 defaults: new { controller = "ECMPS", action = "EmissionsReporting", id = UrlParameter.Optional }

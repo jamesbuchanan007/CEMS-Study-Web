@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
 namespace CEMS_Study_Web
 {
-    public class Part75ViewModel
+    public class Part60AppBViewModel
     {
-        public int Part75EMPId { get; set; }
         public string Regulation { get; set; }
         public string SectionNumber { get; set; }
         public string SectionName { get; set; }
