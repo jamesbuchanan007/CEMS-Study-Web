@@ -136,8 +136,8 @@
     <Compile Include="Controllers\ECMPSController.cs" />
     <Compile Include="Controllers\FormulasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Part60AppBController.cs" />
     <Compile Include="Controllers\Part75EMPController.cs" />
+    <Compile Include="Controllers\TemplateController.cs" />
     <Compile Include="Controllers\UnitsOfMeasureController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -199,8 +199,7 @@
     <Compile Include="Models\Part75PE.cs">
       <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Part60AppBViewModel.cs" />
-    <Compile Include="Part75EMPViewModel.cs" />
+    <Compile Include="Part75ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -219,6 +218,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\Part75EMP1.3.1.png" />
+    <Content Include="Content\Images\Part75EMP2.1.1.png" />
+    <Content Include="Content\Images\Part75EMP3.19.1.png" />
+    <Content Include="Content\Images\Part75EMP3.19.2.png" />
+    <Content Include="Content\Images\Part75EMP3.33.1.png" />
+    <Content Include="Content\Images\Part75EMP3.34.1.png" />
+    <Content Include="Content\Images\Part75EMP9.9.1.png" />
+    <Content Include="Content\Images\Part75EMP9.9.2.png" />
+    <Content Include="Content\Images\Part75EMP9.9.3.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -259,6 +267,7 @@
     <Content Include="Views\Regulations\Part75PlainEnglish.cshtml" />
     <Content Include="Views\Regulations\Part75FieldAudit.cshtml" />
     <Content Include="Views\Regulations\Part75AppendixD.cshtml" />
+    <Content Include="Views\Regulations\Part60AppendixB.cshtml" />
     <Content Include="Views\Regulations\Part60AppendixF.cshtml" />
     <Content Include="Views\Regulations\Part63SubpartUUUUU.cshtml" />
     <Content Include="Views\ECMPS\MonitoringReporting.cshtml" />
@@ -269,7 +278,7 @@
     <Content Include="Views\ECMPS\MATSTransition.cshtml" />
     <Content Include="Views\ECMPS\MATSGuidance.cshtml" />
     <Content Include="Views\Part75EMP\Part75EMP.cshtml" />
-    <Content Include="Views\Part60AppB\Part60AppB.cshtml" />
+    <Content Include="Views\Template\Index.cshtml" />
     <Resource Include="Resources\industry-1827884_1920.jpg" />
     <Resource Include="Resources\power-plant-97119_1920.jpg" />
     <Resource Include="Resources\industry-406905_1920.jpg" />
