@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -8,16 +7,16 @@ using CEMS_Study_Web.Models;
 
 namespace CEMS_Study_Web.Controllers
 {
-    public class Part75EMPController : Controller
+    public class Part60AppBController : Controller
     {
         CEMSStudyWebDbEntities1 db = new CEMSStudyWebDbEntities1();
 
-        // GET: Part75
-        [Route("Part75EMP")]
-        public ActionResult Part75EMP()
+        // GET: Part60AppendixB
+        [Route("Part60AppB")]
+        public ActionResult Part60AppB()
         {
             //GET OBJECT
-            var firstRow = db.Part75EMP.First(x => x.SectionNumber == "Full Regulation");
+            var firstRow = db.Part60AppB.First(x => x.SectionNumber == "Full Regulation");
 
             //LOAD VIEW MODEL
             Part75EMPViewModel vm = new Part75EMPViewModel
@@ -32,19 +31,20 @@ namespace CEMS_Study_Web.Controllers
                 SectionNameList = new List<string>(),
             };
 
-            vm.SectionHeadingList = db.Part75EMP.Select(x => x.SectionHeading).ToList();
-            vm.SectionNumberList = db.Part75EMP.Select(x => x.SectionNumber).ToList();
-            vm.SectionNameList = db.Part75EMP.Select(x => x.SectionName).ToList();
+            vm.SectionHeadingList = db.Part60AppB.Select(x => x.SectionHeading).ToList();
+            vm.SectionNumberList = db.Part60AppB.Select(x => x.SectionNumber).ToList();
+            vm.SectionNameList = db.Part60AppB.Select(x => x.SectionName).ToList();
 
             Dispose();
             return View(vm);
         }
 
-        [Route("Part75EMP/{sectionNumber?}")]
-        public ActionResult Part75EMP(string sectionNumber)
+        [Route("Part60AppB/{sectionNumber?}")]
+        public ActionResult Part60AppB(string sectionNumber)
         {
             //GET OBJECT
-            var firstRow = db.Part75EMP.First(x => x.SectionNumber == sectionNumber);
+            var firstRow = db.Part60AppB.First(x => x.SectionNumber == sectionNumber);
+
 
             //LOAD VIEW MODEL
             Part75EMPViewModel vm = new Part75EMPViewModel
@@ -59,21 +59,12 @@ namespace CEMS_Study_Web.Controllers
                 SectionNameList = new List<string>(),
             };
 
-            vm.SectionHeadingList = db.Part75EMP.Select(x => x.SectionHeading).ToList();
-            vm.SectionNumberList = db.Part75EMP.Select(x => x.SectionNumber).ToList();
-            vm.SectionNameList = db.Part75EMP.Select(x => x.SectionName).ToList();
+            vm.SectionHeadingList = db.Part60AppB.Select(x => x.SectionHeading).ToList();
+            vm.SectionNumberList = db.Part60AppB.Select(x => x.SectionNumber).ToList();
+            vm.SectionNameList = db.Part60AppB.Select(x => x.SectionName).ToList();
 
             Dispose();
             return View(vm);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
         }
     }
 }
