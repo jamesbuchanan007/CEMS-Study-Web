@@ -1,353 +1,163 @@
 ﻿<h2>
-    Question 15.5
+    Question 16.4
 </h2>
 
 <h3>Topic</h3>
 <em>
-    Testing Requirements for Add-On SO<sub>2</sub> and NO<sub>x</sub> Emission Control
-    Installations
+    NO<sub>x</sub> Monitoring -- Multiple Stack Configurations
 </em>
 
 <h3>Question</h3>
 <p>
-    When add-on SO<sub>2</sub> or NO<sub>x</sub> emission controls (e.g., flue gas de-sulfurization
-    (FGD) systems, selective catalytic reduction (SCR, SNCR), etc.) are
-    installed on affected units, what are the CEMS testing requirements?
+    For a single unit with a multiple stack or duct configuration, can the NO<sub>x</sub>
+    emission rate be measured in only one stack and still ensure that NO<sub>x</sub>
+    emissions are accounted for "during all times when the unit combusts
+    fuel," as required by § 75.17(c)(2)?
 </p>
 <h3>Answer</h3>
 <p>
-    Section 75.20(b) describes various changes (e.g., changes to a continuous
-    emission monitoring system (CEMS), to the manner of unit operation, to
-    the flue gas handling system, etc.) that may require re-certification. For
-    example, relocation of a CEMS sampling probe<sup>1</sup> or replacement of an
-    analyzer requires re-certification. Modifications to a CEMS may require
-    re-certification if the changes "significantly affect" the ability of the CEMS
-    to accurately measure and record emissions. And changes to the manner
-    of unit operation or to the flue gas handling system may require
-    re-certification if the changes "significantly" alter the flow or concentration
-    profile.
+    Monitoring only one stack may be feasible, depending on the type of unit,
+    the specifics of the stack or duct configuration, and the way in which the
+    unit is operated. Use the following guidelines:
+</p>
+<text style="text-decoration: underline">Guidelines for Boilers</text>
+<ol>
+    <li>
+        For a simple multiple stack configuration in which the flue gases from
+        the unit are sent to two or more exhaust stacks, you may monitor NO<sub>x</sub>
+        emission rate using a single monitoring system installed on one stack,
+        provided that:
+        <ol type="a">
+            <li>The products of combustion are sufficiently well-mixed to ensure
+                that a NO<sub>x</sub> emission rate representative of the unit can be obtained
+                in any one of the stacks. As a guideline, the combustion products
+                are considered to be well-mixed if test data or CEM data are
+                available to show that the NO<sub>x</sub> emission rates in the individual
+                stacks differ by no more than ten percent or 0.01 lb/mmBtu
+                (whichever is less restrictive);</li>
+            <li>The flue gases are never routed in such a manner that they will
+                bypass the monitored stack; and</li>
+            <li>For units with NO<sub>x</sub> emission controls, the flue gases flowing
+                through all of the individual stacks are controlled to the same level.</li>
+        </ol>
+    </li>
+    <li>
+        For a single-stack unit with split or multiple breechings, if the owner
+        or operator elects to monitor NO<sub>x</sub> emission rate in the duct-work
+        (breechings) rather than in the stack, you may monitor NO<sub>x</sub> emission
+        rate using a single monitoring system installed on one duct, provided
+        that:
+        <ol type="a">
+            <li>The products of combustion are sufficiently well-mixed to ensure
+                that a NO<sub>x</sub> emission rate representative of the unit can be obtained
+                in any one of the ducts (see guideline in (1)(a), above);</li>
+            <li>The flue gases are never routed in such a manner that they will
+                bypass the monitored duct; and</li>
+            <li>For units with NO<sub>x</sub> emission controls, the flue gases flowing
+                through all of the individual ducts are controlled to the same level,
+                and there are no additional NO<sub>x</sub> emission controls downstream of
+                the point at which the NO<sub>x</sub> emission rate is monitored.</li>
+        </ol>
+    </li>
+    <li>
+        For a configuration consisting of a main stack and a bypass stack, you
+        may monitor NO<sub>x</sub> emission rate with a single monitoring system
+        installed on the main stack, provided that:
+        <ol type="a">
+            <li>You report the maximum potential NO<sub>x</sub> emission rate (MER) for
+                any hour in which flue gases flow through the bypass stack; and</li>
+            <li>A method of determination code of "23" is reported for every hour
+                in which flue gases flow through the bypass stack. Treat hours in
+                which code "23" is reported as non-quality-assured hours (do not 
+                include these hours in the load ranges (bins) for missing data
+                look-backs).</li>
+        </ol>
+    </li>
+</ol>
+<p>
+    If the applicable conditions in paragraph (1), (2), or (3) above are fully
+    met and you elect to monitor NO<sub>x</sub> emission rate at only one stack or duct,
+    then:
+    <ul>
+        <li>Report all of the NO<sub>x</sub> emission data and the related NO<sub>x</sub> quality-assurance
+            data at the unit level. Do not use multiple stack ("MS")
+            prefixes for NO<sub>x</sub> reporting. However, if you use MS prefixes for SO<sub>2</sub>
+            and CO<sub>2</sub> reporting from the same unit, continue to use these prefixes.</li>
+        <li>If a flow monitor is installed on each stack or duct, determine the
+            hourly heat input rate at each stack using the applicable Appendix F
+            equation. For each hour, use the CO<sub>2</sub> or O<sub>2</sub> reading from the NO<sub>x</sub>-diluent
+            CEMS in the heat input equation. Calculate the heat input rate
+            at the unit level using Equation F-21C.</li>
+        <li>For cases (1) and (2), above, if you should install an additional NO<sub>x</sub>-diluent
+            CEMS on any of the other stacks or ducts, designate it as a
+            redundant backup system in your monitoring plan.</li>
+        <li>If the unit uses Appendix D and G methodology for SO<sub>2</sub> and CO<sub>2</sub>,
+            determine hourly SO<sub>2</sub> and CO<sub>2</sub> emissions in the normal manner during
+            bypass hours. Also, determine the actual hourly heat input rates at the
+            unit level, using the measured fuel flow rates and the fuel GCV
+            value(s).</li>
+        <li>Report the quarterly and cumulative arithmetic average NO<sub>x</sub> emission
+            rates for the unit.</li>
+        <li>Perform missing data substitution for NO<sub>x</sub> emission rate at the unit
+            level.</li>
+        <li>For further reporting guidance see the ECMPS Reporting Instructions.</li>
+    </ul>
+</p>
+<text style="text-decoration: underline">Guidelines for Combustion Turbines</text>
+<ol>
+    <li>
+        For combustion turbines that have both a main stack and a bypass
+        stack, you may monitor NO<sub>x</sub> emission rate using a single monitoring
+        system installed on the main stack, as described in paragraph (3) under
+        "GUIDELINES FOR BOILERS," above. If you choose this option,
+        follow the applicable reporting guidelines in the bulleted items, above.
+    </li>
+    <li>
+        For combustion turbines that have a main stack and a bypass stack,
+        you may not monitor NO<sub>x</sub> emission rate using a single, certified
+        monitoring system installed on the bypass stack, except for an interim period while the heat recovery steam generator (HRSG) and the main
+        stack are under construction. If you elect to monitor NO<sub>x</sub> emissions
+        from the bypass stack during this interim period, designate the NO<sub>x</sub>
+        monitoring system as a primary system in your monitoring plan.
+        Report all NO<sub>x</sub> emission data and heat input data at the unit level.
+    </li>
+</ol>
+<p>
+    When construction of the HRSG and main stack is complete, if you
+    wish to continue monitoring NO<sub>x</sub> emission rate from only one stack
+    (i.e., the HRSG stack), you must certify a primary monitoring system
+    at the main stack. If you elect to relocate the certified CEMS from the
+    bypass stack to the main stack, keep the "primary" designation for the
+    NO<sub>x</sub>-diluent system in your monitoring plan, keep the same system
+    and component ID numbers, and re-certify the system at its new
+    location. If you choose to certify an entirely new monitoring system,
+    assign new component and system ID numbers. While testing the
+    monitoring system for certification or re-certification (as applicable),
+    you may either use conditional data validation procedures of §
+    75.20(b)(3) or you may use the Part 75 missing data routines until the
+    system is certified or re-certified (as applicable).
 </p>
 <p>
-    Changes such as these sometimes accompany the installation of add-on
-    SO<sub>2</sub> and NO<sub>x</sub> emission controls. Therefore, installing an add-on control
-    device may, in some cases, require re-certification of existing monitoring
-    systems. However, in other cases, depending on the scope of the project,
-    initial certification of new monitoring systems may be required, or perhaps
-    diagnostic testing may be sufficient.
+    After certifying (or re-certifying) the NO<sub>x</sub> monitoring system at the
+    main stack location, monitor the NO<sub>x</sub> emission rate as described in
+    paragraph (3) under "GUIDELINES FOR BOILERS," above. Follow
+    the applicable reporting guidelines in the bulleted items, above.
 </p>
 <p>
-    Below are guidelines that explain, in accordance with § 75.20(b), under
-    what circumstances re-certification is required and when diagnostic testing
-    is sufficient.
-</p>
-<text style="text-decoration: underline">Certification or Re-Certification Requirements</text>
-<p>
-    The following describes those circumstances under which a monitoring
-    system must be re-certified (or initially certified) upon installation of addon
-    SO<sub>2</sub> or add-on NO<sub>x</sub> emission controls.
-    <ol>
-        <li>
-            If installation of the add-on controls involves any of the changes listed
-            in §75.20(b) that require re-certification, the full battery of tests listed
-            in §75.20(c) must be performed to re-certify the CEMS in question<sup>2</sup>.
-        </li>
-        <li>
-            If installation of the add-on controls involves installing new CEMS at
-            a new stack, the full battery of tests listed in §75.20(c) must be
-            performed for initial certification of the CEMS in question.
-        </li>
-        <li>
-            For existing dilution-extractive CEMS, if the nominal size of the
-            critical orifice is changed (i.e., if the dilution ratio changes) when add-on
-            emission controls are installed, a full battery of tests described in
-            §75.20(c) is required1 for re-certification of the gas monitoring systems
-            (i.e., SO<sub>2</sub>, NO<sub>x</sub>, and CO<sub>2</sub>, as applicable).
-        </li>
-        <li>
-            In cases where installation of the add-on controls triggers a dual-span
-            requirement under Section 2.1.1.4 or 2.1.2.4 of Appendix A to Part 75,
-            if the added low-scale SO<sub>2</sub> or NO<sub>x</sub> measurement range is on a different
-            analyzer from the existing high-scale range, and if the low-scale and
-            high-scale analyzers are not connected to a common probe and sample
-            interface, the high and low scales are considered to be separate
-            monitoring systems and a full battery of certification tests of the low
-            scale monitoring system is required. That is, you must perform a
-            linearity check (unless exempted under Section 6.2 of Appendix A), a
-            7-day calibration error test (unless exempted under Section 6.3.1 of
-            Appendix A), a normal load RATA, a bias test, and a cycle time test.
-        </li>
-    </ol>
-    All required certification or re-certification tests must be completed no later
-    than 90 unit operating days or 180 calendar days (whichever occurs first)
-    after reagent is first injected into the add-on control device (see Question
-    15.4) or, in some cases no later than 90 unit operating days or 180
-    calendar days (whichever occurs first) after gases first exit to the
-    atmosphere through a new stack (see Question 15.7). The conditional data
-    validation provisions of §75.20(b)(3) may be used for the entire 90
-    operating/180 calendar day window, if necessary. Submit a certification
-    or re-certification application (as applicable) in accordance with
-    §75.63(a)(1) or (a)(2), no later than 45 days after completing all required
-    tests. Use the ECMPS Client Tool to submit the results of the certification
-    or re-certification tests electronically. Be sure to include a &lt;QACertificationEventData&gt;
-    record(s), describing the event(s), the tests
-    performed, and (if applicable), the use of conditionally valid data.
-</p>
-<text style="text-decoration: underline">Diagnostic Testing – Add-on SO<sub>2</sub> Control Installations</text>
-<p>
-    When add-on SO<sub>2</sub> controls are installed, perform the following diagnostic
-    testing on all monitoring systems that are not required to be initially
-    certified or re-certified:<sup>3</sup>
-    <ol>
-        <li>
-            If Part 75 requires a low-scale measurement range to be added to the
-            SO<sub>2</sub> analyzer<sup>4</sup>, no additional tests are required for the high range.
-            Quality-assure the low range as follows. Perform:
-            <ul>
-                <li>
-                    A diagnostic linearity check (if the span value is  30 ppm);
-                </li>
-                <li>
-                    A diagnostic 7-day calibration error test; and
-                </li>
-                <li>
-                    A diagnostic normal load RATA.<sup>5</sup>
-                </li>
-            </ul>
-        </li>
-        <li>
-            To quality assure the existing NO<sub>x</sub> and CO<sub>2</sub> monitoring systems,
-            perform a 12-point stratification check for NO<sub>x</sub>, and CO<sub>2</sub> at the CEMS
-            or reference method sampling location<sup>6</sup>, in accordance with Section
-            6.5.6.1 of Appendix A to Part 75, with the SO<sub>2</sub> controls operating
-            normally.<sup>7</sup>
-            <p>
-                If the results of the stratification test show the absence of significant
-                stratification for NO<sub>x</sub> and CO<sub>2</sub>, consistent with the criteria in Sect 
-                existing NO<sub>x</sub> monitoring system, or the existing CO<sub>2</sub> monitoring
-                system.
-            </p>
-            <p>
-                If a lack of significant stratification cannot be demonstrated for NO<sub>x</sub> or
-                CO<sub>2</sub>, perform a diagnostic normal load RATA of:
-                <ul>
-                    <li>
-                        The NO<sub>x</sub>–diluent CEMS if either NO<sub>x</sub> or CO<sub>2</sub> is stratified<sup>6</sup>; and
-                    </li>
-                    <li>
-                        The CO<sub>2</sub> CEMS if CO<sub>2</sub> is stratified<sup>6</sup>.
-                    </li>
-                </ul>
-            </p>
-        </li>
-        <li>
-            To quality-assure the existing flow monitor, perform:
-            <ul>
-                <li>
-                    A diagnostic 3-load flow RATA.
-                </li>
-            </ul>
-        </li>
-        <li>
-            To quality-assure an existing moisture monitoring system (if
-            applicable), perform a diagnostic normal-load RATA.
-        </li>
-    </ol>
-</p>
-<p>
-    All required diagnostic testing must be completed no later than 90 unit
-    operating days or 180 calendar days (whichever occurs first) after the first
-    unit operating hour in which reagent is first injected with the unit in
-    operation. The conditional data validation provisions of §75.20(b)(3) may
-    be used for the entire 90 operating/180 calendar day window, if necessary.
-    Submit the results of the required diagnostic tests electronically, using the
-    ECMPS Client Tool. Be sure to include a &lt;QACertificationEventData&gt;
-    record describing the control device installation, the tests performed, and
-    (if applicable), the use of conditionally valid data.
-</p>
-<text style="text-decoration: underline">Diagnostic Testing -- Add-on NO<sub>x</sub> Control Installations</text>
-<p>
-    When add-on NO<sub>x</sub> controls are installed, perform the following diagnostic
-    testing on all existing monitoring systems that are not required to be
-    initially certified or re-certified:<sup>8</sup>
-    <ol>
-        <li>
-            With the possible exception of the project described in (6), below, no
-            additional tests of the high-scale NO<sub>x</sub> measurement range are required.
-        </li>
-        <li>
-            If Part 75 requires a low measurement scale to be added to the NO<sub>x</sub>
-            analyzer<sup>9</sup>, quality-assure the low range as follows. Perform:
-            <ul>
-                <li>A diagnostic linearity check<sup>10</sup>;</li>
-                <li>A diagnostic 7-day calibration error test<sup>11</sup>; and</li>
-                <li>A diagnostic normal load NO<sub>x</sub> RATA with the add-on controls
-                    operating, if either:
-                    <ul>
-                        <li>The add-on NO<sub>x</sub> controls will be operated year-round rather than
-                            seasonally; or</li>
-                        <li>The high and low ranges are not connected to a common probe and
-                            sample interface.</li>
-                    </ul>
-                </li>
-            </ul>
-            If the add-on controls will be operated seasonally, EPA strongly
-            recommends that a diagnostic RATA be performed with the add-on
-            controls in normal operation prior to use of the low scale for any
-            seasonal compliance program, even if the high and low ranges are
-            connected to a common sample probe and interface.<sup>12</sup>
-        </li>
-        <li>
-            No tests are required to quality assure existing SO<sub>2</sub> and CO<sub>2</sub>
-            monitoring systems that are dilution-extractive.<sup>13</sup>
-        </li>
-        <li>
-            To quality assure existing SO<sub>2</sub> and CO<sub>2</sub> monitoring systems that are
-            not dilution extractive, perform:
-            <ul>
-                <li>Diagnostic normal-load RATAs.<sup>14</sup></li>
-            </ul>
-        </li>
-        <li>
-            To quality assure the existing stack flow monitoring system, perform:
-            <ul>
-                <li>An abbreviated diagnostic flow-to-load test, as described in
-                    Section 2.2.5.3 of Appendix B.</li>
-            </ul>
-            If the test is passed, no further testing of the flow monitor is required.
-            If the test is failed, perform:
-            <ul>
-                <li>A diagnostic flow RATA. This RATA may be a single-load test at
-                    normal load, provided that the flow monitor polynomial
-                    coefficients and/or K-factors are not reset or adjusted. If the
-                    polynomial coefficients and/or K-factors are adjusted, a diagnostic
-                    3-load RATA is required.</li>
-            </ul>
-        </li>
-        <li>
-            For common stack configurations, if NO<sub>x</sub> emission controls are added to the
-            individual units in stages (e.g., an SCR is added to Unit 1 this spring and a
-            second SCR is added to Unit 2 next fall)<sup>15</sup>, perform:
-            <ul>
-                <li>A 12-point stratification test after each control device addition, in
-                    accordance with section 6.5.6.1 of Appendix A, to evaluate whether NO<sub>x</sub>
-                    stratification has been introduced by the differences in the
-                    concentrations of the gas streams entering the stack.</li>
-                <li>If the results of the test suggest that addition of the SCR has introduced
-                    stratification, then, consistent with §75.20(b), perform a diagnostic
-                    normal load RATA of the NO<sub>x</sub> monitoring system.</li>
-            </ul>
-        </li>
-        <li>
-            No additional tests are required to quality assure an existing moisture
-            monitoring system.
-        </li>
-    </ol>
-</p>
-<p>
-    All required diagnostic testing must be completed no later than 90 unit
-    operating days or 180 calendar days (whichever occurs first) after the first
-    injection of reagent into the add-on NO<sub>x</sub> controls. The conditional data
-    validation provisions of §75.20(b)(3) may be used for the entire 90
-    operating/180 calendar day window, if necessary. Submit the results of
-    the required diagnostic tests electronically, using the ECMPS Client Tool.
-    Be sure to include a &lt;QACertificationEventData&gt; record describing the
-    control device installation, the tests performed, and (if applicable), the use
-    of conditionally valid data.
-</p>
-<text style="text-decoration: underline">Diagnostic Testing – Installation of Both SO<sub>2</sub> and NO<sub>x</sub> Controls</text>
-<p>
-    If a project involves installation of both SO<sub>2</sub> and NO<sub>x</sub> add-on emission
-    controls, the CEMS certification, re-certification, or diagnostic testing that
-    must be performed is determined by comparing the testing requirements
-    for the individual control device installations. In all cases, you must 
-    implement the most stringent requirements. For example, if a particular
-    test of a monitor is required by the SO<sub>2</sub> control device installation but not
-    by the NO<sub>x</sub> control device installation, the former requirement is more
-    stringent than the latter; therefore, the test must be performed.
+    If the guidelines and conditions for single-stack monitoring described
+    above are not fully met, it is the responsibility of the utility to insure
+    that NO<sub>x</sub> emissions are accurately measured whenever an affected unit
+    is combusting fuel. In these cases, owners and operators must install
+    separate NO<sub>x</sub> monitoring systems in each of the multiple stacks or
+    ducts (see Question 16.5).
 </p>
 <h3>References</h3>
 <p>
-    § 75.4(e), §§ 75.20(b) and (c), § 75.63(a), Appendix A, Sections 2.1.1.4,
-    2.1.2.4 and 6.5(c), Appendix B, Section 2.2.5.3
+    § 75.17(c), and § 75.17(d)
 </p>
 <h3>History</h3>
 <p>
-    First published in October 2003 Revised Manual; Revised in the 2013
-    Manual
+    First published in August 1994, Update #3; revised in October 1999
+    Revised Manual; revised in December 2000, Update #13; revised in
+    October 2003 Revised Manual; revised in 2013 Manual
 </p>
-<p>
-    Note: The provisions of this question apply prospectively, from the date of
-    its original publication in the Part 75 Emissions Monitoring Policy Manual
-    (i.e., October 2003), as Question 16.15. That is, the policy provisions
-    apply only to add-on control device installations for which the allotted
-    window of time to complete the required CEMS testing begins (as
-    described in Question 15.4) on or after the original October 2003
-    publication date. Control device installations that pre-date this question
-    are "grandfathered."
-</p>
-<hr />
-<table>
-    <tr>
-        <td><p class="small"><sup>1</sup>&emsp;The intended meaning is relocation of the probe of an existing (previously certified) CEMS from one port to
-            another in the same stack or from the stack to the existing duct work.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>2</sup>&emsp;Unless otherwise specified---see Question 12.10.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>3</sup>&emsp;If the monitoring system is not up-to-date with all QA/QC requirements of Part 75, Appendix B, then sufficient
-            QA testing must be performed in addition to the tests required by this policy, to make up the deficiency.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>4</sup>&emsp;See Sections 2.1.1.4 and 2.1.2.4 of Part 75, Appendix A. Generally speaking, a second (low) measurement range
-            is required if the maximum expected concentration (MEC) during normal, stable operation of the add-on controls is
-            less than 20% of full-scale on the high range. In certain cases, a dual range may not be required (e.g., for a common
-            stack where SO<sub>2</sub> controls are installed on only one of the units, or for a unit equipped with an SO<sub>2</sub> removal
-            technology that is only 50% efficient)</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>5</sup>&emsp;A normal-load RATA of the low measurement scale is required since, according to Section 6.5(c) in Appendix A
-            of Part 75, for an add-on control device which operates on a year round basis rather than seasonally (such as an
-            FGD), the low range is the range normally used to measure emissions.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>6</sup>&emsp;Note that if data from an O<sub>2</sub> monitor are used to calculate CO<sub>2</sub> concentration, as described in section 4.4.1 of Part
-            75, Appendix F, perform the stratification test for O<sub>2</sub>, rather than CO<sub>2</sub>.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>7</sup>&emsp;At the source's option, a diagnostic normal load RATA can be performed initially in lieu of the stratification test.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>8</sup>&emsp;If a monitoring system is not up-to-date with all QA/QC requirements of Part 75, Appendix B, then sufficient QA
-            testing must be performed in addition to the tests required by this policy, to make up the deficiency.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>10</sup>&emsp;Unless exempted from this test under Section 6.2 of Appendix A.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>11</sup>&emsp;Unless exempted from this test under Section 6.3.1 of Appendix A.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>12</sup>&emsp;Some sources with ozone season accountability for NO<sub>x</sub> may operate their add-on NO<sub>x</sub> controls exclusively
-            during the ozone season (i.e., from May 1st through September 30th) or operate the controls more efficiently
-            during the ozone season than the rest of the year. Although Section 6.5(c) of Appendix A allows the required
-            RATAs for certain dual-span units to be done on either the low or high range when the emission controls are
-            operated seasonally, EPA believes that it is prudent to perform the RATAs while the unit is operating with the
-            add-on controls functioning at peak efficiency. The Agency believes that this will provide the most
-            representative measure of the NO<sub>x</sub> monitoring system's accuracy and bias during the control period (e.g., ozone
-            season), and will ensure that emissions are neither under-reported nor over-reported.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>13</sup>&emsp;For dilution extractive systems, since the sample will be diluted, this minimizes any possible analytical
-            interferences from the presence of un-reacted ammonia (ammonia "slip") in the effluent gas stream.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>14</sup>&emsp;For non-dilution extractive systems, EPA is concerned about possible interferences and bias that may be caused
-            by the presence of un-reacted ammonia in the effluent gas stream. Therefore, EPA believes that a diagnostic
-            RATA should be conducted to assure that there is no significant bias from these interference effects.</p></td>
-    </tr>
-    <tr>
-        <td><p class="small"><sup>15</sup>&emsp;This situation has the potential to introduce stratification in the NO<sub>x</sub> concentration profile which could adversely
-            affect the accuracy of NO<sub>x</sub> measurements made in the stack.</p></td>
-    </tr>
-</table>
