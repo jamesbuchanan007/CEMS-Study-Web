@@ -1,286 +1,100 @@
 ﻿<h2>
-    Question 9.9
+    Question 9.21
 </h2>
 
 <h3>Topic</h3>
 <em>
-    Daily Calibration Error Test -- Data Validation
+    Default High Range Value
 </em>
 
 <h3>Question</h3>
 <p>
-    What is EPA's policy on validation of emissions data based on the daily
-    calibration error test?
+    For units with dual span requirements, in lieu of operating and maintaining
+    a high monitor range, Sections 2.1.1.4(f) and 2.1.2.4(e) of Appendix A to
+    Part 75 allow the use of a default high range value of 200% of the MPC
+    when the full-scale of the low range analyzer is exceeded. When the
+    default high range option is selected, how is the hourly average SO<sub>2</sub> or
+    NO<sub>x</sub> concentration calculated? What happens when the full-scale of the
+    low range analyzer is exceeded for only part of the hour?
 </p>
 
 <h3>Answer</h3>
 <p>
-    The following paragraphs summarize the provisions of Part 75 pertaining
-    to data validation for daily calibration error tests (see Appendix B,
-    Sections 2.1 through 2.1.5) and provide supplementary policy guidance for
-    the implementation of those provisions.
+    To implement the default high range provision, you may use either of the
+    following options:
 </p>
-<b style="text-decoration: underline">
-    Part 75 Rule Provisions
-</b>
 <p>
-    <text style="text-decoration: underline">General Provisions</text>: Daily calibration error tests of each continuous
-    monitor used to report data under Part 75 are required. Additional
-    calibration error tests are required whenever:
+    <text style="text-decoration: underline">Option 1</text>
     <ol>
         <li>
-            a calibration error test is
-            failed;
+            Establish the shortest or fundamental averaging period for which data
+            are continuously recorded by the monitor (i.e., the time "x" required
+            for one complete cycle of analyzing, reading, and data recording,
+            where "x" may be five seconds, ten seconds, sixty seconds, or some
+            other time period, depending on the type of data collection used in the
+            DAHS/CEMS).
         </li>
         <li>
-            a monitor returns to service after corrective maintenance or
-            repair; and
-        </li>
-        <li>
-            following certain allowable calibration adjustments (see
-            Section 2.1.3 of Appendix B).
+            If any of the fundamental readings recorded during an hour exceeds
+            the full-scale of the low range analyzer, report 200% of the MPC for
+            that hour (see exception in the Note below) and report a method of
+            determination code (MODC) of "19" to indicate the use of the default
+            high range value.
         </li>
     </ol>
 </p>
 <p>
-    A passed daily calibration test prospectively validates data from a
-    continuous monitor for 26 clock hours (24 hours plus a two hour grace
-    period), unless another calibration test is failed within that period or a
-    maintenance event is conducted within that 26 hour period necessitating
-    the completion of a calibration test to validate data following that event.
-    Therefore, in order to report quality-assured data from a monitor, the data
-    must be obtained within the 26 hour data validation window of a prior,
-    passed daily calibration error test. Once a 26 hour data validation window
-    has expired, data from the monitor are considered invalid until a
-    subsequent calibration error test is passed. The only exception to this
-    general rule is a grace period allowed for startup events (see discussion of
-    grace period, below).
-</p>
-<p>
-    When a daily calibration test is failed, the data from that monitor are
-    prospectively invalidated, beginning with the hour of the test failure and
-    ending when a subsequent daily calibration test is passed.
-</p>
-<p>
-    <text style="text-decoration: underline">On-line vs. Off-line Calibration</text>: The basic requirement of Part 75 is that
-    calibration error tests must be done on-line (i.e., with the unit operating),
-    at typical operating conditions (see Section 2.1.1.1 of Appendix B).
-    However, if a monitor is able to pass an off-line calibration error test
-    demonstration in accordance with Section 2.1.1.2 of Appendix B, then the
-    limited use of off-line calibration error tests for data validation is
-    permitted for that monitor if:
-    <ol type="a">
-        <li>
-            an on-line calibration error test has been
-            passed within the previous 26 unit (or stack) operating hours; and
-        </li>
-        <li>
-            the 26 clock hour data validation window for the off-line calibration error test
-            has not expired.
-        </li>
-    </ol>
-</p>
-<p>
-    If either of these conditions is not met, then the data from
-    the monitor are invalid with respect to the daily calibration error test
-    requirement. Data from the monitor remain invalid until the appropriate
-    on-line or off-line calibration error test is successfully completed so that
-    both conditions (a) and (b) are met.
-</p>
-<p>
-    This limited use of offline calibration error tests is particularly useful for
-    peaking units that are frequently operated for only a few hours at a time.
-</p>
-<p>
-
-    <text style="text-decoration: underline">Startup Grace Period</text>: An eight hour startup grace period may apply when
-    a unit begins to operate after a period of non-operation. To qualify for a
-    startup grace period, there are two requirements:
+    <text style="text-decoration: underline">Option 2</text>
     <ol>
         <li>
-            Following an outage of one or more hours, the unit must be in a startup
-            condition and a startup event must have begun, as evidenced in the &le;HourlyOperatingData&gt;
-            record by a change in unit operating time
-            from zero in one clock hour to a positive unit operating time in the
-            next clock hour.
+            Establish the shortest or fundamental averaging period for which data
+            are continuously recorded by the monitor, as described in paragraph
+            (1) of Option 1, above.
         </li>
         <li>
-            For the monitor used to validate data during the grace period, an <em>on-line</em>
-            calibration error test of the monitor must have been completed and
-            passed no more than 26 clock hours prior to the unit outage.
-        </li>
-    </ol>
-</p>
-<p>
-    If both of the above conditions are met, then a startup grace period of up to
-    eight clock hours is allowed before an on-line calibration error test of the
-    monitor used to validate data during the grace period is required. During
-    the startup grace period, data generated by the CEMS are considered valid.
-    A startup grace period ends when either:
-    <ol type="A">
-        <li>
-            an on-line calibration error
-            test of the monitor is completed; or
-        </li>
-        <li>
-            eight <em>clock</em> hours have elapsed
-            from the beginning of the startup event, whichever occurs first.
-        </li>
-    </ol>
-</p>
-<p>
-    If a unit shuts down during an eight hour grace period, when that unit
-    resumes operations it does <em>not</em> qualify for a new eight hour grace period.
-    Hours after resuming operations are considered invalid unless those hours
-    are within the eight <em>clock</em> hour window following the initial startup after
-    shutdown for which conditions (1) and (2) above are met.
-</p>
-<p>
-    In certain instances, one or more clock hours within the eight hour
-    window of a start-up grace period may coincide (overlap) with clock hours
-    that are within a 26-hour window associated with a previous on-line
-    calibration error test. In such instances, CEM data validation is governed
-    by whichever window (i.e., the eight hour grace period or the 26-hour
-    calibration window) expires <em>last</em>.
-</p>
-<b style="text-decoration: underline">
-    Supplementary Policy Guidance
-</b>
-<p>
-    Use the following additional guidelines to implement the calibration error
-    provisions of Part 75:
-    <ol>
-        <li>
-            A valid calibration error test consists of passing both a zero and an
-            upscale calibration performed in sequence within the same clock hour
-            or adjacent clock hours.
+            Calculate the hourly average pollutant concentration as the arithmetic
+            average of all quality-assured fundamental data values recorded during
+            the hour, in the following manner:
             <ol type="a">
+
                 <li>
-                    Do not report a partial calibration error test unless the partial test
-                    fails to meet the calibration error specification, in which case, treat
-                    it as a failed test and report it using the test result code of
-                    "Aborted".
+                    If a fundamental reading is less than the full-scale of the low
+                    range analyzer, use the reading directly in the calculation of the
+                    hourly average; and
                 </li>
                 <li>
-                    If either the zero or upscale portion of a <em>completed</em> calibration error
-                    test fails, the monitor is considered to be out-of-control starting
-                    with the hour of the earliest failed injection (or calibration signal).
+                    If a fundamental reading indicates that the low range is "pegged"
+                    (i.e., the monitor output voltage indicates that the full-scale of the
+                    low range has been reached or exceeded), substitute 200% of the MPC for that reading (see exception in the Note below) and use
+                    the substituted value in the calculation of the hourly average.
                 </li>
             </ol>
         </li>
         <li>
-            If more than one calibration is reported in a given clock hour, report
-            the calibrations in time order (the order in which the calibrations were
-            conducted).
-        </li>
-        <li>
-            A <em>passed</em> calibration error test may be used to <em>prospectively</em> validate
-            data for the hour in which it is performed <em>only</em> if the minimum data
-            requirements of § 75.10(d)(1) are met for the clock hour (i.e., at least
-            two valid data points are obtained during the hour, at least 15-minutes
-            apart). In the case where a calibration error test is failed, followed by
-            corrective actions and a subsequent successful calibration, all within
-            the same clock hour---the hour may be reported as valid provided that
-            sufficient data are collected <em>after</em> the subsequent successful calibration
-            to validate the hour.
-        </li>
-        <li>
-            Except as specified in paragraph (5), below, a passed calibration error
-            test may not be used to validate data if the monitor is out-of-control
-            with respect to any of its other required QA tests (e.g., linearity
-            checks, RATAs).
-        </li>
-        <li>
-            When a significant change is made to a monitoring system or when a
-            monitor is repaired and additional recertification or diagnostic tests are
-            required to demonstrate that a monitor previously declared to be outof-
-            control is back in-control, a passed calibration error test may, in
-            accordance with the provisions of § 75.20(b)(3), be used as a
-            "probationary calibration error test" to initiate a period of
-            "conditionally valid data" (see definitions in § 72.2) until the required
-            recertification or diagnostic tests are completed. If the required tests
-            are then passed in succession within the window of time allotted under
-            § 75.20(b)(3)(iv), with no failures, the out-of-control period ends at the
-            date and hour of the probationary calibration error test. [See also
-            similar provisions in § 75.20(d) and Section 2.2.5.3 of Appendix B.]
+            Report the hourly average calculated in the manner described in step
+            (2) above as the unadjusted pollutant concentration and report an
+            MODC of "19" to indicate that the default high range value was used
+            for at least part of the hour.
         </li>
     </ol>
 </p>
-<b style="text-decoration: underline">
-    Detailed Examples
-</b>
 <p>
-    The following examples illustrate data validation for <em>on-line</em> calibration error tests and
-    the use of a start-up grace period. The examples assume that for the hour in which a
-    calibration error test is passed, sufficient valid data are collected <em>after</em> the calibration
-    error test to validate data for that hour. In other words, the hour in which the calibration
-    error test is passed is considered to be the first hour in the 26 clock hour window of data
-    validation associated with the calibration error test.
+    Note: For new combustion turbines, the June 12, 2002 revisions to Part 75
+    disallowed the use of a NO<sub>x</sub> MPC value of 50 ppm previously selected
+    from Table 2-2 in Appendix A, after March 31, 2003 (see Appendix A,
+    section 2.1.2.1(a), Option 2). Since April 1, 2003, the MPC must be
+    determined in accordance with revised section 2.1.2.1(a), and any
+    appropriate span and range adjustments or, if applicable, adjustments to
+    the default high range value, must be made.
 </p>
-<br />
-<br />
-<img class="img-thumbnail" src="~/Content/Images/Part75EMP9.9.1.png" alt="Key For Examples" title="Key For Examples" />
-<br />
-<br />
-<p>
-    In examples 1 through 5 below, assume that the unit has been operating for some time,
-    and that on Day 1 a daily calibration was passed at 7:00 a.m. (validating data from Day 1,
-    Hour 7 through Day 2, Hour 8, and that no calibration error test is failed in that interval).
-    Examples 1 through 5 are not connected in any way---each represents a different
-    scenario.
-</p>
-<br />
-<br />
-<img src="~/Content/Images/Part75EMP9.9.2.png" alt="Data Validation for On-Line Calibration Error Tests" title="Data Validation for On-Line Calibration Error Tests" />
-<br />
-<br />
-<p>
-    Assume for Examples 6 through 10, below that the unit has been off-line for several days,
-    that the last on-line calibration error test was passed 18 hours before the hour of unit
-    shutdown, and that the unit begins operation on Day 1 at 1:01 am, during Hour 1. The
-    unit therefore qualifies for a start-up grace period. Four possible scenarios are shown in
-    Examples 6 through 10:
-</p>
-<br />
-<br />
-<img src="~/Content/Images/Part75EMP9.9.3.png" alt="Data Validation for On-Line Calibration Error Tests" title="Data Validation for On-Line Calibration Error Tests" />
-<br />
-<br />
-<table>
-    <tr>
-        <td>
-            <sup>a</sup>&nbsp;&nbsp;Qualifying start-up grace period begins.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <sup>b</sup>&nbsp;&nbsp;Unit operating time in &lt;OperatingTime&gt; = "0."
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <sup>c</sup>&nbsp;&nbsp;New start-up "event" begins (Unit operating time in &lt;OperatingTime&gt; = positive). No new grace period
-            (event begins within grace period of a previous event).
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <sup>d</sup>&nbsp;&nbsp;Start-up grace period expired. However, on Day 2, the data are valid because the 26 clock hour window
-            from the C.E. test on Day 1, Hour 11 has not expired.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <sup>e</sup>&nbsp;&nbsp;Twenty-six hour calibration window for the C.E. test on Day 1, Hour 11 has expired.
-        </td>
-    </tr>
-</table>
 <h3>References</h3>
 <p>
-    Appendix B, Sections 2.1 through 2.1.5
+    § 75.57, Table 4A; Appendix A, Sections 2.1.1.4(f), 2.1.2.1(a), 2.1.2.4(e);
+    EDR v2.1/2.2 Reporting Instructions, Sections III.B.(1) and III.B.(2)
 </p>
 <h3>History</h3>
 <p>
-    First published in March 1995, Update #5; revised in October 1999
-    Revised Manual; revised in 2013 Manual
+    First published in March 2000, Update #12; revised in December 2000,
+    Update #13; revised in October 2003 Revised Manual; revised in 2013
+    Manual
 </p>

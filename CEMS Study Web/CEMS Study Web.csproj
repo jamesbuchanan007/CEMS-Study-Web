@@ -136,6 +136,7 @@
     <Compile Include="Controllers\ECMPSController.cs" />
     <Compile Include="Controllers\FormulasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Part60AppBController.cs" />
     <Compile Include="Controllers\Part75EMPController.cs" />
     <Compile Include="Controllers\TemplateController.cs" />
     <Compile Include="Controllers\UnitsOfMeasureController.cs" />
@@ -143,19 +144,19 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CEMSStudyDbEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>CEMSStudyDbEntities.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\CEMSStudyDbEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\CEMSStudyDbEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Models\ECMPSEmission.cs">
       <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
@@ -199,7 +200,11 @@
     <Compile Include="Models\Part75PE.cs">
       <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Part75ViewModel.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Part60AppBViewModel.cs" />
+    <Compile Include="Part75EMPViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -212,6 +217,21 @@
     <Content Include="App_Data\CEMSStudyWebDb_log.ldf">
       <DependentUpon>CEMSStudyWebDb.mdf</DependentUpon>
     </Content>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\System.Data.SQLite.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -237,29 +257,43 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <EntityDeploy Include="Models\CEMSStudyDbEntities.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CEMSStudyDbEntities.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <Content Include="Models\CEMSStudyDbEntities.Context.tt">
+      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CEMSStudyDbEntities.Context.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\CEMSStudyDbEntities.edmx.diagram">
       <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\CEMSStudyDbEntities.tt">
+      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CEMSStudyDbEntities.cs</LastGenOutput>
+    </Content>
+    <Content Include="obj\Debug\CEMS Study Web.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\CEMS Study Web.csproj.GenerateResource.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\CEMSStudyDbEntities.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\CEMSStudyDbEntities.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\CEMSStudyDbEntities.ssdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\CEMSStudyDbEntitiyModel.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\CEMSStudyDbEntitiyModel.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\CEMSStudyDbEntitiyModel.ssdl" />
     <None Include="Resources\CEMS_Study_Icon.ico" />
     <None Include="Resources\icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\AppLogo.png" />
     <Content Include="icons8_factory_64_QmM_icon.ico" />
     <None Include="Resources\battleship-389274_1280.jpg" />
     <None Include="Resources\water-316625_1280.jpg" />
-    <Content Include="Models\CEMSStudyDbEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
-      <LastGenOutput>CEMSStudyDbEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\CEMSStudyDbEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CEMSStudyDbEntities.edmx</DependentUpon>
-      <LastGenOutput>CEMSStudyDbEntities.cs</LastGenOutput>
-    </Content>
+    <Content Include="obj\Debug\CEMS Study Web.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\Models.CEMSStudyDbEntities.Context.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.CEMSStudyDbEntities.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.CEMSStudyDbEntities.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.CEMSStudyDbEntitiyModel.Context.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.CEMSStudyDbEntitiyModel.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.CEMSStudyDbEntitiyModel.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <Content Include="Views\Acronyms\Acronyms.cshtml" />
     <Content Include="Views\Definitions\Definitions.cshtml" />
     <Content Include="Views\UnitsOfMeasure\UnitsOfMeasure.cshtml" />
@@ -279,6 +313,7 @@
     <Content Include="Views\ECMPS\MATSGuidance.cshtml" />
     <Content Include="Views\Part75EMP\Part75EMP.cshtml" />
     <Content Include="Views\Template\Index.cshtml" />
+    <Content Include="Views\Part60AppB\Part60AppB.cshtml" />
     <Resource Include="Resources\industry-1827884_1920.jpg" />
     <Resource Include="Resources\power-plant-97119_1920.jpg" />
     <Resource Include="Resources\industry-406905_1920.jpg" />
@@ -335,6 +370,9 @@
     <Content Include="Views\Home\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\roslyn\" />
+    <Folder Include="bin\x64\" />
+    <Folder Include="bin\x86\" />
     <Folder Include="Views\ECMPS\EmissionsReportingPages\" />
     <Folder Include="Views\ECMPS\GHGPages\" />
     <Folder Include="Views\ECMPS\MATSGuidancePages\" />
@@ -357,6 +395,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="obj\Debug\CEMS Study Web.g.resources" />
+    <EmbeddedResource Include="obj\Debug\CEMS_Study_Web.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -365,6 +405,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\CEMSStudyDbEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CEMSStudyDbEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
