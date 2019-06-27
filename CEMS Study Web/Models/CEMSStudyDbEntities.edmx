@@ -5,114 +5,15 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="CEMSStudyWebDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="ECMPS_GHG">
+        <EntityType Name="Part75">
           <Key>
-            <PropertyRef Name="ECMPS_GHGId" />
+            <PropertyRef Name="Part75Id" />
           </Key>
-          <Property Name="ECMPS_GHGId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="ECMPS_PGV">
-          <Key>
-            <PropertyRef Name="ECMPS_PGVId" />
-          </Key>
-          <Property Name="ECMPS_PGVId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar" MaxLength="50" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="ECMPS_QA">
-          <Key>
-            <PropertyRef Name="ECMPS_QAId" />
-          </Key>
-          <Property Name="ECMPS_QAId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
+          <Property Name="Part75Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Regulation" Type="varchar" MaxLength="50" />
+          <Property Name="Subpart" Type="varchar(max)" />
+          <Property Name="SectionNumber" Type="varchar" MaxLength="10" />
           <Property Name="SectionName" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar" MaxLength="50" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="ECMPSEmissions">
-          <Key>
-            <PropertyRef Name="ECMPSEmissionsId" />
-          </Key>
-          <Property Name="ECMPSEmissionsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar" MaxLength="50" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="ECMPSMonitoringPlan">
-          <Key>
-            <PropertyRef Name="ECMPSMonitoringPlanId" />
-          </Key>
-          <Property Name="ECMPSMonitoringPlanId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar" MaxLength="50" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="MATSGuidance">
-          <Key>
-            <PropertyRef Name="MATSGuidanceId" />
-          </Key>
-          <Property Name="MATSGuidanceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="MATSTransition">
-          <Key>
-            <PropertyRef Name="MATSTransitionId" />
-          </Key>
-          <Property Name="MATSTransitionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="Part60AppB">
-          <Key>
-            <PropertyRef Name="Part60AppBId" />
-          </Key>
-          <Property Name="Part60AppBId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionName" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="Part60AppF">
-          <Key>
-            <PropertyRef Name="Part60AppFId" />
-          </Key>
-          <Property Name="Part60AppFId" Type="int" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionName" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar(max)" />
-          <Property Name="SectionSubName" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="Part63SubUUUUU">
-          <Key>
-            <PropertyRef Name="Part63SubUUUUUId" />
-          </Key>
-          <Property Name="Part63SubUUUUUId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionName" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="Part75AppD">
-          <Key>
-            <PropertyRef Name="Part75AppDId" />
-          </Key>
-          <Property Name="Part75AppDId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionName" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar(max)" />
           <Property Name="Content" Type="varchar(max)" />
         </EntityType>
         <EntityType Name="Part75EMP">
@@ -124,45 +25,11 @@
           <Property Name="SectionName" Type="varchar(max)" />
           <Property Name="SectionNumber" Type="varchar(max)" />
           <Property Name="Content" Type="varchar(max)" />
-          <Property Name="Regulation" Type="varchar" MaxLength="50" />
-        </EntityType>
-        <EntityType Name="Part75FAM">
-          <Key>
-            <PropertyRef Name="Part75FAMId" />
-          </Key>
-          <Property Name="Part75FAMId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="SectionName" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
-        </EntityType>
-        <EntityType Name="Part75PE">
-          <Key>
-            <PropertyRef Name="Part75PEId" />
-          </Key>
-          <Property Name="Part75PEId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Regulation" Type="varchar(max)" />
-          <Property Name="SectionName" Type="varchar(max)" />
-          <Property Name="SectionNumber" Type="varchar(max)" />
-          <Property Name="SectionHeading" Type="varchar(max)" />
-          <Property Name="Content" Type="varchar(max)" />
         </EntityType>
         <EntityContainer Name="CEMSStudyWebDbModelStoreContainer">
-          <EntitySet Name="ECMPS_GHG" EntityType="Self.ECMPS_GHG" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ECMPS_PGV" EntityType="Self.ECMPS_PGV" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ECMPS_QA" EntityType="Self.ECMPS_QA" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ECMPSEmissions" EntityType="Self.ECMPSEmissions" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ECMPSMonitoringPlan" EntityType="Self.ECMPSMonitoringPlan" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="MATSGuidance" EntityType="Self.MATSGuidance" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="MATSTransition" EntityType="Self.MATSTransition" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Part60AppB" EntityType="Self.Part60AppB" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Part60AppF" EntityType="Self.Part60AppF" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Part63SubUUUUU" EntityType="Self.Part63SubUUUUU" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Part75AppD" EntityType="Self.Part75AppD" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Part75" EntityType="Self.Part75" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Part75EMP" EntityType="Self.Part75EMP" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Part75FAM" EntityType="Self.Part75FAM" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Part75PE" EntityType="Self.Part75PE" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -287,7 +154,7 @@
           <Property Name="SectionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="SectionNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Regulation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Regulation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Part75FAM">
           <Key>
@@ -326,134 +193,25 @@
           <EntitySet Name="Part75EMP" EntityType="Self.Part75EMP" />
           <EntitySet Name="Part75FAM" EntityType="Self.Part75FAM" />
           <EntitySet Name="Part75PE" EntityType="Self.Part75PE" />
+          <EntitySet Name="Part75" EntityType="CEMSStudyWebDbModel.Part75" />
         </EntityContainer>
+        <EntityType Name="Part75">
+          <Key>
+            <PropertyRef Name="Part75Id" />
+          </Key>
+          <Property Name="Part75Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Regulation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Subpart" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SectionNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="SectionName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="CEMSStudyWebDbModelStoreContainer" CdmEntityContainer="CEMSStudyWebDbEntities1">
-          <EntitySetMapping Name="ECMPS_GHG">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.ECMPS_GHG">
-              <MappingFragment StoreEntitySet="ECMPS_GHG">
-                <ScalarProperty Name="ECMPS_GHGId" ColumnName="ECMPS_GHGId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ECMPS_PGV">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.ECMPS_PGV">
-              <MappingFragment StoreEntitySet="ECMPS_PGV">
-                <ScalarProperty Name="ECMPS_PGVId" ColumnName="ECMPS_PGVId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ECMPS_QA">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.ECMPS_QA">
-              <MappingFragment StoreEntitySet="ECMPS_QA">
-                <ScalarProperty Name="ECMPS_QAId" ColumnName="ECMPS_QAId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionName" ColumnName="SectionName" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ECMPSEmissions">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.ECMPSEmission">
-              <MappingFragment StoreEntitySet="ECMPSEmissions">
-                <ScalarProperty Name="ECMPSEmissionsId" ColumnName="ECMPSEmissionsId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ECMPSMonitoringPlans">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.ECMPSMonitoringPlan">
-              <MappingFragment StoreEntitySet="ECMPSMonitoringPlan">
-                <ScalarProperty Name="ECMPSMonitoringPlanId" ColumnName="ECMPSMonitoringPlanId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="MATSGuidances">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.MATSGuidance">
-              <MappingFragment StoreEntitySet="MATSGuidance">
-                <ScalarProperty Name="MATSGuidanceId" ColumnName="MATSGuidanceId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="MATSTransitions">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.MATSTransition">
-              <MappingFragment StoreEntitySet="MATSTransition">
-                <ScalarProperty Name="MATSTransitionId" ColumnName="MATSTransitionId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Part60AppB">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part60AppB">
-              <MappingFragment StoreEntitySet="Part60AppB">
-                <ScalarProperty Name="Part60AppBId" ColumnName="Part60AppBId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionName" ColumnName="SectionName" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Part60AppF">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part60AppF">
-              <MappingFragment StoreEntitySet="Part60AppF">
-                <ScalarProperty Name="Part60AppFId" ColumnName="Part60AppFId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionName" ColumnName="SectionName" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="SectionSubName" ColumnName="SectionSubName" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Part63SubUUUUU">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part63SubUUUUU">
-              <MappingFragment StoreEntitySet="Part63SubUUUUU">
-                <ScalarProperty Name="Part63SubUUUUUId" ColumnName="Part63SubUUUUUId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionName" ColumnName="SectionName" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Part75AppD">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part75AppD">
-              <MappingFragment StoreEntitySet="Part75AppD">
-                <ScalarProperty Name="Part75AppDId" ColumnName="Part75AppDId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="SectionName" ColumnName="SectionName" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Part75EMP">
             <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part75EMP">
               <MappingFragment StoreEntitySet="Part75EMP">
@@ -466,31 +224,19 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Part75FAM">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part75FAM">
-              <MappingFragment StoreEntitySet="Part75FAM">
-                <ScalarProperty Name="Part75FAMId" ColumnName="Part75FAMId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
+          <EntitySetMapping Name="Part75">
+            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part75">
+              <MappingFragment StoreEntitySet="Part75">
+                <ScalarProperty Name="Content" ColumnName="Content" />
                 <ScalarProperty Name="SectionName" ColumnName="SectionName" />
                 <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Subpart" ColumnName="Subpart" />
+                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
+                <ScalarProperty Name="Part75Id" ColumnName="Part75Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Part75PE">
-            <EntityTypeMapping TypeName="CEMSStudyWebDbModel.Part75PE">
-              <MappingFragment StoreEntitySet="Part75PE">
-                <ScalarProperty Name="Part75PEId" ColumnName="Part75PEId" />
-                <ScalarProperty Name="Regulation" ColumnName="Regulation" />
-                <ScalarProperty Name="SectionName" ColumnName="SectionName" />
-                <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
-                <ScalarProperty Name="SectionHeading" ColumnName="SectionHeading" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-        </EntityContainerMapping>
+          </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
   </edmx:Runtime>

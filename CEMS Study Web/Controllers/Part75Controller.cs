@@ -15,21 +15,24 @@ namespace CEMS_Study_Web.Controllers
         public ActionResult Part75()
         {
             //GET OBJECT
-            var firstRow = db.Part75EMP.First(x => x.SectionNumber == "Full Regulation");
+            var firstRow = db.Part75.First(x => x.SectionNumber == "Full Regulation");
 
             //LOAD VIEW MODEL
             Part75ViewModel vm = new Part75ViewModel
             {
                 Regulation = firstRow.Regulation,
+                Subpart = firstRow.Subpart,
                 SectionNumber = firstRow.SectionNumber,
                 SectionName = firstRow.SectionName,
                 Content = firstRow.Content,
                 SectionNumberList = new List<string>(),
+               SubpartList = new List<string>(),
                 SectionNameList = new List<string>(),
             };
 
-            vm.SectionNumberList = db.Part75EMP.Select(x => x.SectionNumber).ToList();
-            vm.SectionNameList = db.Part75EMP.Select(x => x.SectionName).ToList();
+            vm.SectionNumberList = db.Part75.Select(x => x.SectionNumber).ToList();
+            vm.SubpartList = db.Part75.Select(x => x.Subpart).ToList();
+            vm.SectionNameList = db.Part75.Select(x => x.SectionName).ToList();
 
             Dispose();
             return View(vm);
@@ -39,24 +42,24 @@ namespace CEMS_Study_Web.Controllers
         public ActionResult Part75(string sectionNumber)
         {
             //GET OBJECT
-            var firstRow = db.Part75EMP.First(x => x.SectionNumber == sectionNumber);
+            var firstRow = db.Part75.First(x => x.SectionNumber == sectionNumber);
 
             //LOAD VIEW MODEL
-            Part75EMPViewModel vm = new Part75EMPViewModel
+            Part75ViewModel vm = new Part75ViewModel
             {
                 Regulation = firstRow.Regulation,
-                SectionHeading = firstRow.SectionHeading,
+                Subpart = firstRow.Subpart,
                 SectionNumber = firstRow.SectionNumber,
                 SectionName = firstRow.SectionName,
                 Content = firstRow.Content,
                 SectionNumberList = new List<string>(),
-                SectionHeadingList = new List<string>(),
+                SubpartList = new List<string>(),
                 SectionNameList = new List<string>(),
             };
 
-            vm.SectionHeadingList = db.Part75EMP.Select(x => x.SectionHeading).ToList();
-            vm.SectionNumberList = db.Part75EMP.Select(x => x.SectionNumber).ToList();
-            vm.SectionNameList = db.Part75EMP.Select(x => x.SectionName).ToList();
+            vm.SectionNumberList = db.Part75.Select(x => x.SectionNumber).ToList();
+            vm.SubpartList = db.Part75.Select(x => x.Subpart).ToList();
+            vm.SectionNameList = db.Part75.Select(x => x.SectionName).ToList();
 
             Dispose();
             return View(vm);

@@ -189,6 +189,9 @@
     <Compile Include="Models\Part63SubUUUUU.cs">
       <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Part75.cs">
+      <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Part75AppD.cs">
       <DependentUpon>CEMSStudyDbEntities.tt</DependentUpon>
     </Compile>

@@ -13,6 +13,7 @@ namespace CEMS_Study_Web.ViewModels
         public string SectionName { get; set; }
         public string Content { get; set; }
         public List<string> SectionNameList { get; set; }
+        public List<string> SubpartList { get; set; }
         public List<string> SectionNumberList { get; set; }
     }
 }

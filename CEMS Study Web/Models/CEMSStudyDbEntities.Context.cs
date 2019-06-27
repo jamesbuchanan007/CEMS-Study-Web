@@ -39,5 +39,6 @@ namespace CEMS_Study_Web.Models
         public virtual DbSet<Part75EMP> Part75EMP { get; set; }
         public virtual DbSet<Part75FAM> Part75FAM { get; set; }
         public virtual DbSet<Part75PE> Part75PE { get; set; }
+        public virtual DbSet<Part75> Part75 { get; set; }
     }
 }
