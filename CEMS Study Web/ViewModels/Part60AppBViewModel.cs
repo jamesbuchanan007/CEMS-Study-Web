@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace CEMS_Study_Web
+namespace CEMS_Study_Web.ViewModels
 {
-    public class Part75EMPViewModel
+    public class Part60AppBViewModel
     {
         public string Regulation { get; set; }
         public string SectionNumber { get; set; }

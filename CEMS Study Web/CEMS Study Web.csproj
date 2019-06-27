@@ -204,14 +204,15 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="Part60AppBViewModel.cs" />
-    <Compile Include="Part75EMPViewModel.cs" />
+    <Compile Include="ViewModels\Part60AppBViewModel.cs" />
+    <Compile Include="ViewModels\Part75EMPViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\Part75ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\CEMSStudyWebDb.mdf" />
@@ -359,7 +360,7 @@
     <Content Include="Views\Part75EMP\Part75EMP.cshtml" />
     <Content Include="Views\Template\Index.cshtml" />
     <Content Include="Views\Part60AppB\Part60AppB.cshtml" />
-    <Content Include="Views\Part75\Index.cshtml" />
+    <Content Include="Views\Part75\Part75.cshtml" />
     <Content Include="Views\Part75\Part75_19.cshtml" />
     <Resource Include="Resources\industry-1827884_1920.jpg" />
     <Resource Include="Resources\power-plant-97119_1920.jpg" />
