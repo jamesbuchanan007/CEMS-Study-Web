@@ -17,4 +17,3 @@ namespace CEMS_Study_Web.ViewModels
         public List<string> SectionNumberList { get; set; }
     }
 }
-}

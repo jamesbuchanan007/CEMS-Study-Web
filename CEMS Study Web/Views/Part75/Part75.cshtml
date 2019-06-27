@@ -4,12 +4,26 @@
 @{
     var site = "http://placeimg.com/180/150/any";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var heading = Model.SectionNumber == "1" ? "Introduction" : Model.SectionNumber;
+    var heading = Model.SectionNumber == "1" ? "Table of Contents" : Model.SectionNumber;
+    var sectionSymbol = Model.SectionNumber == "1" ? "" : "&sect;";
 }
+<style>
+    .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+</style>
 <div class="container-fluid">
 
     <!--NAME OF FILE-->
-    <h1>| @Model.Regulation | @heading</h1>
+    <h1>| @Model.Regulation | @sectionSymbol @heading</h1>
     <hr />
     <div class="row">
         <div class="col-md-9">
@@ -22,35 +36,245 @@
                     <li class="breadcrumb-item" aria-current="page">@heading</li>
                 </ol>
             </nav>
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                    Table of Contents
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
 
-                    @for (var i = 0; i < @Model.SubpartList.Count; i++)
-                    {
-                        if (Model.SectionNumberList[i] == "Full Regulation")
+            @if (Model.SectionNumber == "1")
+            {
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartA" style="text-decoration: none; color: white" title="Subpart A - General">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart A - General
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartA" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_1">&sect; 75.1 - Purpose and Scope</a><br />
+                                <a href="~/Part75/75_2">&sect; 75.2 - Applicability</a><br />
+                                <a href="~/Part75/75_3">&sect; 75.3 - General Acid Rain Program Provisions</a><br />
+                                <a href="~/Part75/75_4">&sect; 75.4 - Compliance Dates</a><br />
+                                <a href="~/Part75/75_5">&sect; 75.5 - Prohibitions</a><br />
+                                <a href="~/Part75/75_6">&sect; 75.6 - Incorporation by Reference</a><br />
+                                <a href="~/Part75/75_7">&sect; 75.7 - Reserved</a><br />
+                                <a href="~/Part75/75_8">&sect; 75.8 - Reserved</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartB" style="text-decoration: none; color: white" title="Subpart B - Monitoring Provisions">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart B - Monitoring Provisions
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartB" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_10">&sect; 75.10 - General Operating Requirements</a><br />
+                                <a href="~/Part75/75_11">&sect; 75.11 - Specific Provisions for Monitoring SO<sub>2</sub> Emissions.</a><br />
+                                <a href="~/Part75/75_12">&sect; 75.12 - Specific Provisions for Monitoring NO<sub>x</sub> Emission Rate</a><br />
+                                <a href="~/Part75/75_13">&sect; 75.13 - Specific Provisions for Monitoring CO<sub>2</sub> Emissions</a><br />
+                                <a href="~/Part75/75_14">&sect; 75.14 - Specific Provisions for Monitoring Opacity</a><br />
+                                <a href="~/Part75/75_15">&sect; 75.15 - Reserved</a><br />
+                                <a href="~/Part75/75_16">&sect; 75.16 - Special Provisions for Monitoring Emissions from Common, Bypass, and Multiple Stacks for SO<sub>2</sub> Emissions and Heat Input Determinations</a><br />
+                                <a href="~/Part75/75_17">&sect; 75.17 - Specific Provisions for Monitoring Emissions from Common, Bypass, and Multiple Stacks for NO<sub>x</sub> Emission Rate</a><br />
+                                <a href="~/Part75/75_18">&sect; 75.18 - Specific Provisions for Monitoring Emissions from Common and By-Pass Stacks for Opacity</a><br />
+                                <a href="~/Part75/75_19">&sect; 75.19 - Optional SO<sub>2</sub>, NO<sub>x</sub>, and CO<sub>2</sub> Emissions Calculation for Low Mass Emissions (LME) Units</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartC" style="text-decoration: none; color: white" title="Subpart C - Operation and Maintenance Requirements">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart C - Operation and Maintenance Requirements
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartC" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_20">&sect; 75.20 - Initial Certification and Recertification Procedures</a><br />
+                                <a href="~/Part75/75_21">&sect; 75.21 - Quality Assurance and Quality Control Requirements</a><br />
+                                <a href="~/Part75/75_22">&sect; 75.22 - Reference Test Methods</a><br />
+                                <a href="~/Part75/75_23">&sect; 75.23 - Alternatives to Standards Incorporated by Reference</a><br />
+                                <a href="~/Part75/75_24">&sect; 75.24 - Out-of-Control Periods and Adjustment for System Bias</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartD" style="text-decoration: none; color: white" title="Subpart D - Missing Data Substitution Procedures">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart D - Missing Data Substitution Procedures
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartD" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_30">&sect; 75.30 - General Provisions</a><br />
+                                <a href="~/Part75/75_31">&sect; 75.31 - Initial Missing Data Procedures</a><br />
+                                <a href="~/Part75/75_32">&sect; 75.32 - Determination of Monitor Data Availability for Standard Missing Data Procedures</a><br />
+                                <a href="~/Part75/75_33">&sect; 75.33 - Standard Missing Data Procedures for SO<sub>2</sub>, NO<sub>x</sub>, and Flow Rate</a><br />
+                                <a href="~/Part75/75_34">&sect; 75.34 - Units with Add-On Emission Controls</a><br />
+                                <a href="~/Part75/75_35">&sect; 75.35 - Missing Data Procedures for CO<sub>2</sub></a><br />
+                                <a href="~/Part75/75_36">&sect; 75.36 - Missing Data Procedures for Heat Input Rate Determinations</a><br />
+                                <a href="~/Part75/75_37">&sect; 75.37 - Missing Data Procedures for Moisture</a><br />
+                                <a href="~/Part75/75_38">&sect; 75.38 - Reserved</a><br />
+                                <a href="~/Part75/75_39">&sect; 75.39 - Reserved</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartE" style="text-decoration: none; color: white" title="Subpart E - Alternative Monitoring Systems">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart E - Alternative Monitoring Systems
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartE" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_40">&sect; 75.40 - General Demonstration Requirements</a><br />
+                                <a href="~/Part75/75_41">&sect; 75.41 - Precision Criteria</a><br />
+                                <a href="~/Part75/75_42">&sect; 75.42 - Reliability Criteria</a><br />
+                                <a href="~/Part75/75_43">&sect; 75.43 - Accessibility Criteria</a><br />
+                                <a href="~/Part75/75_44">&sect; 75.44 - Timeliness Criteria</a><br />
+                                <a href="~/Part75/75_45">&sect; 75.45 - Daily Quality Assurance Criteria</a><br />
+                                <a href="~/Part75/75_46">&sect; 75.46 - Missing Data Substitution Criteria</a><br />
+                                <a href="~/Part75/75_47">&sect; 75.47 - Criteria for a Class of Affected Units</a><br />
+                                <a href="~/Part75/75_48">&sect; 75.48 - Petition for an Alternative Monitoring System</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartF" style="text-decoration: none; color: white" title="Subpart F - Record Keeping Requirements">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart F - Record Keeping Requirements
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartF" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_50">&sect; 75.50 - Reserved</a><br />
+                                <a href="~/Part75/75_51">&sect; 75.51 - Reserved</a><br />
+                                <a href="~/Part75/75_52">&sect; 75.52 - Reserved</a><br />
+                                <a href="~/Part75/75_53">&sect; 75.53 - Monitoring Plan</a><br />
+                                <a href="~/Part75/75_54">&sect; 75.54 - Reserved</a><br />
+                                <a href="~/Part75/75_55">&sect; 75.55 - Reserved</a><br />
+                                <a href="~/Part75/75_56">&sect; 75.56 - Reserved</a><br />
+                                <a href="~/Part75/75_57">&sect; 75.57 - General Record Keeping Provisions</a><br />
+                                <a href="~/Part75/75_58">&sect; 75.58 - General Record Keeping Provisions for Specific Situations</a><br />
+                                <a href="~/Part75/75_59">&sect; 75.59 - Certification, Quality Assurance, and Quality Control Record Provisions</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartG" style="text-decoration: none; color: white" title="Subpart G - Reporting Requirements">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart G - Reporting Requirements
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartG" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_60">&sect; 75.60 - General Provisions</a><br />
+                                <a href="~/Part75/75_61">&sect; 75.61 - Notifications</a><br />
+                                <a href="~/Part75/75_62">&sect; 75.62 - Monitoring Plan Submittals</a><br />
+                                <a href="~/Part75/75_63">&sect; 75.63 - Initial Certification or Recertification Application</a><br />
+                                <a href="~/Part75/75_64">&sect; 75.64 - Quarterly Reports</a><br />
+                                <a href="~/Part75/75_65">&sect; 75.65 - Opacity Reports</a><br />
+                                <a href="~/Part75/75_66">&sect; 75.66 - Petitions to the Administrator</a><br />
+                                <a href="~/Part75/75_67">&sect; 75.67 - Retired Units Petitions</a><br />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SubpartH" style="text-decoration: none; color: white" title="Subpart H - NOx Mass Emissions Provisions">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Subpart H - NO<sub>x</sub> Mass Emissions Provisions
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="SubpartH" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/75_70">&sect; 75.70 - NO<sub>x</sub> Mass Emissions Provisions</a><br />
+                                <a href="~/Part75/75_71">&sect; 75.71 - Specific Provisions for Monitoring NO<sub>x</sub> and Heat Input for the Purpose of Calculating NOx Mass Emissions</a><br />
+                                <a href="~/Part75/75_72">&sect; 75.72 - Determination of NO<sub>x</sub> Mass Emissions for Common Stack and Multiple Stack Configurations</a><br />
+                                <a href="~/Part75/75_73">&sect; 75.73 - Record Keeping and Reporting</a><br />
+                                <a href="~/Part75/75_74">&sect; 75.74 - Annual and Ozone Season Monitoring and Reporting Requirements</a><br />
+                                <a href="~/Part75/75_75">&sect; 75.75 - Additional Ozone Season Calculation Procedures for Special Circumstances</a><br />
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#Appendices" style="text-decoration: none; color: white" title="Appendices A - J">
+                                <h4 class="panel-title">
+                                    <span class="fa fa-circle">&emsp;</span>Appendices A - J
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="Appendices" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <a href="~/Part75/Appendix_A">Appendix A - Specifications and Test Procedures</a><br />
+                                <a href="~/Part75/Appendix_B">Appendix B - Quality Assurance and Quality Control Procedures</a><br />
+                                <a href="~/Part75/Appendix_C">Appendix C - Missing Data Estimation Procedures</a><br />
+                                <a href="~/Part75/Appendix_D">Appendix D - Optional SO<sub>2</sub> Emissions Data Protocol for Gas-Fired and Oil-Fired Units</a><br />
+                                <a href="~/Part75/Appendix_E">Appendix E - Optional NO<sub>x</sub> Emissions Estimation Protocol for Gas-Fired Peaking Units and Oil-Fired Peaking Units </a><br />
+                                <a href="~/Part75/Appendix_F">Appendix F - Conversion Procedures</a><br />
+                                <a href="~/Part75/Appendix_G">Appendix G - Determination of CO<sub>2</sub> Emissions</a><br />
+                                <a href="~/Part75/Appendix_H">Appendix H - Revised Traceability Protocol No. 1 [Reserved]</a><br />
+                                <a href="~/Part75/Appendix_I">Appendix I - Factor/Fuel Flow Method [Reserved]</a><br />
+                                <a href="~/Part75/Appendix_J">Appendix J - Compliance Dates for Revised Record Keeping Requirements and Missing Data Procedures [Reserved]</a><br />
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+            else
+            {
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Table of Contents
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+
+                        @for (var i = 0; i < @Model.SubpartList.Count; i++)
                         {
-                            <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i]</a></li>
-                            continue;
+                            if (Model.SectionNumberList[i] == "Full Regulation")
+                            {
+                                <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i]</a></li>
+                                continue;
+                            }
+
+                            if (Model.SectionNumberList[i] == "1")
+                            {
+                                <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SubpartList[i]</a></li>
+                                continue;
+                            }
+
+                            <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SubpartList[i] - @Model.SectionNameList[i]</a></li>
                         }
 
-                        if (Model.SectionNumberList[i] == "1")
-                        {
-                            <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SubpartList[i]</a></li>
-                            continue;
-                        }
+                    </ul>
+                </div>
+                <div style="max-height: 650px; overflow: auto; margin-top: 10px" id="home1">
+                    @Html.Raw(Model.Content)
+                </div>
+            }
 
-                        <li><a href="~/Part75EMP/@Model.SectionNumberList[i]">@Model.SectionNumberList[i] - @Model.SubpartList[i] - @Model.SectionNameList[i]</a></li>
-                    }
-
-                </ul>
-            </div>
-            <div style="max-height: 650px; overflow: auto; margin-top: 10px" id="home1">
-                @Html.Raw(Model.Content)
-            </div>
 
 
             <!--BACK TO TOP BUTTON-->
@@ -95,9 +319,11 @@
 
 <script>
     // When the user clicks on the button, scroll to the top of the document
+
     function topFunction() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         $("#home1").animate({ scrollTop: 0 }, "slow");
     }
+
 </script>
