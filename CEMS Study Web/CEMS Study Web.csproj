@@ -320,6 +320,11 @@
     <Content Include="Content\Images\Part75AppB2.1.jpg" />
     <Content Include="Content\Images\Part75AppB2.2.jpg" />
     <Content Include="Content\Images\Part75AppB2.3.jpg" />
+    <Content Include="Content\Images\Part75AppBFig1.jpg" />
+    <Content Include="Content\Images\Part75AppBFig2.jpg" />
+    <Content Include="Content\Images\Part75AppBFig3.jpg" />
+    <Content Include="Content\Images\Part75AppC.1.jpg" />
+    <Content Include="Content\Images\Part75AppC.2.jpg" />
     <Content Include="Content\Images\Part75EMP1.3.1.png" />
     <Content Include="Content\Images\Part75EMP13.1.1.jpg" />
     <Content Include="Content\Images\Part75EMP14.4.1.jpg" />
@@ -426,6 +431,7 @@
     <Content Include="Views\Part75\Part75_59.cshtml" />
     <Content Include="Views\Part75\Part75AppA2.cshtml" />
     <Content Include="Views\Part75\Part75AppA6.cshtml" />
+    <Content Include="Views\Part75\Part75AppB2.cshtml" />
     <Resource Include="Resources\industry-1827884_1920.jpg" />
     <Resource Include="Resources\power-plant-97119_1920.jpg" />
     <Resource Include="Resources\industry-406905_1920.jpg" />
