@@ -10,332 +10,338 @@
     <link rel="icon" href="/Resources/icons8_factory_64_QmM_icon.ico" type="image/x-icon">
 </head>
 <body>
+<style>
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="~/Home/Index" title="Home">
-                    <img src="~/Resources/AppLogo.png" alt="Home" width="200" />
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse text-center col-sm-10" id="main-navbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="~/Acronyms" title="Acronyms">Acronyms</a></li>
-                    <li><a href="~/Definitions" title="Definitions">Definitions</a></li>
-                    <li><a href="~/Formulas" title="Formulas">Formulas</a></li>
-                    <li><a href="~/UnitsOfMeasure" title="Units of Measure">Units of Measure</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="40 CFR Regulations">40 CFR Regulations<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="~/Part75" title="40 CFR Part 75 Continuous Emission Monitoring">Part 75</a></li>
-                            <li><a href="~/Part75EMP" title="40 CFR Part 75 Emissions Monitoring Policy">Part 75 EMP</a></li>
-                            <li><a href="~/40CFR/Part75PlainEnglish" title="40 CFR Part 75 Plain English Guide">Part 75 Plain English</a></li>
-                            <li><a href="~/40CFR/Part75FieldAudit" title="40 CFR Part 75 Field Audit Manual">Part 75 Field Audit Manual</a></li>
-                            <li><a href="~/40CFR/Part75AppendixD" title="40 CFR Part 75 Appendix D">Part 75 Appendix D</a></li>
-                            <li><a href="~/40CFR/Part60AppendixB" title="40 CFR Part 60 Appendix B">Part 60 Appendix B</a></li>
-                            <li><a href="~/40CFR/Part60AppendixF" title="40 CFR Part 60 Appendix F">Part 60 Appendix F</a></li>
-                            <li><a href="~/40CFR/Part63SubpartUUUUU" title="40 CFR Part 63 Subpart UUUUU">Part 63 Subpart UUUUU</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="Emissions Collection and Monitoring Plan System">ECMPS<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="~/ECMPS/MonitoringReporting" title="ECMPS Monitoring Plan Reporting Instructions">Monitoring Reporting Instructions</a></li>
-                            <li><a href="~/ECMPS/QAReporting" title="ECMPS Quality Assurance and Certification Reporting Instructions">QA Reporting Instructions</a></li>
-                            <li><a href="~/ECMPS/EmissionsReporting" title="ECMPS Emissions Reporting Instructions">Emissions Reporting Instructions</a></li>
-                            <li><a href="~/ECMPS/PGV" title="ECMPS Reporting Requirements Related to the Amendments to the Protocol Gas Verification Program and Minimum Competency Requirements for Air Emissions Testing">PGV Program and Air Emissions Testing</a></li>
-                            <li><a href="~/ECMPS/GHG" title="ECMPS Reporting Guidance for the GHG-MRR">Reporting Guidance for the GHG-MRR</a></li>
-                            <li><a href="~/ECMPS/MATSTransition" title="MATS Transition PDF Reporting Instructions">MATS Transition PDF Reporting Instructions</a></li>
-                            <li><a href="~/ECMPS/MATSGuidance" title="MATS Guidance on Temporary E-Reporting ">MATS Guidance on Temporary E-Reporting </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" title="Contact" data-toggle="modal" data-target="#ContactModal">Contact</a></li>
-                    <li><a href="#" title="Marketing" data-toggle="modal" data-target="#MarketingModal">Marketing</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="~/Home/Index" title="Home">
+                <img src="~/Resources/AppLogo.png" alt="Home" width="200"/>
+            </a>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <div class="col-md-6">
-                <p>&copy; @DateTime.Now.Year - CEMS Study - Pensacola, Florida - USA</p>
-            </div>
-            <div class="col-md-6">
-                <p style="text-align: right">J. Buchanan</p>
-            </div>
-        </footer>
-    </div>
-    <!--MODAL SECTION-->
-    <!-- Contact Modal -->
-    <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <img src="~/Resources/AppLogo.png" class="img-rounded" alt="Home" width="200" />
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <h2 class="modal-title" id="ContactModalLabel" style="margin-top: 10px">
-                            Contact Form
-                        </h2>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <div class="col-md-3">
-                                <label for="contact-firstName" style="margin-top: 10px">First Name:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-user"></i>
-                                </span>
-                                <input type="text" class="form-control" id="contact-firstName" placeholder="First Name" required="required">
-                            </div>
 
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3">
-                                <label for="contact-lastName" style="margin-top: 10px">Last Name:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-user"></i>
-                                </span>
-                                <input type="text" class="form-control" id="contact-lastName" placeholder="Last Name" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3">
-                                <label for="contact-phone" style="margin-top: 10px">Phone:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </span>
-                                <input type="text" class="form-control" id="contact-phone" placeholder="(xxx) xxx-xxxx">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3">
-                                <label for="contact-email" style="margin-top: 10px">Email:</label>
-                            </div>
-                            <div class="input-group">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-envelope"></i>
-                                </span>
-                                <input type="text" class="form-control" id="contact-email" placeholder="Email@Domain.com" required="required">
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <small id="emailHelp" class="text-muted">** We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-textarea">Message</label>
-                            <textarea class="form-control" id="contact-textarea" rows="3" placeholder="Message" style="min-width: 100%" required="required"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="col-md-6 text-left" style="margin-top: 10px">
-                        <p>&copy; @DateTime.Now.Year - CEMS Study&trade;</p>
-                    </div>
-                    <div class="col-md-6 text-right">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times"></i></span></button>
-                        <button type="button" class="btn btn-primary">Send</button>
-                    </div>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse text-center col-sm-10" id="main-navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="~/Acronyms" title="Acronyms">Acronyms</a></li>
+                <li><a href="~/Definitions" title="Definitions">Definitions</a></li>
+                <li><a href="~/Formulas" title="Formulas">Formulas</a></li>
+                <li><a href="~/UnitsOfMeasure" title="Units of Measure">Units of Measure</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="40 CFR Regulations">40 CFR Regulations<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="~/Part75" title="40 CFR Part 75 Continuous Emission Monitoring">Part 75</a></li>
+                        <li><a href="~/Part75EMP" title="40 CFR Part 75 Emissions Monitoring Policy">Part 75 EMP</a></li>
+                        <li><a href="~/40CFR/Part75PlainEnglish" title="40 CFR Part 75 Plain English Guide">Part 75 Plain English</a></li>
+                        <li><a href="~/40CFR/Part75FieldAudit" title="40 CFR Part 75 Field Audit Manual">Part 75 Field Audit Manual</a></li>
+                        <li><a href="~/40CFR/Part75AppendixD" title="40 CFR Part 75 Appendix D">Part 75 Appendix D</a></li>
+                        <li><a href="~/40CFR/Part60AppendixB" title="40 CFR Part 60 Appendix B">Part 60 Appendix B</a></li>
+                        <li><a href="~/40CFR/Part60AppendixF" title="40 CFR Part 60 Appendix F">Part 60 Appendix F</a></li>
+                        <li><a href="~/40CFR/Part63SubpartUUUUU" title="40 CFR Part 63 Subpart UUUUU">Part 63 Subpart UUUUU</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="Emissions Collection and Monitoring Plan System">ECMPS<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="~/ECMPS/MonitoringReporting" title="ECMPS Monitoring Plan Reporting Instructions">Monitoring Reporting Instructions</a></li>
+                        <li><a href="~/ECMPS/QAReporting" title="ECMPS Quality Assurance and Certification Reporting Instructions">QA Reporting Instructions</a></li>
+                        <li><a href="~/ECMPS/EmissionsReporting" title="ECMPS Emissions Reporting Instructions">Emissions Reporting Instructions</a></li>
+                        <li><a href="~/ECMPS/PGV" title="ECMPS Reporting Requirements Related to the Amendments to the Protocol Gas Verification Program and Minimum Competency Requirements for Air Emissions Testing">PGV Program and Air Emissions Testing</a></li>
+                        <li><a href="~/ECMPS/GHG" title="ECMPS Reporting Guidance for the GHG-MRR">Reporting Guidance for the GHG-MRR</a></li>
+                        <li><a href="~/ECMPS/MATSTransition" title="MATS Transition PDF Reporting Instructions">MATS Transition PDF Reporting Instructions</a></li>
+                        <li><a href="~/ECMPS/MATSGuidance" title="MATS Guidance on Temporary E-Reporting ">MATS Guidance on Temporary E-Reporting </a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="Contact" data-toggle="modal" data-target="#ContactModal">Contact</a></li>
+                <li><a href="#" title="Marketing" data-toggle="modal" data-target="#MarketingModal">Marketing</a></li>
+            </ul>
         </div>
     </div>
-
-    <!-- Marketing Modal -->
-    <div id="MarketingModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="MarketingModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <img src="~/Resources/AppLogo.png" class="img-rounded" alt="Home" width="200" />
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <h2 class="modal-title" id="ContactModalLabel" style="margin-top: 10px">
-                            Marketing
-                        </h2>
-                    </div>
+</nav>
+<div class="container body-content">
+    @RenderBody()
+    <hr/>
+    <footer>
+        <div class="col-md-6">
+            <p>&copy; @DateTime.Now.Year - CEMS Study - Pensacola, Florida - USA</p>
+        </div>
+        <div class="col-md-6">
+            <p style="text-align: right">J. Buchanan</p>
+        </div>
+    </footer>
+</div>
+<!--MODAL SECTION-->
+<!-- Contact Modal -->
+<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="ContactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="~/Resources/AppLogo.png" class="img-rounded" alt="Home" width="200"/>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <h3 class="text-center" style="margin-top: -5px">Contact Information</h3>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-firstName">First Name:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-user"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-firstName" placeholder="First Name" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-lastName">Last Name:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-user"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-lastName" placeholder="Last Name" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-phone">Phone:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-phone" placeholder="(xxx) xxx-xxxx" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-email">Email:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-envelope"></i>
-                                </span>
-                                <input type="email" class="form-control" id="marketing-email" placeholder="Email@Domain.com" required="required">
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <small id="emailHelp" class="text-muted">** We'll never share your email with anyone else.</small>
-                        </div>
-                        <hr />
-
-                        <h3 class="text-center">Business Information</h3>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-businessName">Name:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-building"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-businessName" placeholder="Business Name" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-businessAddress1">Address 1:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-building"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-businessAddress1" placeholder="Business Address 1" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-businessAddress2">Address 2:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-building"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-businessAddress2" placeholder="Business Address 2">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-city">City:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-building"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-city" placeholder="Business City" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-state">State:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-building"></i>
-                                </span>
-                                <select class="form-control" id="marketing-state" style="width: 100px" required="required">
-                                    <option>AA</option>
-                                    <option>BB</option>
-                                    <option>CC</option>
-                                    <option>DD</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-postalCode">Postal:</label>
-                            </div>
-                            <div class="input-group col-md-5 col-sm-6 col-xs-12">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-building"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-postalCode" placeholder="Business ZIP Code" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-businessPhone">Phone:</label>
-                            </div>
-                            <div class="input-group col-md-5 col-sm-6 col-xs-12">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </span>
-                                <input type="text" class="form-control" id="marketing-businessPhone" placeholder="(xxx) xxx-xxxx" required="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-3" style="margin-top: 10px">
-                                <label for="marketing-businessWebsite">Website / Site Link:</label>
-                            </div>
-                            <div class="input-group col-md-9">
-                                <span class="input-group-addon">
-                                    <i class="fa fa-globe"></i>
-                                </span>
-                                <input type="url" class="form-control" id="marketing-businessWebsite" placeholder="www.Website/SiteLink.com" required="required">
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="modal-title" id="ContactModalLabel" style="margin-top: 10px">
+                        Contact Form
+                    </h2>
                 </div>
-                <div class="modal-footer">
-                    <div class="col-md-6 text-left" style="margin-top: 10px">
-                        <p>&copy; @DateTime.Now.Year - CEMS Study&trade;</p>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <label for="contact-firstName" style="margin-top: 10px">First Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="contact-firstName" placeholder="First Name" required="required">
+                        </div>
+
                     </div>
-                    <div class="col-md-6 text-right">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal" title="Close"><span><i class="fa fa-times"></i></span></button>
-                        <button type="button" class="btn btn-primary" title="Send">Send</button>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <label for="contact-lastName" style="margin-top: 10px">Last Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="contact-lastName" placeholder="Last Name" required="required">
+                        </div>
                     </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <label for="contact-phone" style="margin-top: 10px">Phone:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            <input type="text" class="form-control" id="contact-phone" placeholder="(xxx) xxx-xxxx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <label for="contact-email" style="margin-top: 10px">Email:</label>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <input type="text" class="form-control" id="contact-email" placeholder="Email@Domain.com" required="required">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <small id="emailHelp" class="text-muted">** We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-textarea">Message</label>
+                        <textarea class="form-control" id="contact-textarea" rows="3" placeholder="Message" style="min-width: 100%" required="required"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-6 text-left" style="margin-top: 10px">
+                    <p>&copy; @DateTime.Now.Year - CEMS Study&trade;</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times"></i></span></button>
+                    <button type="button" class="btn btn-primary">Send</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+<!-- Marketing Modal -->
+<div id="MarketingModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="MarketingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="~/Resources/AppLogo.png" class="img-rounded" alt="Home" width="200"/>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="modal-title" id="ContactModalLabel" style="margin-top: 10px">
+                        Marketing
+                    </h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <h3 class="text-center" style="margin-top: -5px">Contact Information</h3>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-firstName">First Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-firstName" placeholder="First Name" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-lastName">Last Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-lastName" placeholder="Last Name" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-phone">Phone:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-phone" placeholder="(xxx) xxx-xxxx" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-email">Email:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control" id="marketing-email" placeholder="Email@Domain.com" required="required">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <small id="emailHelp" class="text-muted">** We'll never share your email with anyone else.</small>
+                    </div>
+                    <hr/>
+
+                    <h3 class="text-center">Business Information</h3>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessName">Name:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessName" placeholder="Business Name" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessAddress1">Address 1:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessAddress1" placeholder="Business Address 1" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessAddress2">Address 2:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessAddress2" placeholder="Business Address 2">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-city">City:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-city" placeholder="Business City" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-state">State:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <select class="form-control" id="marketing-state" style="width: 100px" required="required">
+                                <option>AA</option>
+                                <option>BB</option>
+                                <option>CC</option>
+                                <option>DD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-postalCode">Postal:</label>
+                        </div>
+                        <div class="input-group col-md-5 col-sm-6 col-xs-12">
+                            <span class="input-group-addon">
+                                <i class="fa fa-building"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-postalCode" placeholder="Business ZIP Code" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessPhone">Phone:</label>
+                        </div>
+                        <div class="input-group col-md-5 col-sm-6 col-xs-12">
+                            <span class="input-group-addon">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            <input type="text" class="form-control" id="marketing-businessPhone" placeholder="(xxx) xxx-xxxx" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3" style="margin-top: 10px">
+                            <label for="marketing-businessWebsite">Website / Site Link:</label>
+                        </div>
+                        <div class="input-group col-md-9">
+                            <span class="input-group-addon">
+                                <i class="fa fa-globe"></i>
+                            </span>
+                            <input type="url" class="form-control" id="marketing-businessWebsite" placeholder="www.Website/SiteLink.com" required="required">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-6 text-left" style="margin-top: 10px">
+                    <p>&copy; @DateTime.Now.Year - CEMS Study&trade;</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" title="Close"><span><i class="fa fa-times"></i></span></button>
+                    <button type="button" class="btn btn-primary" title="Send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+
 </body>
 </html>

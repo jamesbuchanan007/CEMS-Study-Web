@@ -4420,6 +4420,11 @@ tbody.collapse.in {
     margin-bottom: 2px;
 }
 
+/*Activate dropdown on hover*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 @media (min-width: 768px) {
     .navbar-right .dropdown-menu {
         right: 0;
