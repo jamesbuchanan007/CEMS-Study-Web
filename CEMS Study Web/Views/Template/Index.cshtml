@@ -47,11 +47,19 @@
 <a href="#3.3.1">3.3.1</a><br />
 <a href="#3.3.2">3.3.2</a><br />
 <a href="#3.3.3">3.3.3</a><br />
-<a href="#3.4">3.4&&emsp;Calculation of Heat Input Rate</a><br />
-<a href="#3.4.1">3.4.1&&emsp;Heat Input Rate for Gaseous Fuels</a><br />
-<a href="#3.4.2">3.4.2&&emsp;Heat Input Rate From the Combustion of Oil</a><br />
-<a href="#3.4.3">3.4.3&&emsp;Apportioning Heat Input Rate to Multiple Units</a><br />
-<a href="#3.4.3">3.4.3&&emsp;Apportioning Heat Input Rate to Multiple Units</a><br />
+<a href="#3.4">3.4&emsp;Calculation of Heat Input Rate</a><br />
+<a href="#3.4.1">3.4.1&emsp;Heat Input Rate for Gaseous Fuels</a><br />
+<a href="#3.4.2">3.4.2&emsp;Heat Input Rate From the Combustion of Oil</a><br />
+<a href="#3.4.3">3.4.3&emsp;Apportioning Heat Input Rate to Multiple Units</a><br />
+<a href="#3.5">3.5&emsp;Conversion of Hourly Rates to Hourly, Quarterly, and Year-to-Date Totals</a><br />
+<a href="#3.5.1">3.5.1</a><br />
+<a href="#3.5.2">3.5.2&emsp;Quarterly Total SO2 Mass Emissions</a><br />
+<a href="#3.5.3">3.5.3&emsp;Year to Date SO2 Mass Emissions</a><br />
+<a href="#3.5.4">3.5.4&emsp;Hourly Total Heat Input Rate and Heat Input from the Combustion of all Fuels</a><br />
+<a href="#3.5.4.1">3.5.4.1</a><br />
+<a href="#3.5.4.2">3.5.4.2</a><br />
+<a href="#3.5.5">3.5.5&emsp;Quarterly Heat Input</a><br />
+<a href="#3.5.5">3.5.5&emsp;Quarterly Heat Input</a><br />
 <hr />
 <h4 id="3" class="anchorPad">
     <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
@@ -471,7 +479,242 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                Use the total apportioned fuel flow calculated from Equation F-21a or F-21b to calculate the hourly unit heat input rate, using Equations D-6 and D-7 (for gas) or Equations D-8 and D-9 (for oil).
+            </li>
         </ol>
+    </li>
+</ul>
+<h4 id="3.5" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3.5&emsp;<em class="noStyle">Conversion of Hourly Rates to Hourly, Quarterly, and Year-to-Date Totals</em>
+</h4>
+<ul>
+    <li id="3.5.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.1&emsp;Hourly SO2 Mass Emissions from the Combustion of all Fuels. Determine the total mass emissions for each hour from the combustion of all fuels using Equation D-12 (On and after January 1, 2009, determine the total mass emission rate (in lbs/hr) for each hour from the combustion of all fuels by dividing Equation D-12 by the actual unit operating time for the hour):
+        <hr />
+        <img class="img-thumbnail" src="~/Content/Images/Part75AppD.24.jpg" alt="Part 75 Appendix D Eq. D-12" title="Part 75 Appendix D Eq. D-12" />
+        <br />
+        <table>
+            <tr>
+                <th style="width: 75px">
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    M<sub>SO<sub>2</sub>-hr</sub>
+                </td>
+                <td>= Total mass of SO2 emissions from all fuels combusted during the hour, lb. </td>
+            </tr>
+            <tr>
+                <td>
+                    SO<sub>2<sub>rate-l</sub></sub>
+                </td>
+                <td>= SO2 mass emission rate for each type of gas or oil fuel combusted during the hour, lb/hr. </td>
+            </tr>
+            <tr>
+                <td>
+                    ti
+                </td>
+                <td>= Time each gas or oil fuel was combusted for the hour (fuel usage time), fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+            </tr>
+        </table>
+        <hr />
+    </li>
+    <li id="3.5.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.2&emsp;<em>Quarterly Total SO2 Mass Emissions</em>
+        <ul>
+            <li>
+                Sum the hourly SO2 mass emissions in lb as determined from Equation D-12 for all hours in a quarter using Equation D-13:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.25.jpg" alt="Part 75 Appendix D Eq. D-13" title="Part 75 Appendix D Eq. D-13" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width: 75px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO<sub>2-qtr</sub></sub>
+                        </td>
+                        <td>
+                            = Total mass of SO2 emissions from all fuels combusted during the quarter, tons.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO<sub>2-hr</sub></sub>
+                        </td>
+                        <td>
+                            = Hourly SO2 mass emissions determined using Equation D-12, lb.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2000
+                        </td>
+                        <td>
+                            = Conversion factor from lb to tons.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="3.5.3" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.3&emsp;<em>Year to Date SO2 Mass Emissions</em>
+        <ul>
+            <li>
+                Calculate and record SO2 mass emissions in the year to date using Equation D-14:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.26.jpg" alt="Part 75 Appendix D Eq. D-14" title="Part 75 Appendix D Eq. D-14" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width: 75px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO2-YTD</sub>
+                        </td>
+                        <td>
+                            = Total SO2 mass emissions for the year to date, tons.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO2-qtr</sub>
+                        </td>
+                        <td>
+                            = Total SO2 mass emissions for the quarter, tons.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="3.5.4" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.4&emsp;<em>Hourly Total Heat Input Rate and Heat Input from the Combustion of all Fuels</em>
+        <ul>
+            <li id="3.5.4.1" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                3.5.4.1&emsp;Determine the total heat input in mmBtu for each hour from the combustion of all fuels using Equation D-15:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.27.jpg" alt="Part 75 Appendix D Eq. D-15" title="Part 75 Appendix D Eq. D-15" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>hr</sub>
+                        </td>
+                        <td>= Total heat input from all fuels combusted during the hour, mmBtu.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-i</sub>
+                        </td>
+                        <td>= Heat input rate for each type of gas or oil combusted during the hour, mmBtu/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t<sub>i</sub>
+                        </td>
+                        <td>= Time each gas or oil fuel was combusted for the hour (fuel usage time), fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li id="3.5.4.2" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                3.5.4.2&emsp;For reporting purposes, determine the heat input rate to each unit, in mmBtu/hr, for each hour from the combustion of all fuels using Equation D-15a:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.28.jpg" alt="Part 75 Appendix D Eq. D-15a" title="Part 75 Appendix D Eq. D-15a" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-hr</sub>
+                        </td>
+                        <td>= Total heat input rate from all fuels combusted during the hour, mmBtu/hr. </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-i</sub>
+                        </td>
+                        <td>= Heat input rate for each type of gas or oil combusted during the hour, mmBtu/hr. </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t<sub>i</sub>
+                        </td>
+                        <td>= Time each gas or oil fuel was combusted for the hour (fuel usage time), fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t<sub>u</sub>
+                        </td>
+                        <td>= Unit operating time </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="3.5.5" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.5&emsp;<em>Quarterly Heat Input</em>
+        <ul>
+            <li>Sum the hourly heat input values determined from equation D-15 for all hours in a quarter using Equation D-16:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.29.jpg" alt="Part 75 Appendix D Eq. D-16" title="Part 75 Appendix D Eq. D-16"/>
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>qtr</sub>
+                        </td>
+                        <td>
+                            = Total heat input from all fuels combusted during the quarter, mmBtu.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>qtr</sub>
+                        </td>
+                        <td>
+                            = Hourly heat input determined using Equation D-15, mmBtu.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+                </li>
+        </ul>
     </li>
 </ul>
 <p>
