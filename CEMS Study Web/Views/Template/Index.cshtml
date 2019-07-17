@@ -32,23 +32,22 @@
 </h2>
 <hr />
 <h3>
-    3.&emsp;Procedures for NOx Emission Rate
+    4.&emsp;Procedures for CO2 Mass Emissions
 </h3>
 <hr />
 <div class="container" style="max-height: 200px; overflow: auto">
-    <a href="#3.1">3.1</a><br />
-    <a href="#3.2">3.2</a><br />
-    <a href="#3.2">3.2</a><br />
+    <a href="#4.1">4.1</a><br />
+    <a href="#4.1">4.1</a><br />
 </div>
 <hr />
 <p>
-    Use the following procedures to convert continuous emission monitoring system measurements of NOX concentration (ppm) and diluent concentration (percentage) into NOX emission rates (in lb/mmBtu). Perform measurements of NOX and diluent (O2 or CO2) concentrations on the same moisture (wet or dry) basis.
+    Use the following procedures to convert continuous emission monitoring system measurements of CO2 concentration (percentage) and volumetric flow rate (scfh) into CO2 mass emissions (in tons/day) when the owner or operator uses a CO2 continuous emission monitoring system (consisting of a CO2 or O2 pollutant monitor) and a flow monitoring system to monitor CO2 emissions from an affected unit.
 </p>
-<p id="3.1" class="anchorPad">
+<p id="4.1" class="anchorPad">
     <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-    3.1&emsp;When the NOX continuous emission monitoring system uses O2 as the diluent, and measurements are performed on a dry basis, use the following conversion procedure:
+    4.1&emsp;When CO2 concentration is measured on a wet basis, use the following equation to calculate hourly CO2 mass emissions rates (in tons/hr):
     <hr />
-    <img id="Eq. F-5" class="img-thumbnail" src="~/Content/Images/Part75AppF.5.jpg" alt="Part 75 Appendix F Eq. F-5" title="Part 75 Appendix F Eq. F-5" />
+    <img id="Eq. F-11" class="img-thumbnail" src="~/Content/Images/Part75AppF.13.jpg" alt="Part 75 Appendix F Eq. F-11" title="Part 75 Appendix F Eq. F-11" />
     <br />
     <table>
         <tr>
@@ -58,33 +57,27 @@
         </tr>
         <tr>
             <td>
-            K, E, C<sub>h</sub>, F, and %O<sub>2</sub>
-            <td>
-                = defined in section <a href="#3.3">3.3</a> of this appendix.   
-                When measurements are performed on a wet basis, use the equations in Method 19 in appendix A-7 to part 60 of this chapter.
+                E<sub>h</sub>
             </td>
-        </tr>
-    </table>
-    <hr />
-</p>
-<p id="3.2" class="anchorPad">
-    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-    3.2&emsp;When the NOX continuous emission monitoring system uses CO2 as the diluent, use the following conversion procedure:
-    <hr />
-    <img id="Eq. F-6" class="img-thumbnail" src="~/Content/Images/Part75AppF.6.jpg" alt="Part 75 Appendix F Eq. F-6" title="Part 75 Appendix F Eq. F-6"/>
-    <br />
-    <table>
-        <tr>
-            <th>
-                Where:
-            </th>
+            <td>= Hourly CO2 mass emission rate during unit operation, tons/hr.</td>
         </tr>
         <tr>
             <td>
-            K, E, Ch, Fc, and %CO2
-            <td>
-                = defined in section <a href="#3.3">3.3</a> of this appendix.  When CO2 and NOX measurements are performed on a different moisture basis, use the equations in Method 19 in appendix A-7 to part 60 of this chapter.
+                K
             </td>
+            <td> = 5.7 × 10<sup>−7</sup> for CO2, (tons/scf) /%CO2.</td>
+        </tr>
+        <tr>
+            <td>
+                C<sub>h</sub>
+            </td>
+            <td>= Hourly average CO2 concentration during unit operation, wet basis, either measured directly with a CO2 monitor or calculated from wet-basis O2 data using Equation F-14b, percent CO2.</td>
+        </tr>
+        <tr>
+            <td>
+                Q<sub>h</sub>
+            </td>
+            <td>= Hourly average volumetric flow rate during unit operation, wet basis, scfh.</td>
         </tr>
     </table>
     <hr />
