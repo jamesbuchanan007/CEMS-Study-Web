@@ -1,0 +1,773 @@
+﻿
+<style>
+    .img-thumbnail {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    em {
+        text-decoration: underline;
+    }
+
+    .noStyle {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .anchorPad {
+        padding-top: 75px;
+        margin-top: -65px;
+    }
+</style>
+<h2 id="BackToTop" class="anchorPad">
+    Appendix D to Part 75 - Optional SO<sub>2</sub> Emissions Data Protocol for Gas-Fired and Oil-Fired Units
+</h2>
+<hr />
+<h3>
+    3.&emsp;Calculations
+</h3>
+<hr />
+<div class="container" style="max-height: 200px; overflow: auto">
+    <a href="#3">3&emsp;SO<sub>2</sub> Mass Emission Rate Calculation for Oil</a><br />
+    <a href="#3.1">3.1&emsp;SO<sub>2</sub> Mass Emission Rate Calculation for Oil</a><br />
+    <a href="#3.1.1">3.1.1</a><br />
+    <a href="#3.1.2">3.1.2</a><br />
+    <a href="#3.2">3.2&emsp;Mass Flow Rate Calculation for Volumetric Oil Flowmeters</a><br />
+    <a href="#3.2.1">3.2.1</a><br />
+    <a href="#3.2.2">3.2.2</a><br />
+    <a href="#3.2.3">3.2.3</a><br />
+    <a href="#3.3">3.3&emsp;SO<sub>2</sub> Mass Emission Rate Calculation for Gaseous Fuels</a><br />
+    <a href="#3.3.1">3.3.1</a><br />
+    <a href="#3.3.2">3.3.2</a><br />
+    <a href="#3.3.3">3.3.3</a><br />
+    <a href="#3.4">3.4&emsp;Calculation of Heat Input Rate</a><br />
+    <a href="#3.4.1">3.4.1&emsp;Heat Input Rate for Gaseous Fuels</a><br />
+    <a href="#3.4.2">3.4.2&emsp;Heat Input Rate From the Combustion of Oil</a><br />
+    <a href="#3.4.3">3.4.3&emsp;Apportioning Heat Input Rate to Multiple Units</a><br />
+    <a href="#3.5">3.5&emsp;Conversion of Hourly Rates to Hourly, Quarterly, and Year-to-Date Totals</a><br />
+    <a href="#3.5.1">3.5.1</a><br />
+    <a href="#3.5.2">3.5.2&emsp;Quarterly Total SO<sub>2</sub> Mass Emissions</a><br />
+    <a href="#3.5.3">3.5.3&emsp;Year to Date SO<sub>2</sub> Mass Emissions</a><br />
+    <a href="#3.5.4">3.5.4&emsp;Hourly Total Heat Input Rate and Heat Input from the Combustion of all Fuels</a><br />
+    <a href="#3.5.4.1">3.5.4.1</a><br />
+    <a href="#3.5.4.2">3.5.4.2</a><br />
+    <a href="#3.5.5">3.5.5&emsp;Quarterly Heat Input</a><br />
+    <a href="#3.5.6">3.5.6&emsp;Year-to-Date Heat Input</a><br />
+    <a href="#3.6">3.6&emsp;Records and Reports</a><br />
+    <a href="#3.6">3.6&emsp;Records and Reports</a><br />
+</div>
+<hr />
+<h4 id="3" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3&emsp;
+    <em class="noStyle">
+        Fuel Flowmeter Measurements
+    </em>
+</h4>
+<p>
+    Calculate hourly SO<sub>2</sub> mass emission rate from combustion of oil fuel using the procedures in section <a href="#3.1">3.1</a> of this appendix. Calculate hourly SO<sub>2</sub> mass emission rate from combustion of gaseous fuel using the procedures in section <a href="#3.3">3.3</a> of this appendix. (Note: the SO<sub>2</sub> mass emission rates in sections 3.1 and 3.3 are calculated such that the rate, when multiplied by unit operating time, yields the hourly SO<sub>2</sub> mass emissions for a particular fuel for the unit.) Calculate hourly heat input rate for both oil and gaseous fuels using the procedures in section <a href="#3.4">3.4</a> of this appendix. Calculate total SO<sub>2</sub> mass emissions and heat input for each hour, each quarter and the year to date using the procedures under section <a href="#3.5">3.5</a> of this appendix. Where an oil flowmeter records volumetric flow rate, use the calculation procedures in section <a href="#3.2">3.2</a> of this appendix to calculate the mass flow rate of oil.
+</p>
+<h4 id="3.1" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3.1&emsp;<em class="noStyle">
+        SO<sub>2</sub> Mass Emission Rate Calculation for Oil
+    </em>
+</h4>
+<ul>
+    <li id="3.1.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.1.1&emsp;Use Equation D-2 to calculate SO<sub>2</sub> mass emission rate per hour (lb/hr):
+        <hr />
+        <img class="img-thumbnail" src="~/Content/Images/Part75AppD.16.jpg" alt="Part 75 Appendix D Eq. D-2" title="Part 75 Appendix D Eq. D-2" />
+        <br />
+        <table>
+            <tr>
+                <th>
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    SO<sub>2rate-oil</sub>
+                </td>
+                <td>
+                    = Hourly mass emission rate of SO<sub>2</sub> emitted from combustion of oil, lb/hr.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    OIL<sub>rate</sub>
+                </td>
+                <td>
+                    = Mass rate of oil consumed per hr during combustion, lb/hr.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    %S<sub>oil</sub>
+                </td>
+                <td>
+                    = Percentage of sulfur by weight in the oil.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2.0
+                </td>
+                <td>
+                    = Ratio of lb SO<sub>2</sub>/lb S.
+                </td>
+            </tr>
+        </table>
+        <hr />
+    </li>
+    <li id="3.1.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.1.2&emsp;Record the SO<sub>2</sub> mass emission rate from oil for each hour that oil is combusted.
+    </li>
+</ul>
+<h4 id="3.2" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3.2&emsp;<em class="noStyle">Mass Flow Rate Calculation for Volumetric Oil Flowmeters</em>
+</h4>
+<ul>
+    <li id="3.2.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.2.1&emsp;Where the oil flowmeter records volumetric flow rate rather than mass flow rate, calculate and record the oil mass flow rate for each hourly period using hourly oil flow rate measurements and the density or specific gravity of the oil sample.
+    </li>
+    <li id="3.2.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.2.2&emsp;Convert density, specific gravity, or API gravity of the oil sample to density of the oil sample at the sampling location's temperature using ASTM D1250-07, Standard Guide for Use of the Petroleum Measurement Tables (incorporated by reference under (§75.6 of this part).
+    </li>
+    <li id="3.2.3" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.2.3&emsp;Where density of the oil is determined by the applicable ASTM procedures from section 2.2.6 of this appendix, use Equation D-3 to calculate the rate of the mass of oil consumed (in lb/hr):
+        <hr />
+        <img class="img-thumbnail" src="~/Content/Images/Part75AppD.17.jpg" alt="Part 75 Appendix D Eq. D-3" title="Part 75 Appendix D Eq. D-3" />
+        <br />
+        <table>
+            <tr>
+                <th>
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    OIL<sub>rate</sub>
+                </td>
+                <td>
+                    = Mass rate of oil consumed per hr, lb/hr.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    V<sub>oil-rate</sub>
+                </td>
+                <td>
+                    = Volume rate of oil consumed per hr, measured in scf/hr, gal/hr, barrels/hr, or m<sup>3</sup>/hr.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    D<sub>oil</sub>
+                </td>
+                <td>= Density of oil, measured in lb/scf, lb/gal, lb/barrel, or lb/m<sup>3</sup>.</td>
+            </tr>
+        </table>
+        <hr />
+    </li>
+</ul>
+<h4 id="3.3" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3.3&emsp;<em class="noStyle">SO<sub>2</sub> Mass Emission Rate Calculation for Gaseous Fuels</em>
+</h4>
+<ul>
+    <li id="3.3.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.3.1&emsp;Use Equation D-4 to calculate the SO<sub>2</sub> mass emission rate when using the optional gas sampling and analysis procedures in sections 2.3.1 and 2.3.2 of this appendix, or the required gas sampling and analysis procedures in section 2.3.3 of this appendix. Total sulfur content of a fuel must be determined using the procedures of 2.3.3.1.2 of this appendix:
+        <hr />
+        <img class="img-thumbnail" src="~/Content/Images/Part75AppD.18.jpg" alt="Part 75 Appendix D Eq. D-4" title="Part 75 Appendix D Eq. D-4" />
+        <br />
+        <table>
+            <tr>
+                <th>
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    SO<sub>2</sub><sub>rate-gas</sub>
+                </td>
+                <td>
+                    = Hourly mass rate of SO<sub>2</sub> emitted due to combustion of gaseous fuel, lb/hr.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    GAS<sub>rate</sub>
+                </td>
+                <td>
+                    = Hourly metered flow rate of gaseous fuel combusted, 100 scf/hr.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    S<sub>gas</sub>
+                </td>
+                <td>
+                    = Sulfur content of gaseous fuel, in grain/100 scf.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2.0
+                </td>
+                <td>
+                    = Ratio of lb SO<sub>2</sub>/lb S.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7000
+                </td>
+                <td>
+                    = Conversion of grains/100 scf to lb/100 scf.
+                </td>
+            </tr>
+        </table>
+        <hr />
+    </li>
+    <li id="3.3.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.3.2&emsp;Use Equation D-5 to calculate the SO<sub>2</sub> mass emission rate when using a default emission rate from section 2.3.1.1 or 2.3.2.1.1 of this appendix:
+        <hr />
+        <img class="img-thumbnail" src="~/Content/Images/Part75AppD.19.jpg" alt="Part 75 Appendix D Eq. D-5" title="Part 75 Appendix D Eq. D-5" />
+        <br />
+        <table>
+            <tr>
+                <th>
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    SO<sub>2</sub><sub>rate</sub>
+                </td>
+                <td>
+                    = Hourly mass emission rate of SO<sub>2</sub> from combustion of a gaseous fuel, lb/hr.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ER
+                </td>
+                <td>
+                    = SO<sub>2</sub> emission rate from section 2.3.1.1 or 2.3.2.1.1, of this appendix, lb/mmBtu.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    HI<sub>rate</sub>
+                </td>
+                <td>
+                    = Hourly heat input rate of a gaseous fuel, calculated using procedures in section <a href="#3.4.1">3.4.1</a> of this appendix, in mmBtu/hr.
+                </td>
+            </tr>
+        </table>
+        <hr />
+    </li>
+    <li id="3.3.3" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.3.3&emsp;Record the SO<sub>2</sub> mass emission rate for each hour when the unit combusts a gaseous fuel.
+    </li>
+</ul>
+<h4 id="3.4" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3.4&emsp;<em class="noStyle">Calculation of Heat Input Rate</em>
+</h4>
+<ul>
+    <li id="3.4.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.4.1&emsp;<em>Heat Input Rate for Gaseous Fuels</em>
+        <ol type="a">
+            <li>
+                Determine total hourly gas flow or average hourly gas flow rate with a fuel flowmeter in accordance with the requirements of section 2.1 of this appendix and the fuel GCV in accordance with the requirements of section 2.3.4 of this appendix. If necessary perform the 720-hour test under section 2.3.5 to determine the appropriate fuel GCV sampling frequency.
+            </li>
+            <li>
+                Then, use Equation D-6 to calculate heat input rate from gaseous fuels for each hour.
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.20.jpg" alt="Part 75 Appendix D Eq. D-6" title="Part 75 Appendix D Eq. D-6" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width:75px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-gas</sub>
+                        </td>
+                        <td>
+                            = Hourly heat input rate from combustion of the gaseous fuel, mmBtu/hr.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GAS<sub>rate</sub>
+                        </td>
+                        <td>
+                            = Average volumetric flow rate of fuel, for the portion of the hour in which the unit operated, 100 scf/hr.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GCV<sub>gas</sub>
+                        </td>
+                        <td>
+                            = Gross calorific value of gaseous fuel, Btu/100 scf.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10<sup>6</sup>
+                        </td>
+                        <td>
+                            = Conversion of Btu to mmBtu.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li>
+                Note that when fuel flow is measured on an hourly totalized basis (e.g. a fuel flowmeter reports totalized fuel flow for each hour), before Equation D-6 can be used, the total hourly fuel usage must be converted from units of 100 scf to units of 100 scf/hr using Equation D-7:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.21.jpg" alt="Part 75 Appendix D Eq. D-7" title="Part 75 Appendix D Eq. D-7" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width:75px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            GAS<sub>rate</sub>
+                        </td>
+                        <td>
+                            = Average volumetric flow rate of fuel for the portion of the hour in which the unit operated, 100 scf/hr.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GAS<sub>unit</sub>
+                        </td>
+                        <td>= Total fuel combusted during the hour, 100 scf.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t
+                        </td>
+                        <td>= Unit operating time, hour or fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ol>
+    </li>
+    <li id="3.4.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.4.2&emsp;<em>Heat Input Rate From the Combustion of Oil</em>
+        <ol type="a">
+            <li>
+                Determine total hourly oil flow or average hourly oil flow rate with a fuel flowmeter, in accordance with the requirements of section 2.1 of this appendix. Determine oil GCV according to the requirements of section 2.2 of this appendix.
+                <br />
+                <br />
+                <p>
+                    Then, use Equation D-8 to calculate hourly heat input rate from oil for each hour:
+                </p>
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.22.jpg" alt="Part 75 Appendix D Eq. D-8" title="Part 75 Appendix D Eq. D-8" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width:75px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-oil</sub>
+                        </td>
+                        <td>= Hourly heat input rate from combustion of oil, mmBtu/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            OIL<sub>rate</sub>
+                        </td>
+                        <td>= Mass rate of oil consumed per hour, as determined using procedures in section <a href="#3.2.3">3.2.3</a> of this appendix, in lb/hr, tons/hr, or kg/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GCV<sub>oil</sub>
+                        </td>
+                        <td>= Gross calorific value of oil, Btu/lb, Btu/ton, or Btu/kg.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10<sup>6</sup>
+                        </td>
+                        <td>= Conversion of Btu to mmBtu.</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li>
+                Note that when fuel flow is measured on an hourly totalized basis (e.g., a fuel flowmeter reports totalized fuel flow for each hour), before equation D-8 can be used, the total hourly fuel usage must be converted from units of lb to units of lb/hr, using equation D-9:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.23.jpg" alt="Part 75 Appendix D Eq. D-9" title="Part 75 Appendix D Eq. D-9" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            OIL<sub>rate</sub>
+                        </td>
+                        <td>= Average fuel flow rate for the portion of the hour which the unit operated in lb/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            OIL<sub>unit</sub>
+                        </td>
+                        <td>= Total fuel combusted during the hour, lb.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t
+                        </td>
+                        <td>= Unit operating time, hour or fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li>
+                For affected units that are not subject to an Acid Rain emissions limitation, but are regulated under a State or federal NO<sub>x</sub> mass emissions reduction program that adopts the requirements of subpart H of this part, the following alternative method may be used to determine the heat input rate from oil combustion, when the oil flowmeter measures the flow rate of oil volumetrically. In lieu of measuring the oil density and converting the volumetric oil flow rate to a mass flow rate, Equation D-8 may be applied on a volumetric basis. If this option is selected, express the terms OIL<sub>rate</sub> and GCV<sub>oil</sub> in Equation D-8 in units of volume rather than mass. For example, the units of OIL<sub>rate</sub> may be gal/hr and the units of GCV<sub>oil</sub> may be Btu/gal.
+            </li>
+        </ol>
+    </li>
+    <li id="3.4.3" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.4.3&emsp;<em>Apportioning Heat Input Rate to Multiple Units</em>
+        <ol type="a">
+            <li>
+                Use the procedure in this section to apportion hourly heat input rate to two or more units using a single fuel flowmeter which supplies fuel to the units. The designated representative may also petition the Administrator under §75.66 to use this apportionment procedure to calculate SO<sub>2</sub> and CO<sub>2</sub> mass emissions.
+            </li>
+            <li>
+                Determine total hourly fuel flow or flow rate through the fuel flowmeter supplying gas or oil fuel to the units. Convert fuel flow rates to units of 100 scf for gaseous fuels or to lb for oil, using the procedures of this appendix. Apportion the fuel to each unit separately based on hourly output of the unit in MWe or 1000 lb of steam/hr (klb/hr) using Equation F-21a or F-21b in appendix F to this part, as applicable:
+                <ul>
+                    <li>Equation D-10 [Reserved]</li>
+                    <li>
+                        Equation D-11 [Reserved]
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Use the total apportioned fuel flow calculated from Equation F-21a or F-21b to calculate the hourly unit heat input rate, using Equations D-6 and D-7 (for gas) or Equations D-8 and D-9 (for oil).
+            </li>
+        </ol>
+    </li>
+</ul>
+<h4 id="3.5" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3.5&emsp;<em class="noStyle">Conversion of Hourly Rates to Hourly, Quarterly, and Year-to-Date Totals</em>
+</h4>
+<ul>
+    <li id="3.5.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.1&emsp;Hourly SO<sub>2</sub> Mass Emissions from the Combustion of all Fuels. Determine the total mass emissions for each hour from the combustion of all fuels using Equation D-12 (On and after January 1, 2009, determine the total mass emission rate (in lbs/hr) for each hour from the combustion of all fuels by dividing Equation D-12 by the actual unit operating time for the hour):
+        <hr />
+        <img class="img-thumbnail" src="~/Content/Images/Part75AppD.24.jpg" alt="Part 75 Appendix D Eq. D-12" title="Part 75 Appendix D Eq. D-12" />
+        <br />
+        <table>
+            <tr>
+                <th style="width: 75px">
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    M<sub>SO<sub>2</sub>-hr</sub>
+                </td>
+                <td>= Total mass of SO<sub>2</sub> emissions from all fuels combusted during the hour, lb. </td>
+            </tr>
+            <tr>
+                <td>
+                    SO<sub>2<sub>rate-l</sub></sub>
+                </td>
+                <td>= SO<sub>2</sub> mass emission rate for each type of gas or oil fuel combusted during the hour, lb/hr. </td>
+            </tr>
+            <tr>
+                <td>
+                    ti
+                </td>
+                <td>= Time each gas or oil fuel was combusted for the hour (fuel usage time), fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+            </tr>
+        </table>
+        <hr />
+    </li>
+    <li id="3.5.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.2&emsp;<em>Quarterly Total SO<sub>2</sub> Mass Emissions</em>
+        <ul>
+            <li>
+                Sum the hourly SO<sub>2</sub> mass emissions in lb as determined from Equation D-12 for all hours in a quarter using Equation D-13:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.25.jpg" alt="Part 75 Appendix D Eq. D-13" title="Part 75 Appendix D Eq. D-13" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width: 75px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO<sub>2-qtr</sub></sub>
+                        </td>
+                        <td>
+                            = Total mass of SO<sub>2</sub> emissions from all fuels combusted during the quarter, tons.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO<sub>2-hr</sub></sub>
+                        </td>
+                        <td>
+                            = Hourly SO<sub>2</sub> mass emissions determined using Equation D-12, lb.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2000
+                        </td>
+                        <td>
+                            = Conversion factor from lb to tons.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="3.5.3" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.3&emsp;<em>Year to Date SO<sub>2</sub> Mass Emissions</em>
+        <ul>
+            <li>
+                Calculate and record SO<sub>2</sub> mass emissions in the year to date using Equation D-14:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.26.jpg" alt="Part 75 Appendix D Eq. D-14" title="Part 75 Appendix D Eq. D-14" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width: 75px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO<sub>2</sub>-YTD</sub>
+                        </td>
+                        <td>
+                            = Total SO<sub>2</sub> mass emissions for the year to date, tons.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            M<sub>SO<sub>2</sub>-qtr</sub>
+                        </td>
+                        <td>
+                            = Total SO<sub>2</sub> mass emissions for the quarter, tons.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="3.5.4" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.4&emsp;<em>Hourly Total Heat Input Rate and Heat Input from the Combustion of all Fuels</em>
+        <ul>
+            <li id="3.5.4.1" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                3.5.4.1&emsp;Determine the total heat input in mmBtu for each hour from the combustion of all fuels using Equation D-15:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.27.jpg" alt="Part 75 Appendix D Eq. D-15" title="Part 75 Appendix D Eq. D-15" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>hr</sub>
+                        </td>
+                        <td>= Total heat input from all fuels combusted during the hour, mmBtu.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-i</sub>
+                        </td>
+                        <td>= Heat input rate for each type of gas or oil combusted during the hour, mmBtu/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t<sub>i</sub>
+                        </td>
+                        <td>= Time each gas or oil fuel was combusted for the hour (fuel usage time), fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li id="3.5.4.2" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                3.5.4.2&emsp;For reporting purposes, determine the heat input rate to each unit, in mmBtu/hr, for each hour from the combustion of all fuels using Equation D-15a:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.28.jpg" alt="Part 75 Appendix D Eq. D-15a" title="Part 75 Appendix D Eq. D-15a" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-hr</sub>
+                        </td>
+                        <td>= Total heat input rate from all fuels combusted during the hour, mmBtu/hr. </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>rate-i</sub>
+                        </td>
+                        <td>= Heat input rate for each type of gas or oil combusted during the hour, mmBtu/hr. </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t<sub>i</sub>
+                        </td>
+                        <td>= Time each gas or oil fuel was combusted for the hour (fuel usage time), fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            t<sub>u</sub>
+                        </td>
+                        <td>= Unit operating time </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="3.5.5" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.5&emsp;<em>Quarterly Heat Input</em>
+        <ul>
+            <li>
+                Sum the hourly heat input values determined from equation D-15 for all hours in a quarter using Equation D-16:
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.29.jpg" alt="Part 75 Appendix D Eq. D-16" title="Part 75 Appendix D Eq. D-16" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>qtr</sub>
+                        </td>
+                        <td>
+                            = Total heat input from all fuels combusted during the quarter, mmBtu.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>qtr</sub>
+                        </td>
+                        <td>
+                            = Hourly heat input determined using Equation D-15, mmBtu.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="3.5.6" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        3.5.6&emsp;<em>Year-to-Date Heat Input</em>
+        <ul>
+            <li>
+                Calculate and record the total heat input in the year to date using Equation D-17.
+                <hr />
+                <img class="img-thumbnail" src="~/Content/Images/Part75AppD.30.jpg" alt="Part 75 Appendix D Eq. D-17" title="Part 75 Appendix D Eq. D-17" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>YTD</sub>
+                        </td>
+                        <td>
+                            = Total heat input for the year to date, mmBtu.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI<sub>qtr</sub>
+                        </td>
+                        <td>
+                            = Total heat input for the quarter, mmBtu.
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4 id="3.6" class="anchorPad">
+    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+    3.6&emsp;<em class="noStyle">Records and Reports</em>
+</h4>
+<ul>
+    <li>Calculate and record quarterly and cumulative SO<sub>2</sub> mass emissions and heat input for each calendar quarter using the procedures and equations of section <a href="#3.5">3.5</a> of this appendix. Calculate and record SO<sub>2</sub> emissions and heat input data using a data acquisition and handling system. Report these data in a standard electronic format specified by the Administrator.</li>
+</ul>
+<hr />
+<h4>Reference</h4>
+<p>
+    [58 FR 3701, Jan. 11, 1993, as amended at 60 FR 26548, 26551, May 17, 1995; 61 FR 25585, May 22, 1996; 61 FR 59166, Nov. 20, 1996; 63 FR 57513, Oct. 27, 1998; 64 FR 28652, May 26, 1999; 64 FR 37582, July 12, 1999; 67 FR 40460, 40472, June 12, 2002; 67 FR 53505, Aug. 16, 2002; 73 FR 4369, Jan. 24, 2008; 76 FR 17324, Mar. 28, 2011; 76 FR 20536, Apr. 13, 2011; 77 FR 2460, Jan. 18, 2012]
+</p>
