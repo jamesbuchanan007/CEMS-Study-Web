@@ -32,221 +32,414 @@
 </h2>
 <hr />
 <h3>
-    4.&emsp;Procedures for CO<sub>2</sub> Mass Emissions
+    5.&emsp;Procedures for Heat Input
 </h3>
 <hr />
 <div class="container" style="max-height: 200px; overflow: auto">
-    <a href="#4.1">4.1</a><br />
-    <a href="#4.2">4.2</a><br />
-    <a href="#4.3">4.3</a><br />
-    <a href="#4.4">4.4</a><br />
-    <a href="#4.4.1">4.4.1</a><br />
-    <a href="#4.4.2">4.4.2</a><br />
+    <a href="#5.1">5.1</a><br />
+    <a href="#5.2">5.2</a><br />
+    <a href="#5.2.1">5.2.1</a><br />
+    <a href="#5.2.2">5.2.2</a><br />
+    <a href="#5.2.3">5.2.3</a><br />
+    <a href="#5.2.4">5.2.4</a><br />
+    <a href="#5.3">5.3&emsp;Heat Input Summation (for Heat Input Determined Using a Flow Monitor and Diluent Monitor)</a><br />
+    <a href="#5.3.1">5.3.1</a><br />
+    <a href="#5.3.2">5.3.2</a><br />
+    <a href="#5.4">5.4</a><br />
+    <a href="#5.5">5.5</a><br />
+    <a href="#5.5.1">5.5.1</a><br />
+    <a href="#5.5.2">5.5.2</a><br />
+    <a href="#5.5.3">5.5.3</a><br />
+    <a href="#5.5.3.1">5.5.3.1</a><br />
+    <a href="#5.5.3.2">5.5.3.2</a><br />
+    <a href="#5.5.3.3">5.5.3.3</a><br />
+    <a href="#5.5.4">5.5.4</a><br />
+    <a href="#5.5.5">5.5.5</a><br />
+    <a href="#5.5.6">5.5.6</a><br />
+    <a href="#5.5.7">5.5.7</a><br />
 </div>
 <hr />
 <p>
-    Use the following procedures to convert continuous emission monitoring system measurements of CO<sub>2</sub> concentration (percentage) and volumetric flow rate (scfh) into CO<sub>2</sub> mass emissions (in tons/day) when the owner or operator uses a CO<sub>2</sub> continuous emission monitoring system (consisting of a CO<sub>2</sub> or O<sub>2</sub> pollutant monitor) and a flow monitoring system to monitor CO<sub>2</sub> emissions from an affected unit.
+    Use the following procedures to compute heat input rate to an affected unit (in mmBtu/hr or mmBtu/day):
 </p>
-<p id="4.1" class="anchorPad">
+
+<ul>
+    <li id="5.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.1&emsp;Calculate and record heat input rate to an affected unit on an hourly basis, except as provided in sections <a href="#5.5">5.5</a> through <a href="#5.5.7">5.5.7</a>. The owner or operator may choose to use the provisions specified in §75.16(e) or in section 2.1.2 of appendix D to this part in conjunction with the procedures provided in sections <a href="#5.6">5.6</a> through <a href="#5.6.2">5.6.2</a> to apportion heat input among each unit using the common stack or common pipe header.
+    </li>
+    <li id="5.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.2&emsp;For an affected unit that has a flow monitor (or approved alternate monitoring system under subpart E of this part for measuring volumetric flow rate) and a diluent gas (O2 or CO2) monitor, use the recorded data from these monitors and one of the following equations to calculate hourly heat input rate (in mmBtu/hr).
+        <ul>
+            <li id="5.2.1" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                5.2.1&emsp;When measurements of CO2 concentration are on a wet basis, use the following equation:
+                <hr />
+                <img id="Eq. F-15" class="img-thumbnail" src="~/Content/Images/Part75AppF.18.jpg" alt="Part 75 Appendix F Eq. F-15" title="Part 75 Appendix F Eq. F-15" />
+                <br />
+                <table>
+                    <tr>
+                        <th style="width: 100px">
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI
+                        </td>
+                        <td>= Hourly heat input rate during unit operation, mmBtu/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Q<sub>w</sub>
+                        </td>
+                        <td>= Hourly average volumetric flow rate during unit operation, wet basis, scfh.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            F<sub>c</sub>
+                        </td>
+                        <td>= Carbon-based F-factor, listed in section 3.3.5 of this appendix for each fuel, scf/mmBtu.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            %CO<sub>2w</sub>
+                        </td>
+                        <td>= Hourly concentration of CO2 during unit operation, percent CO2 wet basis.</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li id="5.2.2" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                5.2.2&emsp;When measurements of CO2 concentration are on a dry basis, use the following equation:
+                <hr />
+                <img id="Eq. F-16" class="img-thumbnail" src="~/Content/Images/Part75AppF.19.jpg" alt="Part 75 Appendix F Eq. F-16" title="Part 75 Appendix F Eq. F-16" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI
+                        </td>
+                        <td>= Hourly heat input rate during unit operation, mmBtu/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Q<sub>h</sub>
+                        </td>
+                        <td>= Hourly average volumetric flow rate during unit operation, wet basis, scfh.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            F<sub>c</sub>
+                        </td>
+                        <td>= Carbon-based F-Factor, listed in section 3.3.5 of this appendix for each fuel, scf/mmBtu.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            %CO<sub>2d</sub>
+                        </td>
+                        <td>= Hourly concentration of CO2 during unit operation, percent CO2 dry basis. </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            %H<sub>2</sub>O
+                        </td>
+                        <td>= Moisture content of gas in the stack, percent.</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li id="5.2.3" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                5.2.3&emsp;When measurements of O2 concentration are on a wet basis, use the following equation:
+                <hr />
+                <img id="Eq. F-17" class="img-thumbnail" src="~/Content/Images/Part75AppF.20.jpg" alt="Part 75 Appendix F Eq. F-17" title="Part 75 Appendix F Eq. F-17" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            HI
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Q<sub>w</sub>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            F
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            %O<sub>2w</sub>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            %H<sub>2</sub>O
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+            <li id="5.2.4" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                5.2.4&emsp;When measurements of O2 concentration are on a dry basis, use the following equation:
+                <hr />
+                <img id="Eq. F-18" class="img-thumbnail" src="~/Content/Images/Part75AppF.21.jpg" alt="Part 75 Appendix F Eq. F-18" title="Part 75 Appendix F Eq. F-18" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>HI</td>
+                        <td>= Hourly heat input rate during unit operation, mmBtu/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>Q<sub>w</sub></td>
+                        <td>= Hourly average volumetric flow during unit operation, wet basis, scfh.</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>= Dry basis F-factor, listed in section 3.3.5 of this appendix for each fuel, dscf/mmBtu.</td>
+                    </tr>
+                    <tr>
+                        <td>%H2O</td>
+                        <td>= Moisture content of the stack gas, percent.</td>
+                    </tr>
+                    <tr>
+                        <td>%O<sub>2d</sub></td>
+                        <td>= Hourly concentration of O2 during unit operation, percent O2 dry basis. </td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+</ul>
+<h4 id="5.3" class="anchorPad">
     <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-    4.1&emsp;When CO<sub>2</sub> concentration is measured on a wet basis, use the following equation to calculate hourly CO<sub>2</sub> mass emissions rates (in tons/hr):
-    <hr />
-    <img id="Eq. F-11" class="img-thumbnail" src="~/Content/Images/Part75AppF.13.jpg" alt="Part 75 Appendix F Eq. F-11" title="Part 75 Appendix F Eq. F-11" />
-    <br />
-    <table>
-        <tr>
-            <th>
-                Where:
-            </th>
-        </tr>
-        <tr>
-            <td>
-                E<sub>h</sub>
-            </td>
-            <td>= Hourly CO<sub>2</sub> mass emission rate during unit operation, tons/hr.</td>
-        </tr>
-        <tr>
-            <td>
-                K
-            </td>
-            <td> = 5.7 × 10<sup>−7</sup> for CO<sub>2</sub>, (tons/scf) /%CO<sub>2</sub>.</td>
-        </tr>
-        <tr>
-            <td>
-                C<sub>h</sub>
-            </td>
-            <td>= Hourly average CO<sub>2</sub> concentration during unit operation, wet basis, either measured directly with a CO<sub>2</sub> monitor or calculated from wet-basis O<sub>2</sub> data using Equation F-14b, percent CO<sub>2</sub>.</td>
-        </tr>
-        <tr>
-            <td>
-                Q<sub>h</sub>
-            </td>
-            <td>= Hourly average volumetric flow rate during unit operation, wet basis, scfh.</td>
-        </tr>
-    </table>
-    <hr />
-</p>
-<p id="4.2" class="anchorPad">
+    5.3&emsp;<em class="noStyle">Heat Input Summation (for Heat Input Determined Using a Flow Monitor and Diluent Monitor)</em>
+</h4>
+<ul>
+    <li id="5.3.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.3.1&emsp;Calculate total quarterly heat input for a unit or common stack using a flow monitor and diluent monitor to calculate heat input, using the following equation:
+        <hr />
+        <img id="Eq. F-18a" class="img-thumbnail" src="~/Content/Images/Part75AppF.22.jpg" alt="Part 75 Appendix F Eq. F-18a" title="Part 75 Appendix F Eq. F-18a" />
+        <br />
+        <table>
+            <tr>
+                <th>
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>HI<sub>q</sub></td>
+                <td>= Total heat input for the quarter, mmBtu.</td>
+            </tr>
+            <tr>
+                <td>HI<sub>i</sub></td>
+                <td>= Hourly heat input rate during unit operation, using Equation <a href="#Eq. F-15" style="text-decoration: none">F-15</a>, <a href="#Eq. F-16" style="text-decoration: none">F-16</a>, <a href="#Eq. F-17" style="text-decoration: none">F-17</a>, or <a href="#Eq. F-18" style="text-decoration: none">F-18</a>, mmBtu/hr.</td>
+            </tr>
+            <tr>
+                <td>t<sub>i</sub></td>
+                <td>= Hourly operating time for the unit or common stack, hour or fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
+            </tr>
+
+        </table>
+        <hr />
+    </li>
+    <li id="5.3.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.3.2&emsp;Calculate total cumulative heat input for a unit or common stack using a flow monitor and diluent monitor to calculate heat input, using the following equation:
+        <hr />
+        <img id="Eq. F-18b" class="img-thumbnail" src="~/Content/Images/Part75AppF.23.jpg" alt="Part 75 Appendix F Eq. F-18b" title="Part 75 Appendix F Eq. F-18b" />
+        <br />
+        <table>
+            <tr>
+                <th>
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>HI<sub>c</sub></td>
+                <td>= Total heat input for the year to date, mmBtu.</td>
+            </tr>
+            <tr>
+                <td>HI<sub>q</sub></td>
+                <td>= Total heat input for the quarter, mmBtu.</td>
+            </tr>
+
+        </table>
+        <hr />
+    </li>
+</ul>
+<h4 id="5.4" class="anchorPad">
     <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-    4.2&emsp;When CO<sub>2</sub> concentration is measured on a dry basis, use Equation F-2 to calculate the hourly CO<sub>2</sub> mass emission rate (in tons/hr) with a K-value of 5.7 × 10<sup>−7</sup> (tons/scf) percent CO<sub>2</sub>, where E<sub>h</sub> = hourly CO<sub>2</sub> mass emission rate, tons/hr and C<sub>hp</sub> = hourly average CO<sub>2</sub> concentration in flue, dry basis, percent CO<sub>2</sub>.
-</p>
-<p id="4.3" class="anchorPad">
+    5.4&emsp;[Reserved]
+</h4>
+<h4 id="5.5" class="anchorPad">
     <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-    4.3&emsp;Use the following equations to calculate total CO<sub>2</sub> mass emissions for each calendar quarter (Equation <a href="#Eq. F-12">F-12</a>) and for each calendar year (Equation <a href="#Eq. F-13">F-13</a>):
-    <hr />
-    <img id="Eq. F-12" class="img-thumbnail" src="~/Content/Images/Part75AppF.14.jpg" alt="Part 75 Appendix F Eq. F-12" title="Part 75 Appendix F Eq. F-12" />
-    <br />
-    <table>
-        <tr>
-            <th>
-                Where:
-            </th>
-        </tr>
-        <tr>
-            <td>
-                E<sub>CO<sub>2</sub>q</sub>
-            </td>
-            <td>= Quarterly total CO<sub>2</sub> mass emissions, tons.</td>
-        </tr>
-        <tr>
-            <td>
-                E<sub>h</sub>
-            </td>
-            <td>= Hourly CO<sub>2</sub> mass emission rate, tons/hr.</td>
-        </tr>
-        <tr>
-            <td>
-                t<sub>h</sub>
-            </td>
-            <td>= Unit operating time, in hours or fraction of an hour (in equal increments that can range from one hundredth to one quarter of an hour, at the option of the owner or operator).</td>
-        </tr>
-        <tr>
-            <td>
-                H<sub>R</sub>
-            </td>
-            <td>= Number of hourly CO<sub>2</sub> mass emission rates available during calendar quarter. </td>
-        </tr>
-    </table>
-    <hr />
-    <img id="Eq. F-13" class="img-thumbnail" src="~/Content/Images/Part75AppF.15.jpg" alt="Part 75 Appendix F Eq. F-13" title="Part 75 Appendix F Eq. F-13" />
-    <br />
-    <table>
-        <tr>
-            <th>
-                Where:
-            </th>
-        </tr>
-        <tr>
-            <td>
-                E<sub>CO<sub>2</sub>a</sub>
-            </td>
-            <td>= Annual total CO<sub>2</sub> mass emissions, tons.</td>
-        </tr>
-        <tr>
-            <td>
-                E<sub>CO<sub>2</sub>q</sub>
-            </td>
-            <td>= Quarterly total CO<sub>2</sub> mass emissions, tons.</td>
-        </tr>
-        <tr>
-            <td>
-                q
-            </td>
-            <td>= Quarters for which ECO<sub>2</sub>q are available during calendar year.</td>
-        </tr>
-    </table>
-    <hr />
-</p>
-<p id="4.4" class="anchorPad">
-    <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-    4.4&emsp;For an affected unit, when the owner or operator is continuously monitoring O<sub>2</sub> concentration (in percent by volume) of flue gases using an O<sub>2</sub> monitor, use the equations and procedures in section <a href="#4.4.1">4.4.1</a> and <a href="#4.4.2">4.4.2</a> of this appendix to determine hourly CO<sub>2</sub> mass emissions (in tons).
-    <ul>
-        <li id="4.4.1" class="anchorPad">
-            <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-            4.4.1&emsp;If the owner or operator elects to use data from an O<sub>2</sub> monitor to calculate CO<sub>2</sub> concentration, the appropriate F and FC factors from section 3.3.5 of this appendix shall be used in one of the following equations (as applicable) to determine hourly average CO<sub>2</sub> concentration of flue gases (in percent by volume) from the measured hourly average O<sub>2</sub> concentration:
-            <hr />
-            <img id="Eq. F-14a" class="img-thumbnail" src="~/Content/Images/Part75AppF.16.jpg" alt="Part 75 Appendix F Eq. F-14a" title="Part 75 Appendix F Eq. F-14a" />
-            <br />
-            <table>
-                <tr>
-                    <th>
-                        Where:
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        CO<sub>2d</sub>
-                    </td>
-                    <td>= Hourly average CO<sub>2</sub> concentration during unit operation, percent by volume, dry basis. </td>
-                </tr>
-                <tr>
-                    <td>
-                        F, F<sub>c</sub>
-                    </td>
-                    <td>= F-factor or carbon-based F<sub>c</sub>-factor from section 3.3.5 of this appendix.</td>
-                </tr>
-                <tr>
-                    <td>
-                        20.9
-                    </td>
-                    <td>= Percentage of O<sub>2</sub> in ambient air. </td>
-                </tr>
-                <tr>
-                    <td>
-                        O<sub>2d</sub>
-                    </td>
-                    <td>= Hourly average O<sub>2</sub> concentration during unit operation, percent by volume, dry basis. </td>
-                </tr>
-            </table>
-            <hr />
-            <img id="Eq. F-14b" class="img-thumbnail" src="~/Content/Images/Part75AppF.17.jpg" alt="Part 75 Appendix F Eq. F-14b" title="Part 75 Appendix F Eq. F-14b" />
-            <br />
-            <table>
-                <tr>
-                    <th>
-                        Where:
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        CO<sub>2w</sub>
-                    </td>
-                    <td>= Hourly average CO<sub>2</sub> concentration during unit operation, percent by volume, wet basis. </td>
-                </tr>
-                <tr>
-                    <td>
-                        O<sub>2w</sub>
-                    </td>
-                    <td>= Hourly average O<sub>2</sub> concentration during unit operation, percent by volume, wet basis. </td>
-                </tr>
-                <tr>
-                    <td>
-                        F, F<sub>c</sub>
-                    </td>
-                    <td>= F-factor or carbon-based FC-factor from section 3.3.5 of this appendix. </td>
-                </tr>
-                <tr>
-                    <td>
-                        20.9
-                    </td>
-                    <td>= Percentage of O<sub>2</sub> in ambient air. </td>
-                </tr>
-                <tr>
-                    <td>
-                        %H<sub>2</sub>O
-                    </td>
-                    <td>= Moisture content of gas in the stack, percent. </td>
-                </tr>
-            </table>
-            <hr />
-            For any hour where Equation <a href="#Eq. F-14a">F-14a</a> or <a href="#Eq. F-14b">F-14b</a> results in a negative hourly average CO<sub>2</sub> value, 0.0% CO<sub>2w</sub> shall be recorded as the average CO<sub>2</sub> value for that hour.
-        </li>
-        <li id="4.4.2" class="anchorPad">
-            <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
-            4.4.2&emsp;Determine CO<sub>2</sub> mass emissions (in tons) from hourly average CO<sub>2</sub> concentration (percent by volume) using equation <a href="#Eq. F-11">F-11</a> and the procedure in section 4.1, where O<sub>2</sub> measurements are on a wet basis, or using the procedures in section <a href="#4.2">4.2</a> of this appendix, where O<sub>2</sub> measurements are on a dry basis.
-        </li>
-    </ul>
-</p>
+    5.5&emsp;For a gas-fired or oil-fired unit that does not have a flow monitor and is using the procedures specified in appendix D to this part to monitor SO2 emissions or for any unit using a common stack for which the owner or operator chooses to determine heat input by fuel sampling and analysis, use the following procedures to calculate hourly heat input rate in mmBtu/hr. The procedures of section 5.5.3 of this appendix shall not be used to determine heat input from a coal unit that is required to comply with the provisions of this part for monitoring, recording, and reporting NOX mass emissions under a State or federal NOX mass emission reduction program.
+</h4>
+<ul>
+    <li id="5.5.1" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.5.1
+        <ol type="a">
+            <li>
+                When the unit is combusting oil, use the following equation to calculate hourly heat input rate:
+                <hr />
+                <img id="Eq. F-19" class="img-thumbnail" src="~/Content/Images/Part75AppF.24.jpg" alt="Part 75 Appendix F Eq. F-19" title="Part 75 Appendix F Eq. F-19" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>HI<sub>o</sub></td>
+                        <td>= Hourly heat input rate from oil, mmBtu/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>M<sub>o</sub></td>
+                        <td>= Mass rate of oil consumed per hour, as determined using procedures in appendix D to this part, in lb/hr, tons/hr, or kg/hr.</td>
+                    </tr>
+                    <tr>
+                        <td>GCV<sub>o</sub></td>
+                        <td>= Gross calorific value of oil, as measured by ASTM D240-00, ASTM D5865-01a, ASTM D5865-10, or ASTM D4809-00 for each oil sample under section 2.2 of appendix D to this part, Btu/unit mass (all incorporated by reference under §75.6).</td>
+                    </tr>
+                    <tr>
+                        <td>10<sup>6</sup></td>
+                        <td>= Conversion of Btu to mmBtu.</td>
+                    </tr>
+
+                </table>
+                <hr />
+            </li>
+            <li>
+                When performing oil sampling and analysis solely for the purpose of the missing data procedures in §75.36, oil samples for measuring GCV may be taken weekly, and the procedures specified in appendix D to this part for determining the mass rate of oil consumed per hour are optional.
+            </li>
+        </ol>
+    </li>
+    <li id="5.5.2" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.5.2&emsp;When the unit is combusting gaseous fuels, use the following equation to calculate heat input rate from gaseous fuels for each hour:
+        <hr />
+        <img id="Eq. F-20" class="img-thumbnail" src="~/Content/Images/Part75AppF.25.jpg" alt="Part 75 Appendix F Eq. F-20" title="Part 75 Appendix F Eq. F-20" />
+        <br />
+        <table>
+            <tr>
+                <th>
+                    Where:
+                </th>
+            </tr>
+            <tr>
+                <td>HI<sub>g</sub></td>
+                <td>= Hourly heat input rate from gaseous fuel, mmBtu/hour.</td>
+            </tr>
+            <tr>
+                <td>Q<sub>g</sub></td>
+                <td>= Metered flow rate of gaseous fuel combusted during unit operation, hundred standard cubic feet per hour.</td>
+            </tr>
+            <tr>
+                <td>GCV<sub>g</sub></td>
+                <td>= Gross calorific value of gaseous fuel, as determined by sampling (for each delivery for gaseous fuel in lots, for each daily gas sample for gaseous fuel delivered by pipeline, for each hourly average for gas measured hourly with a gas chromatograph, or for each monthly sample of pipeline natural gas, or as verified by the contractual supplier at least once every month pipeline natural gas is combusted, as specified in section 2.3 of appendix D to this part) using ASTM D1826-94 (Reapproved 1998), ASTM D3588-98, ASTM D4891-89 (Reapproved 2006), GPA Standard 2172-96 Calculation of Gross Heating Value, Relative Density and Compressibility Factor for Natural Gas Mixtures from Compositional Analysis, or GPA Standard 2261-00 Analysis for Natural Gas and Similar Gaseous Mixtures by Gas Chromatography, Btu/100 scf (all incorporated by reference under §75.6 of this part). </td>
+            </tr>
+            <tr>
+                <td>10<sup>6</sup></td>
+                <td>= Conversion of Btu to mmBtu.</td>
+            </tr>
+
+        </table>
+        <hr />
+    </li>
+    <li id="5.5.3" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.5.3&emsp;When the unit is combusting coal, use the procedures, methods, and equations in sections <a href="#5.5.3.1" style="text-decoration: none">5.5.3.1</a>-<a href="#5.5.3.3" style="text-decoration: none">5.5.3.3</a> of this appendix to determine the heat input from coal for each 24-hour period. (All ASTM methods are incorporated by reference under §75.6 of this part.)
+        <ul>
+            <li id="5.5.3.1" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                5.5.3.1&emsp;Perform coal sampling daily according to section 5.3.2.2 in Method 19 in appendix A to part 60 of this chapter and use ASTM D2234-00, Standard Practice for Collection of a Gross Sample of Coal, (incorporated by reference under §75.6 of this part) Type I, Conditions A, B, or C and systematic spacing for sampling. (When performing coal sampling solely for the purposes of the missing data procedures in §75.36, use of ASTM D2234-00 is optional, and coal samples may be taken weekly.)
+            </li>
+            <li id="5.5.3.2" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                5.5.3.2&emsp;All ASTM methods are incorporated by reference under §75.6. Use ASTM D2013-01 for preparation of a daily coal sample and analyze each daily coal sample for gross calorific value using ASTM D5865-01a or ASTM D5865-10. On-line coal analysis may also be used if the on-line analytical instrument has been demonstrated to be equivalent to the applicable ASTM methods under §§75.23 and 75.66.
+            </li>
+            <li id="5.5.3.3" class="anchorPad">
+                <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+                5.5.3.3&emsp;Calculate the heat input from coal using the following equation:
+                <hr />
+                <img id="Eq. F-21" class="img-thumbnail" src="~/Content/Images/Part75AppF.26.jpg" alt="Part 75 Appendix F Eq. F-21" title="Part 75 Appendix F Eq. F-21" />
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            Where:
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>HI<sub>c</sub></td>
+                        <td>= Daily heat input from coal, mmBtu/day.</td>
+                    </tr>
+                    <tr>
+                        <td>M<sub>c</sub></td>
+                        <td>= Mass of coal consumed per day, as measured and recorded in company records, tons.</td>
+                    </tr>
+                    <tr>
+                        <td>GCV<sub>c</sub></td>
+                        <td>= Gross calorific value of coal sample, as measured by ASTM D3176-89 (Reapproved 2002), ASTM D5865-01a, or ASTM D5865-10, Btu/lb (incorporated by reference under §75.6).</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>= Conversion of Btu/lb to mmBtu/ton.</td>
+                    </tr>
+                </table>
+                <hr />
+            </li>
+        </ul>
+    </li>
+    <li id="5.5.4" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.5.4&emsp;For units obtaining heat input values daily instead of hourly, apportion the daily heat input using the fraction of the daily steam load or daily unit operating load used each hour in order to obtain HIi for use in the above equations. Alternatively, use the hourly mass of coal consumed in equation <a href="#Eq. F-21" style="text-decoration: none">F-21</a>.
+    </li>
+    <li id="5.5.5" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.5.5   If a daily fuel sampling value for gross calorific value is not available, substitute the maximum gross calorific value measured from the previous 30 daily samples. If a monthly fuel sampling value for gross calorific value is not available, substitute the maximum gross calorific value measured from the previous 3 monthly samples.
+    </li>
+    <li id="5.5.6" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.5.6&emsp;If a fuel flow value is not available, use the fuel flowmeter missing data procedures in section 2.4 of appendix D of this part. If a daily coal consumption value is not available, substitute the maximum fuel feed rate during the previous thirty days when the unit burned coal.
+    </li>
+    <li id="5.5.7" class="anchorPad">
+        <a href="#BackToTop" title="Back to Top"><span class="fa fa-chevron-up"></span></a>
+        5.5.7 Results for samples must be available no later than thirty calendar days after the sample is composited or taken. However, during an audit, the Administrator may require that the results be available in five business days, or sooner if practicable.
+    </li>
+</ul>
 <hr />
 <h4>Reference</h4>
 <p>
