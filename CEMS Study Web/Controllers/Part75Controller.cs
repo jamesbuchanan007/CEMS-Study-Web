@@ -35,7 +35,7 @@ namespace CEMS_Study_Web.Controllers
         //public ActionResult Part75(string sectionNumber)
         //{
         //    //GET OBJECT
-        //    var firstRow = db.Part75.First(x => x.SectionNumber == sectionNumber);
+        //    var firstRow = db.Part75.FirstOrDefault(x => x.SectionNumber == sectionNumber);
 
         //    //LOAD VIEW MODEL
         //    Part75ViewModel vm = new Part75ViewModel
