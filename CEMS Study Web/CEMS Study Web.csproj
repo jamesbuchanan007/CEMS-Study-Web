@@ -516,6 +516,7 @@
     <Content Include="Views\Part75\Part75AppB2.cshtml" />
     <Content Include="Views\Part75\Part75AppD2.cshtml" />
     <Content Include="Views\Part75\Part75AppD3.cshtml" />
+    <Content Include="Views\Part75\Part75_74.cshtml" />
     <Resource Include="Resources\industry-1827884_1920.jpg" />
     <Resource Include="Resources\power-plant-97119_1920.jpg" />
     <Resource Include="Resources\industry-406905_1920.jpg" />
