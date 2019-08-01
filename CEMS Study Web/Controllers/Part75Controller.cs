@@ -34,8 +34,10 @@ namespace CEMS_Study_Web.Controllers
         [Route("Part75/{sectionNumber?}")]
         public ActionResult Part75(string sectionNumber)
         {
+            var sectionNum = sectionNumber ?? "75.1";
+
             //GET OBJECT
-            var firstRow = db.Part75.FirstOrDefault(x => x.SectionNumber == sectionNumber);
+            var firstRow = db.Part75.FirstOrDefault(x => x.SectionNumber == sectionNum);
 
             //LOAD VIEW MODEL
             Part75ViewModel vm = new Part75ViewModel
