@@ -1,78 +1,2478 @@
-﻿@model dynamic
+﻿<style>
+    .img-thumbnail {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-@{
-    ViewBag.Title = "Acronyms";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    var site = "http://placeimg.com/180/150/any";
-
-}
-<div class="container-fluid">
-    <!--NAME OF FILE-->
-    <h1>| @ViewBag.Title</h1>
-    <hr />
-    <div class="row">
-        <div class="col-md-9">
-            <img class="img-responsive" src="~/Resources/keyboard-70506_1280.jpg" />
-            <hr />
-            <!--BREADCRUMB-->
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<h2>
+    Subpart B — Monitoring Provisions
+</h2>
+<hr />
+<h3>
+    § 75.19 &emsp;Optional SO<sub>2</sub>, NO<sub>x</sub>, and CO<sub>2</sub> Emissions Calculation for Low Mass Emissions (LME) Units
+</h3>
+<ol type="a">
+    <li>
+        <em>Applicability and Qualification</em>.
+        <ol>
+            <li>
+                For units that meet the requirements
+                of this paragraph (a)(1) and paragraphs
+                (a)(2) and (b) of this section, the low
+                mass emissions (LME) excepted methodology
+                in paragraph (c) of this section
+                may be used in lieu of continuous emission
+                monitoring systems or, if applicable,
+                in lieu of methods under appendices
+                D, E, and G to this part, for the
+                purpose of determining unit heat input,
+                NO<sub>x</sub>, SO<sub>2</sub>, and CO<sub>2</sub> mass emissions, and
+                NO<sub>x</sub> emission rate under this part. If
+                the owner or operator of a qualifying
+                unit elects to use the LME methodology,
+                it must be used for all parameters
+                that are required to be monitored
+                by the applicable program(s). For example,
+                for an Acid Rain Program LME
+                unit, the methodology must be used to
+                estimate SO<sub>2</sub>, NO<sub>x</sub>, and CO<sub>2</sub> mass emissions,
+                NO<sub>x</sub> emission rate, and unit heat
+                input.
+                <ol type="i">
+                    <li>
+                        A low mass emissions unit is an
+                        affected unit that is gas-fired, or oilfired
+                        (as defined in § 72.2 of this chapter),
+                        and for which:
+                        <ol type="A">
+                            <li>
+                                An initial demonstration is provided,
+                                in accordance with paragraph
+                                (a)(2) of this section, which shows that
+                                the unit emits:
+                                <ol>
+                                    <li>
+                                        No more than 25 tons of SO<sub>2</sub> annually
+                                        and less than 100 tons of NO<sub>x</sub> annually,
+                                        for Acid Rain Program affected
+                                        units. If the unit is also subject to the
+                                        provisions of subpart H of this part, no
+                                        more than 50 of the allowable annual
+                                        tons of NO<sub>x</sub> may be emitted during the
+                                        ozone season; or
+                                    </li>
+                                    <li>
+                                        Less than 100 tons of NO<sub>x</sub> annually
+                                        and no more than 50 tons of NO<sub>x</sub>
+                                        during the ozone season, for non-Acid
+                                        Rain Program units subject to the provisions
+                                        of subpart H of this part, for
+                                        which the owner or operator reports
+                                        emissions data on a year-round basis,
+                                        in accordance with <a href="~/Part75/75.74" style="text-decoration: none">§75.74</a>(a) or
+                                        <a href="~/Part75/75.74" style="text-decoration: none">§75.74</a>(b); or
+                                    </li>
+                                    <li>
+                                        No more than 50 tons of NO<sub>x</sub> per
+                                        ozone season, for non-Acid Rain Program
+                                        units subject to the provisions of
+                                        subpart H of this part, for which the
+                                        owner or operator reports emissions
+                                        data only during the ozone season, in
+                                        accordance with <a href="~/Part75/75.74" style="text-decoration: none">§75.74</a>(b); and
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                An annual demonstration is provided
+                                thereafter, using one of the allowable
+                                methodologies in paragraph (c)
+                                of this section, showing that the low
+                                mass emissions unit continues to emit
+                                no more than the applicable number of
+                                tons of SO<sub>2</sub> and/or NO<sub>x</sub> specified in
+                                paragraph (a)(1)(i)(A) of this section.
+                            </li>
+                            <li>
+                                This paragraph, (a)(1)(i)(C), applies
+                                only to a unit that is subject to
+                                an SO<sub>2</sub> emission limitation under the
+                                Acid Rain Program, and that combusts
+                                a gaseous fuel other than pipeline natural
+                                gas or natural gas (as defined in
+                                § 72.2 of this chapter). The owner or operator
+                                of such a unit must quantify the
+                                sulfur content and variability of the
+                                gaseous fuel by performing the demonstration
+                                described in section <a href="~/Part75/AppD.2#2.3.6" style="text-decoration: none">2.3.6</a> of
+                                appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> to this part, in order for
+                                the unit to qualify for LME unit status.
+                                If the results of that demonstration
+                                show that the gaseous fuel qualifies
+                                under paragraph (b) of section 2.3.6
+                                to use a default SO<sub>2</sub> emission rate to
+                                report SO<sub>2</sub> mass emissions under this
+                                part, the unit is eligible for LME unit
+                                status.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Each qualifying LME unit must
+                        start using the low mass emissions excepted
+                        methodology as follows:
+                        <ol type="A">
+                            <li>
+                                For a unit that reports emission
+                                data on a year-round basis, begin using
+                                the methodology in the first unit operating
+                                hour in the calendar year designated
+                                in the certification application
+                                as the first year that the methodology
+                                will be used; or
+                            </li>
+                            <li>
+                                For a unit that is subject to Subpart
+                                H of this part and that reports
+                                only during the ozone season according
+                                to <a href="~/Part75/75.74" style="text-decoration: none">§75.74</a>(c), begin using the methodology
+                                in the first unit operating hour
+                                in the ozone season designated in the
+                                certification application as the first
+                                ozone season that the methodology will
+                                be used.
+                            </li>
+                            <li>
+                                For a new or newly-affected unit,
+                                see paragraph (b)(4) of this section for
+                                additional guidance.
+                            </li>
+                        </ol>
+                    </li>
                 </ol>
-            </nav>
+            </li>
 
-            <!--ACRONYM-->
-            <div class="form-group col-md-3">
-                <label for="AcronymList">Acronyms List</label>
-                <select class="form-control form-control-static" id="AcronymList">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <!--ACRONYM MEANING-->
-            <div class="form-group col-md-9">
-                <label for="AcronymTextArea">Acronym Name</label>
-                <textarea class="form-control" id="AcronymTextArea" rows="3" style="min-width: 100%">This is the meaning of the acronym</textarea>
-            </div>
-            <hr />
-        </div>
+            <li>
+                A unit may initially qualify as a
+                low mass emissions unit if the designated
+                representative submits a certification
+                application to use the LME
+                methodology (as described in
+                <a href="~/Part75/75.63" style="text-decoration: none">§75.63</a>(a)(1)(ii) and in this paragraph,
+                (a)(2)) and the Administrator (or permitting
+                authority, as applicable) certifies
+                the use of such methodology. The
+                certification application shall be submitted
+                no later than 45 days prior to
+                the date on which use of the low mass
+                emissions methodology is expected to
+                commence, and the application must
+                contain:
+                <ol type="i">
+                    <li>
+                        A statement identifying the projected
+                        date on which the LME methodology
+                        will first be used. The projected
+                        commencement date shall be consistent
+                        with paragraphs (a)(1)(ii) and
+                        (b)(4) of this section, as applicable; and
+                    </li>
+                    <li>
+                        Either:
+                        <ol type="A">
+                            <li>
+                                Actual SO<sub>2</sub> and/or NO<sub>x</sub> mass
+                                emissions data (as applicable) for each
+                                of the three calendar years (or ozone
+                                seasons) prior to the calendar year in
+                                which the certification application is
+                                submitted demonstrating to the satisfaction
+                                of the Administrator or (if applicable)
+                                the permitting authority,
+                                that the unit emitted less than the applicable
+                                number of tons of SO<sub>2</sub> and/or
+                                NO<sub>x</sub> specified in paragraph (a)(1)(i)(A)
+                                of this section. For the purposes of this
+                                paragraph, (a)(2)(ii)(A), the required actual
+                                SO<sub>2</sub> or NO<sub>x</sub> mass emissions for
+                                each qualifying year or ozone season
+                                shall be determined using the SO<sub>2</sub>, NO<sub>x</sub>
+                                and heat input data reported to the Administrator
+                                in the electronic quarterly
+                                reports required under <a href="~/Part75/75.64" style="text-decoration: none">§75.64</a> or under
+                                the Ozone Transport Commission (OTC)
+                                NO<sub>x</sub> Budget Trading Program. Notwithstanding
+                                this requirement, in the
+                                absence of such electronic reports, an
+                                estimate of the actual emissions for
+                                each of the previous three years (or
+                                ozone seasons) shall be provided, using
+                                either the maximum rated heat input
+                                methodology described in paragraph
+                                (c)(3)(i) of this section or procedures
+                                consistent with the long term fuel flow
+                                heat input methodology described in
+                                paragraph (c)(3)(ii) of this section, in
+                                conjunction with the appropriate SO<sub>2</sub>
+                                or NO<sub>x</sub> emission rate from paragraph
+                                (c)(1)(i) of this section for SO<sub>2</sub>, and
+                                paragraph (c)(1)(ii) or (c)(1)(iv) of this
+                                section for NO<sub>x</sub>. Alternatively, the initial
+                                estimate of the NO<sub>x</sub> emission rate
+                                may be based on historical emission
+                                test data that is representative of operation
+                                at normal load or historical data
+                                from a CEMS certified under part 60 of
+                                this chapter or under a state CEM program;
+                                or
+                            </li>
+                            <li>
+                                When the three full years (or
+                                ozone seasons) of actual SO<sub>2</sub> and NO<sub>x</sub>
+                                mass emissions data (or reliable estimates
+                                thereof) described under paragraph
+                                (a)(2)(ii)(A) of this section do not
+                                exist, the designated representative
+                                may submit an application to use the
+                                low mass emissions excepted methodology
+                                based upon a combination of actual
+                                historical SO<sub>2</sub> and NO<sub>x</sub> mass emissions
+                                data and projected SO<sub>2</sub> and NO<sub>x</sub>
+                                mass emissions, totaling three years
+                                (or ozone seasons). Except as provided
+                                in paragraph (a)(3) of this section, actual
+                                data must be used for any years
+                                (or ozone seasons) in which such data
+                                exists and projected data should be
+                                used for any remaining future years (or
+                                ozone seasons) needed to provide emissions
+                                data for three consecutive calendar
+                                years (or ozone seasons). For example,
+                                if a unit commenced operation
+                                two years ago, the designated representative
+                                may submit actual, historical
+                                data for the previous two years
+                                and one year of projected emissions for
+                                the current calendar year or, for a new
+                                unit, the designated representative
+                                may submit three years of projected
+                                emissions, beginning with the current
+                                calendar year. Any actual or projected
+                                annual emissions must demonstrate to
+                                the satisfaction of the Administrator
+                                that the unit will emit less than the
+                                applicable number of tons of SO<sub>2</sub> and/or
+                                NO<sub>x</sub> specified in paragraph (a)(1)(i)(A)
+                                of this section. Projected emissions
+                                shall be calculated using either the appropriate
+                                default emission rates from
+                                paragraphs (c)(1)(i) and (c)(1)(ii) of this
+                                section (or, alternatively for NO<sub>x</sub>, a
+                                conservative estimate of the NO<sub>x</sub> emission
+                                rate, as described in paragraph
+                                (a)(4) of this section), in conjunction
+                                with projections of unit operating
+                                hours or fuel type and fuel usage, according
+                                to one of the allowable calculation
+                                methodologies in paragraph (c) of
+                                this section; and
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        A description of the methodology
+                        from paragraph (c) of this section
+                        that will be used to demonstrate ongoing
+                        compliance under paragraph (b)
+                        of this section; and
+                    </li>
+                    <li>
+                        Appropriate documentation demonstrating
+                        that the unit is eligible to
+                        use projected emissions to qualify for
+                        LME status under paragraph (a)(3) of
+                        this section (if applicable).
 
-        <!--SIDE WELL FOR SPONSORED / GOOGLE ADS-->
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading"><p class="text-center">Sponsored Listings / Google Ads</p></div>
-                <div class="panel-body text-center">
-                    <a href="#" style="text-decoration: none">
-                        <img class="img-thumbnail" src="@site" alt="Business 1" title="Business 1" />
-                    </a>
-                    <a href="#" style="font: white; text-decoration: none">
-                        <img class="img-thumbnail" src="@site" alt="Business 2" title="Business 2" />
-                    </a>
-                    <a href="#" style="font: white; text-decoration: none">
-                        <img class="img-thumbnail" src="@site" alt="Business 3" title="Business 3" />
-                    </a>
-                </div>
-                <div class="panel panel-footer">
-                    <p>
-                        If you would like to advertise your CEMS business here, please inquire via the Marketing link.
-                    </p>
-                    <p>
-                        @*TRIGGER CONTACT MODAL*@
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MarketingModal">Marketing &raquo;</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr />
-    <!--GOOGLE ADDS BOTTOM OF PAGE-->
-    <div class="well text-center">
-        <h2>Google Ads Here</h2>
-    </div>
-</div>
+
+                    </li>
+                </ol>
 
 
+            </li>
+            <li>
+                In the following circumstances,
+                projected emissions for a future year
+                (or years) may be used in lieu of the actual
+                emissions data from one (or more)
+                of the three years (or ozone seasons)
+                preceding the year of the certification
+                application:
+                <ol type="i">
+                    <li>
+                        If the owner or operator takes an
+                        enforceable permit restriction on the
+                        number of annual or ozone season unit
+                        operating hours for the future year (or
+                        years), such that the unit will emit no
+                        more than the applicable number of
+                        tons of SO<sub>2</sub> and/or NO<sub>x</sub> specified in
+                        paragraph (a)(1)(i)(A) of this section; or
+                    </li>
+                    <li>
+                        If the actual emissions for one (or
+                        more) of the three years (or ozone seasons)
+                        prior to the year of the certification
+                        application is not representative
+                        of the present and expected future
+                        emissions from the unit, because the
+                        owner or operator has recently installed
+                        emission controls on the unit.
+                    </li>
+                </ol>
+
+
+            </li>
+            <li>
+                When the owner or operator elects
+                to demonstrate initial LME qualification
+                and on-going compliance using a
+                fuel-and-unit-specific NO<sub>x</sub> emission
+                (c)(1)(iv) of this section, there will be
+                instances (e.g., for a new or newly-affected
+                unit) where it is not possible to
+                determine that NO<sub>x</sub> emission rate prior
+                to submitting the certification application.
+                In such cases, if the generic default
+                NO<sub>x</sub> emission rates in Table LM–
+                2 of this section are inappropriately
+                high for the unit, the owner or operator
+                may use a more representative,
+                but conservatively high estimate of the
+                expected NO<sub>x</sub> emission rate, for the
+                purposes of the initial monitoring plan
+                submittal and to calculate the unit’s
+                projected annual or ozone season emissions
+                under paragraph (a)(2)(ii)(B) of
+                this section. For example, the NO<sub>x</sub>
+                emission rate could, as described in
+                paragraph (a)(2)(ii)(A) of this section,
+                be estimated using historical CEM data
+                or historical emission test data that is
+                representative of operation at normal
+                load. The NO<sub>x</sub> emission limit specified
+                in the operating permit for the unit
+                could also be used to estimate the NO<sub>x</sub>
+                emission rate (except for units
+                equipped with SCR or SNCR), or, consistent
+                with paragraph (c)(1)(iv)(C)(4) of
+                this section, for a unit that uses SCR
+                or SNCR to control NO<sub>x</sub> emissions, an
+                estimated default NO<sub>x</sub> emission rate of
+                0.15 lb/mmBtu could be used. However,
+                these estimated NO<sub>x</sub> emission rates
+                may not be used for reporting purposes
+                in the time period extending from the
+                first hour in which the LME methodology
+                is used to the date and hour on
+                which the fuel-and-unit-specific NO<sub>x</sub>
+                emission rate testing is completed.
+                Rather, in that interval, the owner or
+                operator shall either report the appropriate
+                default NO<sub>x</sub> emission rate from
+                Table LM–2, or shall report the maximum
+                potential NO<sub>x</sub> emission rate, calculated
+                in accordance with § 72.2 of this
+                chapter and section <a href="~/Part75/AppA.2#2.1.2.1" style="text-decoration: none">2.1.2.1</a> of appendix
+                <a href="~/Part75/AppA.1" style="text-decoration: none">A</a> to this part. Then, beginning with
+                the first unit operating hour after completion
+                of the tests, the appropriate default
+                NO<sub>x</sub> emission rate(s) obtained
+                from the fuel-and-unit-specific testing
+                shall be used for emissions reporting.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <em>On-Going Qualification and Disqualification</em>.
+        <ol>
+            <li>
+                Once a low mass emissions
+                unit has qualified for and has started
+                using the low mass emissions excepted
+                methodology, an annual demonstration
+                is required, showing that the unit continues
+                to emit no more than the applicable
+                number of tons of SO<sub>2</sub> and/or NO<sub>x</sub>
+                specified in paragraph (a)(1)(i)(A) of
+                this section. The calculation methodology
+                used for the annual demonstration
+                shall be the methodology described
+                in the certification application
+                under paragraph (a)(2)(iii) of this section.
+            </li>
+            <li>
+                If any low mass emissions unit
+                fails to provide the required annual
+                demonstration under paragraph (b)(1)
+                of this section, such that the calculated
+                cumulative emissions for the
+                unit exceed the applicable number of
+                tons of SO<sub>2</sub> and/or NO<sub>x</sub> specified in
+                paragraph (a)(1)(i)(A) of this section at
+                the end of any calendar year or ozone
+                season, then:
+                <ol type="i">
+                    <li>
+                        The low mass emissions unit shall
+                        be disqualified from using the low mass
+                        emissions excepted methodology; and
+                    </li>
+                    <li>
+                        The owner or operator of the low
+                        mass emissions unit shall install and
+                        certify monitoring systems that meet
+                        the requirements of <a href="~/Part75/75.11" style="text-decoration: none">§75.11</a>, <a href="~/Part75/75.12" style="text-decoration: none">§75.12</a>, and
+                        <a href="~/Part75/75.13" style="text-decoration: none">§75.13</a>, and shall report SO<sub>2</sub> (Acid Rain
+                        Program units, only), NO<sub>x</sub>, and CO<sub>2</sub>
+                        (Acid Rain Program units, only) emissions
+                        data and heat input data from
+                        such monitoring systems by December
+                        31 of the calendar year following the
+                        year in which the unit exceeded the
+                        number of tons of SO<sub>2</sub> and/or NO<sub>x</sub> specified
+                        in paragraph (a)(1)(i)(A) of this
+                        section; and
+                    </li>
+                    <li>
+                        If the required monitoring systems
+                        have not been installed and certified
+                        by the applicable deadline in
+                        paragraph (b)(2)(ii) of this section, the
+                        owner or operator shall report the following
+                        values for each unit operating
+                        hour, beginning with the first operating
+                        hour after the deadline and continuing
+                        until the monitoring systems
+                        have been provisionally certified: the
+                        maximum potential hourly heat input
+                        for the unit, as defined in § 72.2 of this
+                        chapter; the SO<sub>2</sub> emissions, in lb/hr,
+                        calculated using the applicable default
+                        SO<sub>2</sub> emission rate from paragraph
+                        (c)(1)(i) of this section and the maximum
+                        potential hourly unit heat input;
+                        the CO<sub>2</sub> emissions, in tons/hr, calculated
+                        using the applicable default
+                        CO<sub>2</sub> emission rate from paragraph
+                        (c)(1)(iii) of this section and the maximum
+                        potential hourly unit heat input;
+                        and the maximum potential NO<sub>x</sub> emission
+                        rate, as defined in § 72.2 of this
+                        chapter.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                If a low mass emissions unit that
+                initially qualifies to use the low mass
+                emissions excepted methodology under
+                this section changes fuels, such that a
+                fuel other than those allowed for use in
+                the low mass emissions methodology is
+                combusted in the unit, the unit shall
+                be disqualified from using the low mass
+                emissions excepted methodology as of
+                the first hour that the new fuel is combusted
+                in the unit. The owner or operator
+                shall install and certify SO<sub>2</sub> (Acid
+                Rain Program units, only), NO<sub>x</sub>, and
+                CO<sub>2</sub> (Acid Rain Program units, only)
+                and flow (if necessary) monitoring systems
+                that meet the requirements of
+                <a href="~/Part75/75.11" style="text-decoration: none">§75.11</a>, <a href="~/Part75/75.12" style="text-decoration: none">§75.12</a>, and <a href="~/Part75/75.13" style="text-decoration: none">§75.13</a> prior to a change
+                to such fuel, and shall report emissions
+                data from such monitoring systems beginning
+                with the date and hour on
+                which the new fuel is first combusted
+                in the unit. If the required monitoring
+                systems are not installed and certified
+                prior to the fuel switch, the owner or
+                operator shall report (as applicable)
+                the maximum potential concentration
+                of SO<sub>2</sub>, CO<sub>2</sub> and NO<sub>x</sub>, the maximum potential
+                NO<sub>x</sub> emission rate, the maximum
+                potential flow rate, the maximum
+                potential hourly heat input and
+                the maximum (or minimum, if appropriate)
+                potential moisture percentage,
+                from the date and hour of the fuel
+                switch until the monitoring systems
+                are certified or until probationary calibration
+                error tests of the monitors are
+                passed and the conditional data validation
+                procedures in <a href="~/Part75/75.20" style="text-decoration: none">§75.20</a>(b)(3) begin to
+                be used. All maximum and minimum
+                potential values shall be specific to the
+                new fuel and shall be determined in a
+                manner consistent with section <a href="~/Part75/AppA.2#2" style="text-decoration: none">2</a> of appendix
+                <a href="~/Part75/AppA.1" style="text-decoration: none">A</a> to this part and § 72.2 of this
+                chapter. The owner or operator must
+                notify the Administrator (or the permitting
+                authority) in the case where a
+                unit switches fuels without previously
+                having installed and certified a SO<sub>2</sub>,
+                NO<sub>x</sub> and CO<sub>2</sub> monitoring system meeting
+                the requirements of <a href="~/Part75/75.11" style="text-decoration: none">§75.11</a>, <a href="~/Part75/75.12," style="text-decoration: none">§75.12,</a>
+                and <a href="~/Part75/75.13" style="text-decoration: none">§75.13</a>.
+            </li>
+            <li>
+                If a new of newly-affected unit initially
+                qualifies to use the low mass
+                emissions excepted methodology under
+                this section and the owner or operator
+                wants to use the low mass emissions
+                methodology for the unit, he or she
+                must:
+                <ol type="i">
+                    <li>
+                        Keep the records specified in paragraph
+                        (c)(2) of this section, beginning
+                        with the date and hour of commencement
+                        of commercial operation, for a
+                        new unit subject to an Acid Rain emission
+                        limitation, and beginning with the
+                        date and hour of the commencement of
+                        operation, for a new unit subject to a
+                        NO<sub>x</sub> mass reduction program under
+                        subpart H of this part. For newly-affected
+                        units, the records in paragraph
+                        (c)(2) of this section shall be kept as
+                        follows:
+                        <ol type="A">
+                            <li>
+                                For Acid Rain Program units,
+                                begin keeping the records as of the
+                                first hour of commercial operation of
+                                the unit following the date on which
+                                the unit becomes affected; or
+                            </li>
+                            <li>
+                                For units subject to a NO<sub>x</sub> mass
+                                reduction program under subpart H of
+                                this part, begin keeping the records as
+                                of the first hour of unit operation following
+                                the date on which the unit becomes
+                                an affected unit;
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Use these records to determine
+                        the cumulative heat input and SO<sub>2</sub>,
+                        CO<sub>2</sub>, and/or NO<sub>x</sub> mass emissions in
+                        order to continue to qualify as a low
+                        mass emissions unit; and
+                    </li>
+                    <li>
+                        Determine the cumulative SO<sub>2</sub>
+                        and/or NO<sub>x</sub> mass emissions according
+                        to paragraph (c) of this section using
+                        the same procedures used after the certification
+                        deadline for the unit, for purposes
+                        of demonstrating eligibility to
+                        use the excepted methodology set forth
+                        in this section. For example, use the
+                        default emission rates in Tables LM–1,
+                        LM–2, and LM–3 of this section or use
+                        the fuel-and-unit-specific NO<sub>x</sub> emission
+                        rate determined according to paragraph
+                        (c)(1)(iv) of this section. For Acid
+                        Rain Program LME units, the Administrator
+                        will not count SO<sub>2</sub> mass emissions
+                        calculated for the period between
+                        commencement of commercial operation
+                        and the certification deadline for
+                        the unit under <a href="~/Part75/75.4" style="text-decoration: none">§75.4</a> against SO<sub>2</sub> allowances
+                        to be held in the unit account.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                A low mass emissions unit that
+                has been disqualified from using the
+                low mass emissions excepted methodology
+                may subsequently submit an application
+                to qualify again to use the
+                low mass emissions methodology under
+                paragraph (a)(2) of this section only if,
+                following the non-compliant year (or
+                ozone season), at least three full years
+                (or ozone seasons) of actual, monitored
+                emissions data is obtained showing
+                that the unit emitted no more than the
+                applicable number of tons of SO<sub>2</sub> and/or
+                NO<sub>x</sub> specified in paragraph (a)(1)(i)(A)
+                of this section. Further, the designated
+                representative or authorized account
+                representative must certify in the application
+                that the unit operation for
+                the years or ozone seasons for which
+                the emissions were monitored are representative
+                of the projected future operation
+                of the unit.
+            </li>
+        </ol>
+    </li>
+    <li>
+        <em>
+            Low Mass Emissions Excepted Methodology,
+            Calculations, and Values
+        </em>.
+        <ol>
+            <li>
+                <em>
+                    Determination
+                    of SO<sub>2</sub>, NO<sub>x</sub>, and CO<sub>2</sub> Emission
+                    Rates
+                </em>.
+                <ol type="i">
+                    <li>
+                        If the unit combusts only natural
+                        gas and/or fuel oil, use Table LM–1 of
+                        this section to determine the appropriate
+                        SO<sub>2</sub> emission rate for use in calculating
+                        hourly SO<sub>2</sub> mass emissions
+                        under this section. Alternatively, for
+                        fuel oil combustion, a lower, fuel-specific
+                        SO<sub>2</sub> emission factor may be used
+                        in lieu of the applicable emission factor
+                        from Table LM–1, if a federally enforceable
+                        permit condition is in place
+                        that limits the sulfur content of the
+                        oil. If this alternative is chosen, the
+                        fuel-specific SO<sub>2</sub> emission rate in lb/
+                        mmBtu shall be calculated by multiplying
+                        the fuel sulfur content limit
+                        (weight percent sulfur) by 1.01. In addition,
+                        the owner or operator shall periodically
+                        determine the sulfur content
+                        of the oil combusted in the unit, using
+                        one of the oil sampling and analysis options
+                        described in section <a href="~/Part75/AppD.2#2.2" style="text-decoration: none">2.2</a> of appendix
+                        <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> to this part, and shall keep
+                        records of these fuel sampling results
+                        in a format suitable for inspection and
+                        auditing. Alternatively, the required
+                        oil sampling and associated record keeping
+                        may be performed using a consensus
+                        standard (e.g., ASTM, API, etc.)
+                        that is prescribed in the unit’s Federally-
+                        enforceable operating permit, in
+                        an applicable State regulation, or in
+                        another applicable Federal regulation.
+                        If the unit combusts gaseous fuel(s)
+                        other than natural gas, the owner or
+                        operator shall use the procedures in
+                        section <a href="~/Part75/AppD.2#2.3.6" style="text-decoration: none">2.3.6</a> of appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> to this part
+                        to document the total sulfur content of
+                        each such fuel and to determine the appropriate
+                        default SO<sub>2</sub> emission rate for
+                        each such fuel.
+                    </li>
+                    <li>
+                        If the unit combusts only natural
+                        gas and/or fuel oil, use either the appropriate
+                        NO<sub>x</sub> emission factor from
+                        Table LM–2 of this section, or a fuel-and-
+                        unit-specific NO<sub>x</sub> emission rate determined
+                        according to paragraph
+                        (c)(1)(iv) of this section, to calculate
+                        hourly NO<sub>x</sub> mass emissions under this
+                        section. If the unit combusts a gaseous
+                        fuel other than pipeline natural gas or
+                        natural gas, the owner or operator
+                        shall determine a fuel-and-unit-specific
+                        NO<sub>x</sub> emission rate according to paragraph
+                        (c)(1)(iv) of this section.
+                    </li>
+                    <li>
+                        If the unit combusts only natural
+                        gas and/or fuel oil, use Table LM–
+                        3 of this section to determine the appropriate
+                        CO<sub>2</sub> emission rate for use in
+                        calculating hourly CO<sub>2</sub> mass emissions
+                        under this section (Acid Rain Program
+                        units, only). If the unit combusts a gaseous
+                        fuel other than pipeline natural
+                        gas or natural gas, the owner or operator
+                        shall determine a fuel-and-unit-specific
+                        CO<sub>2</sub> emission rate for the fuel,
+                        as follows:
+                        <ol type="A">
+                            <li>
+                                Derive a carbon-based F-factor
+                                for the fuel, using fuel sampling and
+                                analysis, as described in section <a href="~/Part75/AppF.3#3.3.6" style="text-decoration: none">3.3.6</a> of
+                                appendix <a href="~/Part75/AppF.1" style="text-decoration: none">F</a> to this part; and
+                            </li>
+                            <li>
+                                Use Equation <a href="~/Part75/AppG.2#Eq. G–4" style="text-decoration: none">G–4</a> in appendix <a href="~/Part75/AppG.1" style="text-decoration: none">G</a>
+                                to this part to derive the default CO<sub>2</sub>
+                                emission rate. Rearrange the equation,
+                                solving it for the ratio of W<sub>CO2</sub>/H (this
+                                ratio will yield an emission rate, in
+                                units of tons/mmBtu). Then, substitute
+                                the carbon-based F-factor determined
+                                in paragraph (c)(1)(iii)(A) of this section
+                                into the rearranged equation to
+                                determine the default CO<sub>2</sub> emission
+                                rate for the unit.
+                            </li>
+                        </ol>
+
+
+                    </li>
+                    <li>
+                        In lieu of using the default NO<sub>x</sub>
+                        emission rate from Table LM–2 of this
+                        section, the owner or operator may, for
+                        each fuel combusted by a low mass
+                        emissions unit, determine a fuel-and-unit-
+                        specific NO<sub>x</sub> emission rate for the
+                        purpose of calculating NO<sub>x</sub> mass emissions
+                        under this section. This option
+                        may be used by any unit which qualifies
+                        to use the low mass emission excepted
+                        methodology under paragraph
+                        (a) of this section, and also by groups
+                        of units which combust fuel from a
+                        common source of supply and which
+                        use the long term fuel flow methodology
+                        under paragraph (c)(3)(ii) of this
+                        section to determine heat input. The
+                        testing must be completed in a timely
+                        manner, such that the test results are
+                        reported electronically no later than
+                        the end of the calendar year or ozone
+                        season in which the LME methodology
+                        is first used. If this option is chosen,
+                        the following procedures shall be used.
+                        <ol type="A">
+                            <li>
+                                Except as otherwise provided in
+                                paragraphs (c)(1)(iv)(F), (c)(1)(iv)(G),
+                                and (c)(1)(iv)(I) of this section, determine
+                                a fuel-and-unit-specific NO<sub>x</sub> emission
+                                rate by conducting a four load
+                                NO<sub>x</sub> emission rate test procedure as
+                                specified in section <a href="~/Part75/AppE2.#2.1" style="text-decoration: none">2.1</a> of appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> to
+                                this part, for each type of fuel combusted
+                                in the unit. For a group of units
+                                sharing a common fuel supply, the appendix
+                                <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing must be performed on
+                                each individual unit in the group, unless
+                                some or all of the units in the
+                                group belong to an identical group of
+                                units, as defined in paragraph
+                                (c)(1)(iv)(B) of this section, in which
+                                case, representative testing may be
+                                conducted on units in the identical
+                                group of units, as described in paragraph
+                                (c)(1)(iv)(B) of this section. For
+                                the purposes of this section, make the
+                                following modifications to the appendix
+                                <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> test procedures:
+                                <ol>
+                                    <li>
+                                        Do not measure the heat input as
+                                        required under <a href="~/Part75/AppE2.#2.1.3" style="text-decoration: none">2.1.3</a> of appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> to
+                                        this part.
+                                    </li>
+                                    <li>
+                                        Do not plot the test results as
+                                        specified under <a href="~/Part75/AppE.2#2.1.6" style="text-decoration: none">2.1.6</a> of appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> to
+                                        this part.
+                                    </li>
+                                    <li>
+                                        Do not correct the NO<sub>x</sub> concentration
+                                        to 15% O<sub>2</sub>.
+                                    </li>
+                                    <li>
+                                        If the testing is performed on an
+                                        uncontrolled diffusion flame turbine, a
+                                        correction to the observed average NO<sub>x</sub>
+                                        concentration from each run of the test
+                                        must be applied using the following
+                                        Equation LM–1a.
+                                    </li>
+                                </ol>
+                                <!--INSERT IMAGE LM-1A-->
+                            </li>
+                            <li>
+                                Representative appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing
+                                may be done on low mass emission
+                                units in a group of identical units. All
+                                of the units in a group of identical
+                                units must combust the same fuel type
+                                but do not have to share a common fuel
+                                supply.
+                                <ol>
+                                    <li>
+                                        To be considered identical, all low
+                                        mass emission units must be of the
+                                        same size (based on maximum rated
+                                        hourly heat input), manufacturer and
+                                        model, and must have the same history
+                                        of modifications (e.g., have the same
+                                        controls installed, the same types of
+                                        burners and have undergone major
+                                        overhauls at the same frequency (based
+                                        on hours of operation)). Also, under
+                                        similar operating conditions, the stack
+                                        or turbine outlet temperature of each
+                                        unit must be within ±50 degrees Fahrenheit
+                                        of the average stack or turbine
+                                        outlet temperature for all of the units.
+                                    </li>
+                                    <li>
+                                        If all of the low mass emission
+                                        units in the group qualify as identical,
+                                        then representative testing of the units
+                                        in the group may be performed according
+                                        to Table LM–4 of this section.
+                                    </li>
+                                    <li>
+                                        [Reserved]
+                                    </li>
+                                    <li>
+                                        If the acceptance criteria in paragraph
+                                        (c)(1)(iv)(B)(1) of this section are
+                                        not met then the group of low mass
+                                        emission units is not considered an
+                                        identical group of units and individual
+                                        appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing of each unit is required.
+                                    </li>
+                                    <li>
+                                        Fuel and unit specific NO<sub>x</sub> emission
+                                        rates determined according to
+                                        paragraphs (c)(1)(iv)(F) and (c)(1)(iv)(G)
+                                        of this section may be used in lieu of
+                                        appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing for one or more low
+                                        mass emission units in a group of identical
+                                        units.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Based on the results of the part 75
+                                appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing, determine the fueland-
+                                unit-specific NO<sub>x</sub> emission rate as
+                                follows:
+                                <ol>
+                                    <li>
+                                        Except for LME units that use selective
+                                        catalytic reduction (SCR) or selective
+                                        non-catalytic reduction (SNCR)
+                                        to control NO<sub>x</sub> emissions, the highest
+                                        three-run average NO<sub>x</sub> emission rate
+                                        obtained at any load in the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a>
+                                        test for a particular type of fuel shall
+                                        be the fuel-and-unit-specific NO<sub>x</sub> emission
+                                        rate, for that type of fuel.
+                                    </li>
+                                    <li>
+                                        [Reserved]
+                                    </li>
+                                    <li>
+                                        For a group of identical low mass
+                                        emissions units (except for units that
+                                        use SCR or SNCR to control NO<sub>x</sub> emissions),
+                                        the fuel-and-unit-specific NO<sub>x</sub>
+                                        emission rate for all units in the group,
+                                        for a particular type of fuel, shall be
+                                        the highest three-run average NO<sub>x</sub>
+                                        emission rate obtained at any tested
+                                        load from any unit tested in the group,
+                                        for that type of fuel.
+                                    </li>
+                                    <li>
+                                        Except as provided in paragraphs
+                                        (c)(1)(iv)(C)(7) and (c)(1)(iv)(C)(8) of this
+                                        section, for an individual low mass
+                                        emissions unit which uses SCR or
+                                        SNCR to control NO<sub>x</sub> emissions, the
+                                        fuel-and-unit-specific NO<sub>x</sub> emission
+                                        rate for each type of fuel combusted in
+                                        the unit shall be the higher of:
+                                        (i) The highest three-run average
+                                        emission rate from any load of the appendix
+                                        <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> test for that type of fuel; or
+                                        (ii) 0.15 lb/mmBtu.
+                                    </li>
+                                    <li>
+                                        [Reserved]
+                                    </li>
+                                    <li>
+                                        Except as provided in paragraphs
+                                        (c)(1)(iv)(C)(7) and (c)(1)(iv)(C)(8) of this
+                                        section, for a group of identical low
+                                        mass emissions units that are all
+                                        equipped with SCR or SNCR to control
+                                        NO<sub>x</sub> emissions, the fuel-and-unit-specific
+                                        NO<sub>x</sub> emission rate for each unit in
+                                        he group of units, for a particular type
+                                        of fuel, shall be the higher of:
+                                        <ol type="i">
+                                            <li>
+                                                The highest three-run average NO<sub>x</sub>
+                                                emission rate at any load from all appendix
+                                                <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> tests of all tested units in the
+                                                group, for that type of fuel; or
+                                            </li>
+                                            <li>
+                                                0.15 lb/mmBtu.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Notwithstanding the requirements
+                                        of paragraphs (c)(1)(iv)(C)(4) and
+                                        (c)(1)(iv)(C)(6) of this section, for a unit
+                                        (or group of identical units) equipped
+                                        with SCR (or SNCR) and water (or
+                                        steam) injection to control NO<sub>x</sub> emissions:
+                                        <ol type="i">
+                                            <li>
+                                                If the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing is performed
+                                                when the water (or steam) injection
+                                                is in use and either upstream of
+                                                the SCR or SNCR or during a time period
+                                                when the SCR or SNCR is out of
+                                                service; then
+                                            </li>
+                                            <li>
+                                                The highest three-run average
+                                                emission rate from the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing
+                                                may be used as the fuel-and-unit-specific
+                                                NO<sub>x</sub> emission rate for the unit
+                                                (or, if applicable, for each unit in the
+                                                group), for each unit operating hour in
+                                                which the water-to-fuel ratio is within
+                                                the acceptable range established during
+                                                the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Notwithstanding the requirements
+                                        of paragraphs (c)(1)(iv)(C)(4) and
+                                        (c)(1)(iv)(C)(6) of this section, for a unit
+                                        (or group of identical units) equipped
+                                        with SCR (or SNCR) and uses dry low-
+                                        NO<sub>x</sub> technology to control NO<sub>x</sub> emissions:
+                                        <ol type="i">
+                                            <li>
+                                                If the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing is performed
+                                                during a time period when the
+                                                dry low-NO<sub>x</sub> controls are in use, but
+                                                the SCR or SNCR is out of service;
+                                                then
+                                            </li>
+                                            <li>
+                                                The highest three-run average
+                                                emission rate from the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing
+                                                may be used as the fuel-and-unit-specific
+                                                NO<sub>x</sub> emission rate for the unit
+                                                (or, if applicable, for each unit in the
+                                                group), for each unit operating hour in
+                                                which the parametric data described in
+                                                paragraph (c)(1)(iv)(H)(2) of this section
+                                                demonstrate that the dry low-NO<sub>x</sub> controls
+                                                are operating in the premixed or
+                                                low-NO<sub>x</sub> mode.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        For an individual combustion turbine
+                                        (or a group of identical turbines)
+                                        that operate principally at base load
+                                        (or at a set point temperature), but are
+                                        capable of operating at a higher peak
+                                        load (or higher internal operating temperature),
+                                        the fuel-and-unit-specific
+                                        NO<sub>x</sub> emission rate for the unit (or for
+                                        each unit in the group) shall be as follows:
+                                        <ol type="i">
+                                            <li>
+                                                If the testing is done only at base
+                                                load, use the three-run average NO<sub>x</sub>
+                                                emission rate for base load operating
+                                                hours and 1.15 times that emission rate
+                                                for peak load operating hours; or
+                                            </li>
+                                            <li>
+                                                If the testing is done at both base
+                                                load and peak load, use the three-run
+                                                average NO<sub>x</sub> emission rate from the
+                                                base load testing for base load operating
+                                                hours and the three-run average
+                                                NO<sub>x</sub> emission rate from the peak load
+                                                testing for peak load operating hours.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                For each low mass emissions
+                                unit, or group of identical units for
+                                which the provisions of paragraph
+                                (c)(1)(iv) of this section are used to account
+                                for NO<sub>x</sub> emission rate, the owner
+                                or operator shall determine a new fuel-and-
+                                unit-specific NO<sub>x</sub> emission rate
+                                every five years (20 calendar quarters),
+                                unless changes in the fuel supply, physical
+                                changes to the unit, changes in the
+                                manner of unit operation, or changes
+                                to the emission controls occur which
+                                may cause a significant increase in the
+                                unit’s actual NO<sub>x</sub> emission rate. If such
+                                changes occur, the fuel-and-unit-specific
+                                NO<sub>x</sub> emission rate(s) shall be redetermined
+                                according to paragraph
+                                (c)(1)(iv) of this section. Testing shall
+                                be done at the number of loads specified
+                                in paragraph (c)(1)(iv)(A) or
+                                (c)(1)(iv)(I) of this section, as applicable.
+                                If a low mass emissions unit belongs
+                                to a group of identical units and
+                                it is required to retest to determine a
+                                new fuel-and-unit-specific NO<sub>x</sub> emission
+                                rate because of changes in the fuel
+                                supply, physical changes to the unit,
+                                changes in the manner of unit operation
+                                or changes to the emission controls
+                                occur which may cause a significant
+                                increase in the unit’s actual NO<sub>x</sub>
+                                emission rate, any other unit in that
+                                group of identical units is not required
+                                to re-determine the fuel-and-unit-specific
+                                NO<sub>x</sub> emission rate unless such
+                                unit also undergoes changes in the fuel
+                                supply, physical changes to the unit,
+                                changes in the manner of unit operation
+                                or changes to the emission controls
+                                occur which may cause a significant
+                                increase in the unit’s actual NO<sub>x</sub>
+                                emission rates.
+                            </li>
+                            <li>
+                                Each low mass emissions unit or
+                                each low mass emissions unit in a
+                                group of identical units for which a
+                                fuel-and-unit-specific NO<sub>x</sub> emission
+                                rate(s) are determined shall meet the
+                                quality assurance and quality control
+                                provisions of paragraph (e) of this section.
+                            </li>
+                            <li>
+                                Low mass emission units may use
+                                the results of appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing, if
+                                such test results are available from a
+                                test conducted no more than five years
+                                prior to the time of initial certification,
+                                to determine the appropriate
+                                fuel-and-unit-specific NO<sub>x</sub> emission
+                                rate(s). However, fuel-and-unit-specific
+                                NO<sub>x</sub> emission rates from historical
+                                testing may not be used longer than
+                                five years after the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing
+                                was conducted.
+                            </li>
+                            <li>
+                                Low mass emissions units for
+                                which at least 3 years of quality-assured
+                                NO<sub>x</sub> emission rate data from a
+                                NO<sub>x</sub>-diluent CEMS that meets the
+                                quality assurance requirements of either:
+                                this part, or appendix F to part 60
+                                of this chapter, or a comparable State
+                                CEM program, and corresponding fuel
+                                usage data are available may determine
+                                fuel-and-unit-specific NO<sub>x</sub> emission
+                                rates from the actual data using
+                                the following procedure. Separate the
+                                actual NO<sub>x</sub> emission rate data into
+                                groups, according to the type of fuel
+                                combusted. Discard data from periods
+                                when multiple fuels were combusted.
+                                Each fuel-specific data set must contain
+                                at least 168 hours of data and must
+                                represent all normal operating ranges
+                                of the unit when combusting the fuel.
+                                Sort the data in each fuel-specific data
+                                set in ascending order according to
+                                NO<sub>x</sub> emission rate. Determine the 95th
+                                percentile NO<sub>x</sub> emission rate for each
+                                data set as defined in § 72.2 of this chapter.
+                                Use the 95th percentile value for
+                                each data set as the fuel-and-unit-specific
+                                NO<sub>x</sub> emission rate, except that for
+                                a unit that uses SCR or SNCR for NO<sub>x</sub>
+                                emission control, if the 95th percentile
+                                value is less than 0.15 lb/mmBtu, a
+                                value of 0.15 lb/mmBtu shall be used as
+                                the fuel-and-unit-specific NO<sub>x</sub> emission
+                                rate.
+                            </li>
+                            <li>
+                                For low mass emission units with
+                                add-on NO<sub>x</sub> emission controls, and for
+                                units that use dry low-NO<sub>x</sub> technology,
+                                the owner or operator shall, during
+                                every hour of unit operation during the
+                                test period, monitor and record parameters,
+                                as required under paragraph
+                                (e)(5) of this section, which indicate
+                                that the NO<sub>x</sub> emission controls are operating
+                                properly. After the test period,
+                                these same parameters shall be monitored
+                                and recorded and kept for all operating
+                                hours in order to determine
+                                whether the NO<sub>x</sub> controls are operating
+                                properly and to allow the determination
+                                of the correct NO<sub>x</sub> emission rate
+                                as required under paragraph (c)(1)(iv)
+                                of this section.
+                                <ol>
+                                    <li>
+                                        For low mass emission units with
+                                        steam or water injection, the steam-to-fuel
+                                        or water-to-fuel ratio used during
+                                        the testing must be documented. The
+                                        water-to-fuel or steam-to-fuel ratio
+                                        must be maintained during unit operations
+                                        for a unit to use the fuel and
+                                        unit specific NO<sub>x</sub> emission rate determined
+                                        during the test. Owners or operators
+                                        must include in the monitoring
+                                        plan the acceptable range of the water-to-
+                                        fuel or steam-to-fuel ratio, which
+                                        will be used to indicate hourly, proper
+                                        operation of the NO<sub>x</sub> controls for each
+                                        unit. The water-to-fuel or steam-to-fuel
+                                        ratio shall be monitored and recorded
+                                        during each hour of unit operation.
+                                        If the water-to-fuel or steam-to-fuel
+                                        ratio is not within the acceptable
+                                        range in a given hour the fuel and unit
+                                        specific NO<sub>x</sub> emission rate may not be
+                                        used for that hour, and the appropriate
+                                        default NO<sub>x</sub> emission rate from Table
+                                        LM–2 shall be reported instead.
+                                    </li>
+                                    <li>
+                                        For a low mass emissions unit
+                                        that uses dry low-NO<sub>x</sub> premix technology
+                                        to control NO<sub>x</sub> emissions, proper
+                                        operation of the emission controls
+                                        means that the unit is in the low-NO<sub>x</sub>
+                                        or premixed combustion mode, and
+                                        fired with natural gas. Evidence of operation
+                                        in the low-NO<sub>x</sub> or premixed
+                                        mode shall be provided by monitoring
+                                        the appropriate turbine operating parameters.
+                                        These parameters may include
+                                        percentage of full load, turbine
+                                        exhaust temperature, combustion reference
+                                        temperature, compressor discharge
+                                        pressure, fuel and air valve positions,
+                                        dynamic pressure pulsations, internal
+                                        guide vane (IGV) position, and
+                                        flame detection or flame scanner condition.
+                                        The acceptable values and
+                                        ranges for all parameters monitored
+                                        shall be specified in the monitoring
+                                        plan for the unit, and the parameters
+                                        shall be monitored during each subsequent
+                                        operating hour. If one or more of
+                                        these parameters is not within the acceptable
+                                        range or at an acceptable
+                                        value in a given operating hour, the
+                                        fuel-and-unit-specific NO<sub>x</sub> emission
+                                        rate may not be used for that hour, and
+                                        the appropriate default NO<sub>x</sub> emission
+                                        rate from Table LM–2 shall be reported
+                                        instead. When the unit is fired with oil
+                                        the appropriate default value from
+                                        Table LM–2 shall be reported.
+                                    </li>
+                                    <li>
+                                        For low mass emission units with
+                                        other types of add-on NO<sub>x</sub> controls, appropriate
+                                        parameters and the acceptable
+                                        range of the parameters which indicate
+                                        hourly proper operation of the
+                                        NO<sub>x</sub> controls must be specified in the
+                                        monitoring plan. These parameters
+                                        shall be monitored during each subsequent
+                                        operating hour. If any of these
+                                        parameters are not within the acceptable
+                                        range in a given operating hour,
+                                        the fuel and unit specific NO<sub>x</sub> emission
+                                        rates may not be used in that hour, and
+                                        the appropriate default NO<sub>x</sub> emission
+                                        rate from Table LM–2 shall be reported
+                                        instead.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Notwithstanding the requirements
+                                in paragraph (c)(1)(iv)(A) of this section,
+                                the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing to determine
+                                (or re-determine) the fuel-specific,
+                                unit-specific NO<sub>x</sub> emission rate
+                                for a unit (or for each unit in a group
+                                of identical units) may be performed at
+                                fewer than four loads, under the following
+                                circumstances:
+                                <ol>
+                                    <li>
+                                        Testing may be done at one load
+                                        level if the data analysis described in
+                                        paragraph (c)(1)(iv)(J) of this section is
+                                        performed and the results show that
+                                        the unit has operated (or all units in
+                                        the group of identical units have operated)
+                                        at a single load level for at least
+                                        85.0 percent of all operating hours in
+                                        the previous three years (12 calendar
+                                        quarters) prior to the calendar quarter
+                                        of the appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing. For combustion
+                                        turbines that are operated to
+                                        produce approximately constant output
+                                        (in MW) but which use internal operating
+                                        and exhaust temperatures and
+                                        not the actual output in MW to control
+                                        the operation of the turbine, the internal
+                                        operating temperature set point
+                                        may be used as a surrogate for load in
+                                        demonstrating that the unit qualifies
+                                        for single-load testing. If the data analysis
+                                        shows that the unit does not qualify
+                                        for single-load testing, testing may
+                                        be done at two (or three) load levels if
+                                        the unit has operated (or if all units in
+                                        the group of identical units have operated)
+                                        cumulatively at two (or three)
+                                        load levels for at least 85.0 percent of
+                                        all operating hours in the previous
+                                        three years; or
+                                    </li>
+                                    <li>
+                                        If a multiple-load appendix E test
+                                        was initially performed for a unit (or
+                                        group of identical units) to determine
+                                        the fuel-and-unit specific NO<sub>x</sub> emission
+                                        rate, then the periodic retests required
+                                        under paragraph (c)(1)(iv)(D) of this
+                                        section may be single-load tests, performed
+                                        at the load level for which the
+                                        highest average NO<sub>x</sub> emission rate was
+                                        obtained in the initial test.
+                                    </li>
+                                    <li>
+                                        The initial appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing
+                                        may be performed at a single load, between
+                                        75 and 100 percent of the maximum
+                                        sustainable load defined in the
+                                        monitoring plan for the unit, if the average
+                                        annual capacity factor of the
+                                        LME unit, when calculated according
+                                        to the definition of ‘‘capacity factor’’
+                                        in § 72.2 of this chapter, is 2.5 percent or
+                                        less for the three calendar years immediately
+                                        preceding the year of the testing,
+                                        and that the annual capacity factor
+                                        does not exceed 4.0 percent in any
+                                        of those three years. Similarly, for a
+                                        LME unit that reports emissions data
+                                        on an ozone season-only basis, the initial
+                                        appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing may be performed
+                                        at a single load between 75 and
+                                        100 percent of the maximum sustainable
+                                        load if the 2.5 and 4.0 percent capacity
+                                        factor requirements are met for
+                                        the three ozone seasons immediately
+                                        preceding the date of the emission testing
+                                        (see <a href="~/Part75/75.74" style="text-decoration: none">§75.74</a>(c)(11)). For a group of
+                                        identical LME units, any unit(s) in the
+                                        group that meet the 2.5 and 4.0 percent
+                                        capacity factor requirements may perform
+                                        the initial appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> testing at a
+                                        single load between 75 and 100 percent
+                                        of the maximum sustainable load.
+                                    </li>
+                                    <li>
+                                        The retest of any LME unit may
+                                        be performed at a single load between
+                                        75 and 100 percent of the maximum sustainable
+                                        load if, for the three calendar
+                                        years immediately preceding the year
+                                        of the retest (or, if applicable, the
+                                        three ozone seasons immediately preceding
+                                        the date of the retest), the applicable
+                                        capacity factor requirements
+                                        described in paragraph (c)(1)(iv)(I)(3) of
+                                        this section are met.
+                                    </li>
+                                    <li>
+                                        Alternatively, for combustion turbines,
+                                        the single-load testing described
+                                        in paragraphs (c)(1)(iv)(I)(3) and
+                                        (c)(1)(iv)(I)(4) of this section may be
+                                        performed at the highest attainable
+                                        load level corresponding to the season
+                                        of the year in which the testing is conducted.
+                                    </li>
+                                    <li>
+                                        In all cases where the alternative
+                                        single-load testing option described in
+                                        paragraphs (c)(1)(iv)(I)(3) through
+                                        (c)(1)(iv)(I)(5) of this section is used,
+                                        the owner or operator shall keep
+                                        records documenting that the required
+                                        capacity factor requirements were met.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                To determine whether a unit
+                                qualifies for testing at fewer than four
+                                loads under paragraph (c)(1)(iv)(I) of
+                                this section, follow the procedures in
+                                paragraph (c)(1)(iv)(J)(1) or
+                                (c)(1)(iv)(J)(2) of this section, as applicable.
+                                <ol>
+                                    <li>
+                                        Determine the range of operation
+                                        of the unit, according to section <a href="~/Part75/AppA.6#6.5.2.1" style="text-decoration: none">6.5.2.1</a>
+                                        of appendix <a href="~/Part75/AppA.1" style="text-decoration: none">A</a> to this part. Divide the
+                                        range of operation into four equal load
+                                        bands. For example, if the range of operation
+                                        extends from 20 MW to 100 MW,
+                                        the four equal load bands would be:
+                                        band #1: from 20 MW to 40 MW; band #2:
+                                        from 41 MW to 60 MW; band #3: from 61
+                                        MW to 80 MW; and band #4: from 81 to
+                                        100 MW. Then, perform a historical
+                                        load analysis for all unit operating
+                                        hours in the 12 calendar quarters preceding
+                                        the quarter of the test. Alternatively,
+                                        for sources that report emissions
+                                        data only during the ozone season,
+                                        the historical load analysis may
+                                        be based on unit operation in the previous
+                                        three ozone seasons, rather than
+                                        unit operation in the previous 12 calendar
+                                        quarters. Determine the percentage
+                                        of the data that fall into each load
+                                        band. For a unit that is not part of a
+                                        group of identical units, if 85.0% or
+                                        more of the data fall into one load
+                                        band, single-load testing may be performed
+                                        at any point within that load
+                                        band. For a group of identical units, if
+                                        each unit in the group meets the 85.0%
+                                        criterion, then representative single-load
+                                        testing within the load band may
+                                        be performed. If the 85.0% criterion
+                                        cannot be met to qualify for single-load
+                                        testing but this criterion can be
+                                        met cumulatively for two (or three)
+                                        load levels, then testing may be performed
+                                        at two (or three) loads instead
+                                        of four.
+                                    </li>
+                                    <li>
+                                        For a combustion turbine that
+                                        uses exhaust temperature and not the
+                                        actual output in megawatts to control
+                                        the operation of the turbine (or for a
+                                        group of identical units of this type),
+                                        the owner or operator must document
+                                        that the unit (or each unit in the
+                                        group) has operated within ±10% of the
+                                        set point temperature for 85.0% of the
+                                        operating hours in the previous 12 calendar
+                                        quarters to qualify for single-load
+                                        testing. Alternatively, for sources
+                                        that report emissions data only during
+                                        the ozone season, the historical set
+                                        point temperature analysis may be
+                                        based on unit operation in the previous
+                                        three ozone seasons, rather than unit
+                                        operation in the previous 12 calendar
+                                        quarters. When the set point temperature
+                                        is used rather than unit load to
+                                        justify single-load testing, the designated
+                                        representative shall certify in
+                                        the monitoring plan for the unit that
+                                        this is the normal manner of unit operation
+                                        and shall document the setpoint
+                                        temperature.
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <em>
+                    Records of Operating Time, Fuel
+                    Usage, Unit Output and NO<sub>x</sub> Emission Control
+                    Operating Status
+                </em>. The owner or operator
+                shall keep the following records
+                on-site, for three years, in a form suitable
+                for inspection, except that for unmanned
+                facilities, the records may be
+                kept at a central location, rather than
+                on-site:
+                <ol type="i">
+                    <li>
+                        For each low mass emissions unit,
+                        the owner or operator shall keep hourly
+                        records which indicate whether or
+                        not the unit operated during each
+                        clock hour of each calendar year. The
+                        owner or operator may report partial
+                        operating hours or may assume that
+                        for each hour the unit operated the operating
+                        time is a whole hour. Units
+                        using partial operating hours and the
+                        maximum rated hourly heat input to
+                        calculate heat input for each hour
+                        must report partial operating hours.
+                    </li>
+                    <li>
+                        For each low mass emissions
+                        unit, the owner or operator shall keep
+                        hourly records indicating the type(s) of
+                        fuel(s) combusted in the unit during
+                        each hour of unit operation.
+                    </li>
+                    <li>
+                        For each low mass emissions
+                        unit using the long term fuel flow
+                        methodology under paragraph (c)(3)(ii)
+                        of this section to determine hourly
+                        heat input, the owner or operator shall
+                        keep hourly records of unit load (in
+                        megawatts or thousands of pounds of
+                        steam per hour), for the purpose of apportioning
+                        heat input to the individual
+                        unit operating hours.
+                    </li>
+                    <li>
+                        For each low mass emissions unit
+                        with add-on NO<sub>x</sub> emission controls of
+                        any kind and each unit that uses dry
+                        low-NO<sub>x</sub> technology, the owner or operator
+                        shall keep hourly records of the
+                        hourly value of the parameter(s) specified
+                        in (c)(1)(iv)(H) of this section used
+                        to indicate proper operation of the
+                        unit’s NO<sub>x</sub> controls.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <em>Heat Input</em>. Hourly, quarterly and
+                annual heat input for a low mass emissions
+                unit shall be determined using either
+                the maximum rated hourly heat
+                input method under paragraph (c)(3)(i)
+                of this section or the long term fuel
+                flow method under paragraph (c)(3)(ii)
+                of this section.
+                <ol type="i">
+                    <li>
+                        Maximum rated hourly heat input
+                        method.
+                        <ol type="A">
+                            <li>
+                                For the purposes of the
+                                mass emission calculation methodology
+                                of paragraph (c)(3) of this section,
+                                HIhr, the hourly heat input
+                                (mmBtu) to a low mass emissions unit
+                                shall be deemed to equal the maximum
+                                rated hourly heat input, as defined in
+                                § 72.2 of this chapter, multiplied by the
+                                operating time of the unit for each
+                                hour. The owner or operator may
+                                choose to record and report partial operating
+                                hours or may assume that a
+                                unit operated for a whole hour for each
+                                hour the unit operated. However, the
+                                owner or operator of a unit may petition
+                                the Administrator under <a href="~/Part75/75.66" style="text-decoration: none">§75.66</a> for
+                                a lower value for maximum rated hourly
+                                heat input than that defined in § 72.2
+                                of this chapter. The Administrator
+                                may approve such lower value if the
+                                owner or operator demonstrates that
+                                either the maximum hourly heat input
+                                specified by the manufacturer or the
+                                highest observed hourly heat input, or
+                                both, are not representative, and such
+                                a lower value is representative, of the
+                                unit’s current capabilities because
+                                modifications have been made to the
+                                unit, limiting its capacity permanently.
+                            </li>
+                            <li>
+                                The quarterly heat input, HI<sub>qtr</sub>, in
+                                mmBtu, shall be determined using
+                                Equation LM–1:
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.1.jpg" alt="Part 75 §75.19 Eq. LM-1" title="Part 75 §75.19 Eq. LM-1" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th>Where:</th>
+                                    <tr>
+                                        <td>n</td>
+                                        <td>
+                                            = Number of unit operating hours in the
+                                            quarter.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>hr</sub></td>
+                                        <td>
+                                            = Hourly heat input under paragraph
+                                            (c)(3)(i)(A) of this section (mmBtu).
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                The year-to-date cumulative heat
+                                input (mmBtu) shall be the sum of the
+                                quarterly heat input values for all of
+                                the calendar quarters in the year to
+                                date.
+                            </li>
+                            <li>
+                                For a unit subject to the provisions
+                                of subpart H of this part, which is
+                                not required to report emission data on
+                                a year-round basis and elects to report
+                                only during the ozone season, the quarterly
+                                heat input for the second calendar
+                                quarter of the year shall, for
+                                compliance purposes, include only the
+                                heat input for the months of May and
+                                June, and the cumulative ozone season
+                                heat input shall be the sum of the heat
+                                input values for May, June and the
+                                third calendar quarter of the year.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Long term fuel flow heat input
+                        method. The owner or operator may, for
+                        the purpose of demonstrating that a
+                        low mass emissions unit or group of
+                        low mass emission units sharing a common
+                        fuel supply meets the requirements
+                        of this section, use records of
+                        long-term fuel flow, to calculate hourly
+                        heat input to a low mass emissions
+                        unit.
+                        <ol type="A">
+                            <li>
+                                This option may be used for a
+                                group of low mass emission units only
+                                if:
+                                <ol>
+                                    <li>
+                                        The low mass emission units combust
+                                        fuel from a common source of supply;
+                                        and
+                                    </li>
+                                    <li>
+                                        Records are kept of the total
+                                        amount of fuel combusted by the group
+                                        of low mass emission units and the
+                                        hourly output (in megawatts or pounds
+                                        of steam) from each unit in the group;
+                                        and
+                                    </li>
+                                    <li>
+                                        All of the units in the group are
+                                        low mass emission units.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                For each fuel used during the
+                                quarter, the volume in standard cubic
+                                feet (for gas) or gallons (for oil) may be
+                                determined using any of the following
+                                methods;
+                                <ol>
+                                    <li>
+                                        Fuel billing records (for low mass
+                                        emission units, or groups of low mass
+                                        emission units, which purchase fuel
+                                        from non-affiliated sources);
+                                    </li>
+                                    <li>
+                                        American Petroleum Institute
+                                        (API) Manual of Petroleum Measurement
+                                        Standards, Chapter 3-Tank Gauging
+                                        Section 1A, Standard Practice for
+                                        the Manual Gauging of Petroleum and
+                                        Petroleum Products, Second Edition,
+                                        August 2005; Section 1B-Standard Practice
+                                        for Level Measurement of Liquid
+                                        Hydrocarbons in Stationary Tanks by
+                                        Automatic Tank Gauging, Second Edition
+                                        June 2001; Section 2-Standard
+                                        Practice for Gauging Petroleum and
+                                        Petroleum Products in Tank Cars,
+                                        First Edition, August 1995 (Reaffirmed
+                                        March 2006); Section 3-Standard Practice
+                                        for Level Measurement of Liquid
+                                        Hydrocarbons in Stationary Pressurized
+                                        Storage Tanks by Automatic Tank
+                                        Gauging, First Edition June 1996 (Reaffirmed,
+                                        March 2001); Section 4-Standard
+                                        Practice for Level Measurement of
+                                        Liquid Hydrocarbons on Marine Vessels
+                                        by Automatic Tank Gauging, First
+                                        Edition April 1995 (Reaffirmed, September
+                                        2000); and Section 5-Standard
+                                        Practice for Level Measurement of
+                                        Light Hydrocarbon Liquids Onboard
+                                        Marine Vessels by Automatic Tank
+                                        Gauging, First Edition March 1997 (Reaffirmed,
+                                        March 2003); for <a href="~/Part75/75.19" style="text-decoration: none">§75.19</a>; Shop
+                                        Testing of Automatic Liquid Level
+                                        Gages, Bulletin 2509 B, December 1961
+                                        (Reaffirmed August 1987, October 1992)
+                                        (all incorporated by reference under
+                                        <a href="~/Part75/75.6" style="text-decoration: none">§75.6</a> of this part); or
+                                    </li>
+                                    <li>
+                                        A fuel flow meter certified and
+                                        maintained according to appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> to
+                                        this part.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Except as provided in paragraph
+                                (c)(3)(ii)(C)(3) of this section, for each
+                                fuel combusted during a quarter, the
+                                gross calorific value of the fuel shall be
+                                determined by either:
+                                <ol>
+                                    <li>
+                                        Using the applicable procedures
+                                        for gas and oil analysis in sections <a href="~/Part75/AppD2.#2.2" style="text-decoration: none">2.2</a>
+                                        and <a href="~/Part75/AppD2.#2.3" style="text-decoration: none">2.3</a> of appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> to this part. If
+                                        this option is chosen the highest gross
+                                        calorific value recorded during the previous
+                                        calendar year shall be used (or,
+                                        for a new or newly-affected unit, if
+                                        there are no sample results from the
+                                        previous year, use the highest GCV
+                                        from the samples taken in the current
+                                        year); or
+                                    </li>
+                                    <li>
+                                        Using the appropriate default
+                                        gross calorific value listed in Table
+                                        LM–5 of this section.
+                                    </li>
+                                    <li>
+                                        For gaseous fuels other than pipeline
+                                        natural gas or natural gas, the
+                                        GCV sampling frequency shall be daily
+                                        unless the results of a demonstration
+                                        under section <a href="~/Part75/AppD2.#2.3.5" style="text-decoration: none">2.3.5</a> of appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> to
+                                        this part show that the fuel has a low
+                                        GCV variability and qualifies for
+                                        monthly sampling. If daily GCV sampling
+                                        is required, use the highest GCV
+                                        obtained in the calendar quarter as
+                                        GCVmax in Equation LM–3, of this section.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                If Eq. LM–2 is used for heat input
+                                determination, the specific gravity of
+                                each type of fuel oil combusted during
+                                the quarter shall be determined either
+                                by:
+                                <ol>
+                                    <li>
+                                        Using the procedures in section
+                                        <a href="~/Part75/AppD#2.2.6" style="text-decoration: none">2.2.6</a> of appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> to this part. If this
+                                        option is chosen, use the highest specific
+                                        gravity value recorded during the
+                                        previous calendar year (or, for a new or
+                                        newly-affected unit, if there are no
+                                        sample results from the previous year,
+                                        use the highest specific gravity from
+                                        the samples taken in the current year);
+                                        or
+                                    </li>
+                                    <li>
+                                        Using the appropriate default specific
+                                        gravity value in Table LM–6 of
+                                        this section.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                The quarterly heat input from
+                                each type of fuel combusted during the
+                                quarter by a low mass emissions unit
+                                or group of low mass emissions units
+                                sharing a common fuel supply shall be
+                                determined using either Equation LM–
+                                2 or Equation LM–3 for oil (as applicable
+                                to the method used to quantify oil
+                                usage) and Equation LM–3 for gaseous
+                                fuels. For a unit subject to the provisions
+                                of subpart H of this part, which is
+                                not required to report emission data on
+                                a year-round basis and elects to report
+                                only during the ozone season, the quarterly
+                                heat input for the second calendar
+                                quarter of the year shall include
+                                only the heat input for the months of
+                                May and June.
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.2.jpg" alt="Part 75 §75.19 Eq. LM-2" title="Part 75 §75.19 Eq. LM-2" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>fuel-qtr</sub></td>
+                                        <td>= Quarterly total heat input from oil (mmBtu).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M<sub>qtr</sub></td>
+                                        <td>
+                                            = Mass of oil consumed during the quarter,
+                                            determined as the product of the volume
+                                            of oil under paragraph (c)(3)(ii)(B) of
+                                            this section and the specific gravity
+                                            under paragraph (c)(3)(ii)(D) of this section
+                                            (lb).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GCV<sub>max</sub></td>
+                                        <td>
+                                            = Gross calorific value of oil, as determined
+                                            under paragraph (c)(3)(ii)(C) of
+                                            this section (Btu/lb)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10<sup>6</sup></td>
+                                        <td>= Conversion of Btu to mmBtu.</td>
+                                    </tr>
+                                </table>
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.3.jpg" alt="Part 75 §75.19 Eq. LM-3" title"Part 75 §75.19 Eq. LM-3" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>fuel-qtr</sub></td>
+                                        <td>
+                                            = Quarterly heat input from gaseous
+                                            fuel or fuel oil (mmBtu).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Q<sub>qtr</sub></td>
+                                        <td>
+                                            = Volume of gaseous fuel or fuel oil combusted
+                                            during the quarter, as determined
+                                            under paragraph (c)(3)(ii)(B) of this section
+                                            standard cubic feet (scf) or (gal), as
+                                            applicable.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GCV<sub>max</sub></td>
+                                        <td>
+                                            = Gross calorific value of the gaseous
+                                            fuel or fuel oil combusted during the
+                                            quarter, as determined under paragraph
+                                            (c)(3)(ii)(C) of this section (Btu/scf) or
+                                            (Btu/gal), as applicable.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10<sup>6</sup></td>
+                                        <td>= Conversion of Btu to mmBtu.</td>
+                                    </tr>
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                Use Eq. LM–4 to calculate
+                                HI<sub>qtr-total</sub>, the quarterly heat input
+                                (mmBtu) for all fuels. HI<sub>qtr-total</sub> shall be
+                                the sum of the HI<sub>fuel-qtr</sub> values determined
+                                using Equations LM–2 and LM–3.
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.4.jpg" alt"Part 75 §75.19 Eq. LM-4" title"Part 75 §75.19 Eq. LM-4" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>qtr-total</sub></td>
+                                        <td>
+                                            = Quarterly heat input (mmBtu) for all fuels.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>fuel-qtr</sub></td>
+                                        <td>
+                                            = Sum of the HI<sub>fuel-qtr</sub> values determined
+                                            using Equations LM–2 and LM–3.
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                The year-to-date cumulative heat
+                                input (mmBtu) for all fuels shall be the
+                                sum of all quarterly total heat input
+                                (HI<sub>qtr-total</sub>) values for all calendar quarters
+                                in the year to date. For a unit subject
+                                to the provisions of subpart H of
+                                this part, which is not required to report
+                                emission data on a year-round
+                                basis and elects to report only during
+                                the ozone season, the cumulative ozone
+                                season heat input shall be the sum of
+                                the quarterly heat input values for the
+                                second and third calendar quarters of
+                                the year.
+                            </li>
+                            <li>
+                                For each low mass emissions unit
+                                or each low mass emissions unit in a
+                                group of identical units, the owner or
+                                operator shall determine the cumulative
+                                quarterly unit load in megawatt
+                                hours or thousands of pounds of steam.
+                                The quarterly cumulative unit load
+                                shall be the sum of the hourly unit
+                                load values recorded under paragraph
+                                (c)(2) of this section and shall be determined
+                                using Equations LM–5 or LM–6.
+                                For a unit subject to the provisions of
+                                subpart H of this part, which is not required
+                                to report emission data on a
+                                year-round basis and elects to report
+                                only during the ozone season, the quarterly
+                                cumulative load for the second
+                                calendar quarter of the year shall include
+                                only the unit loads for the
+                                months of May and June.
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.5.jpg" alt"Part 75 §75.19 Eq. LM-5" title"Part 75 §75.19 Eq. LM-5" />
+                                <br />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.6.jpg" alt"Part 75 §75.19 Eq. LM-6" title"Part 75 §75.19 Eq. LM-6" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>MW<sub>qtr</sub></td>
+                                        <td>
+                                            = Sum of all unit operating loads recorded
+                                            during the quarter by the unit
+                                            (MWh).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST<sub>fuel-qtr</sub></td>
+                                        <td>
+                                            = Sum of all hourly steam loads recorded
+                                            during the quarter by the unit (klb
+                                            of steam/hr).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>MW</td>
+                                        <td>
+                                            = Unit operating load for a particular
+                                            unit operating hour (MWh).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST</td>
+                                        <td>
+                                            = Unit steam load for a particular unit
+                                            operating hour (klb of steam).
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                For a low mass emissions unit
+                                that is not included in a group of low
+                                mass emission units sharing a common
+                                fuel supply, apportion the total heat
+                                input for the quarter, HI<sub>qtr-total</sub> to each
+                                hour of unit operation using either
+                                Equation LM–7 or LM–8:
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.7.jpg" alt"Part 75 §75.19 Eq. LM-7" title"Part 75 §75.19 Eq. LM-7" />
+                                <br />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.8.jpg" alt"Part 75 §75.19 Eq. LM-8" title"Part 75 §75.19 Eq. LM-8" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>hr</sub></td>
+                                        <td>
+                                            = Hourly heat input to the unit
+                                            (mmBtu).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>MW<sub>hr</sub></td>
+                                        <td>
+                                            = Hourly operating load for the unit
+                                            (MW).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST<sub>hr</sub></td>
+                                        <td>
+                                            = Hourly steam load for the unit (klb of
+                                            steam/hr).
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                For each low mass emissions unit
+                                that is included in a group of units
+                                sharing a common fuel supply, apportion
+                                the total heat input for the quarter,
+                                HI<sub>qtr-total</sub> to each hour of operation
+                                using either Equation LM–7a or LM–8a:
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.9.jpg" alt"Part 75 §75.19 Eq. LM-7a" title"Part 75 §75.19 Eq. LM-7a" />
+                                <br />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.10.jpg" alt"Part 75 §75.19 Eq. LM-8a" title"Part 75 §75.19 Eq. LM-8a" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>hr</sub></td>
+                                        <td>
+                                            = Hourly heat input to the individual
+                                            unit (mmBtu).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>MW<sub>hr</sub></td>
+                                        <td>
+                                            = Hourly operating load for the individual
+                                            unit (MW).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST<sub>hr</sub></td>
+                                        <td>
+                                            = Hourly steam load for the individual
+                                            unit (klb of steam/hr).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&sum;MW<sub>qtr</sub></td>
+                                        <td>
+                                            = Sum of the quarterly operating
+                                            all-units loads (from Eq. LM–5) for all units
+                                            in the group (MW).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&sum;ST<sub>qtr</sub></td>
+                                        <td>
+                                            = Sum of the quarterly steam
+                                            all-units loads (from Eq. LM–6) for all units
+                                            in the group (klb of steam/hr)
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr />
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <em>
+                    Calculation of SO<sub>2</sub>, NO<sub>x</sub> and CO<sub>2</sub>
+                    Mass Emissions
+                </em>. The owner or operator
+                shall, for the purpose of demonstrating
+                that a low mass emissions unit meets
+                the requirements of this section, calculate
+                SO<sub>2</sub>, NO<sub>x</sub> and CO<sub>2</sub> mass emissions
+                in accordance with the following.
+                <ol type="i">
+                    <li>
+                        <em>SO<sub>2</sub> Mass Emissions</em>.
+                        <ol type="A">
+                            <li>
+                                The hourly
+                                SO<sub>2</sub> mass emissions (lbs) for a low mass
+                                emissions unit (Acid Rain Program
+                                units, only) shall be determined using
+                                Equation LM–9 and the appropriate
+                                fuel-based SO<sub>2</sub> emission factor for the
+                                fuels combusted in that hour. If more
+                                than one fuel is combusted in the hour,
+                                use the highest emission factor for all
+                                of the fuels combusted in the hour. If
+                                records are missing as to which fuel
+                                was combusted in the hour, use the
+                                highest emission factor for all of the
+                                fuels capable of being combusted in the
+                                unit.
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.11.jpg" alt"Part 75 §75.19 Eq. LM-9" title"Part 75 §75.19 Eq. LM-9" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>W<sub>SO2</sub></td>
+                                        <td>
+                                            = Either the SO2 emission factor from
+                                            Table LM–1 of this section or the fuel-and-unit-
+                                            specific SO2 emission rate from paragraph
+                                            (c)(1)(i) of this section (lb/mmBtu).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>EF<sub>SO2</sub></td>
+                                        <td>
+                                            = Hourly operating load for the individual
+                                            unit (MW).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>hr</sub></td>
+                                        <td>
+                                            = Either the maximum rated hourly heat
+                                            input under paragraph (c)(3)(i)(A) of this
+                                            section or the hourly heat input under
+                                            paragraph (c)(3)(ii) of this section
+                                            (mmBtu).
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                The quarterly SO<sub>2</sub> mass emissions
+                                (tons) for the low mass emissions unit
+                                shall be the sum of all the hourly SO<sub>2</sub>
+                                mass emissions in the quarter, as determined
+                                under paragraph (c)(4)(i)(A) of
+                                this section, divided by 2000 lb/ton.
+                            </li>
+                            <li>
+                                The year-to-date cumulative SO<sub>2</sub>
+                                mass emissions (tons) for the low mass
+                                emissions unit shall be the sum of the
+                                quarterly SO<sub>2</sub> mass emissions, as determined
+                                under paragraph (c)(4)(i)(B) of
+                                this section, for all of the calendar
+                                quarters in the year to date.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <em>NO<sub>x</sub> Mass Emissions</em>.
+                        <ol type="A">
+                            <li>
+                                The hourly NO<sub>x</sub> mass emissions
+                                for the low mass emissions unit
+                                (lbs) shall be determined using Equation
+                                LM–10. If more than one fuel is
+                                combusted in the hour, use the highest
+                                emission rate for all of the fuels combusted
+                                in the hour. If records are missing
+                                as to which fuel was combusted in
+                                the hour, use the highest emission factor
+                                for all of the fuels capable of being
+                                combusted in the unit. For low mass
+                                emission units with NO<sub>x</sub> emission controls
+                                of any kind and for which a fueland-
+                                unit-specific NO<sub>x</sub> emission rate is
+                                determined under paragraph (c)(1)(iv)
+                                of this section, for any hour in which
+                                the parameters under paragraph
+                                (c)(1)(iv)(A) of this section do not show
+                                that the NO<sub>x</sub> emission controls are operating
+                                properly, use the NO<sub>x</sub> emission
+                                rate from Table LM–2 of this section
+                                for the fuel combusted during the hour
+                                with the highest NO<sub>x</sub> emission rate.
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.12.jpg" alt"Part 75 §75.19 Eq. LM-10" title"Part 75 §75.19 Eq. LM-10" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>W<sub>NOx</sub></td>
+                                        <td>
+                                            = Hourly NOX mass emissions (lbs).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>EF<sub>NOx</sub></td>
+                                        <td>
+                                            = Either the NOX emission factor from
+                                            Table LM–2 of this section or the fuel- and
+                                            unit-specific NOX emission rate determined
+                                            under paragraph (c)(1)(iv) of this section
+                                            (lb/mmBtu).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>hr</sub></td>
+                                        <td>
+                                            = Either the maximum rated hourly heat
+                                            input from paragraph (c)(3)(i)(A) of this
+                                            section or the hourly heat input as determined
+                                            under paragraph (c)(3)(ii) of this section
+                                            (mmBtu).
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                The quarterly NO<sub>x</sub> mass emissions
+                                (tons) for the low mass emissions
+                                unit shall be the sum of all of the hourly
+                                NO<sub>x</sub> mass emissions in the quarter,
+                                as determined under paragraph
+                                (c)(4)(ii)(A) of this section, divided by
+                                2000 lb/ton.
+                            </li>
+                            <li>
+                                The year-to-date cumulative NO<sub>x</sub>
+                                mass emissions (tons) for the low mass
+                                emissions unit shall be the sum of the
+                                quarterly NO<sub>x</sub> mass emissions, as determined
+                                under paragraph (c)(4)(ii)(B)
+                                of this section, for all of the calendar
+                                quarters in the year to date. For a unit
+                                subject to the provisions of subpart H
+                                of this part, which is not required to
+                                report emission data on a year-round
+                                basis and elects to report only during
+                                the ozone season, the ozone season NO<sub>x</sub>
+                                mass emissions for the unit shall be
+                                the sum of the quarterly NO<sub>x</sub> mass
+                                emissions, as determined under paragraph
+                                (c)(4)(ii)(B) of this section, for
+                                the second and third calendar quarters
+                                of the year, and the second quarter report
+                                shall include emissions data only
+                                for May and June.
+                            </li>
+                            <li>
+                                The quarterly and cumulative
+                                NO<sub>x</sub> emission rate in lb/mmBtu (if required
+                                by the applicable program(s))
+                                shall be determined as follows. Calculate
+                                the quarterly NO<sub>x</sub> emission rate
+                                by taking the arithmetic average of all
+                                of the hourly EFNO<sub>x</sub> values. Calculate
+                                the cumulative (year-to-date) NO<sub>x</sub>
+                                emission rate by taking the arithmetic
+                                average of the quarterly NO<sub>x</sub> emission
+                                rates.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <em>CO<sub>2</sub> Mass emissions</em>.
+                        <ol type="A">
+                            <li>
+                                The
+                                hourly CO<sub>2</sub> mass emissions (tons) for
+                                the affected low mass emissions unit
+                                (Acid Rain Program units, only) shall
+                                be determined using Equation LM–11
+                                and the appropriate fuel-based CO<sub>2</sub>
+                                emission factor from Table LM–3 of
+                                this section for the fuel being combusted
+                                in that hour. If more than one
+                                fuel is combusted in the hour, use the
+                                highest emission factor for all of the
+                                fuels combusted in the hour. If records
+                                are missing as to which fuel was combusted
+                                in the hour, use the highest
+                                emission factor for all of the fuels capable
+                                of being combusted in the unit.
+                                <hr />
+                                <img class="img-thumbnail" src="~/Content/Images/Part7575.19.13.jpg" alt"Part 75 §75.19 Eq. LM-11" title"Part 75 §75.19 Eq. LM-11" />
+                                <br />
+                                <br />
+                                <table>
+                                    <tr>
+                                        <th style="width:75px">Where:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>W<sub>CO2</sub></td>
+                                        <td>
+                                            = Hourly CO2 mass emissions (tons).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>EF<sub>CO2</sub></td>
+                                        <td>
+                                            = Either the fuel-based CO2 emission
+                                            factor from Table LM–3 of this section or
+                                            the fuel-and-unit-specific CO2 emission
+                                            rate from paragraph (c)(1)(iii) of this section
+                                            (tons/mmBtu).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HI<sub>hr</sub></td>
+                                        <td>
+                                            = Either the maximum rated hourly heat
+                                            input from paragraph (c)(3)(i)(A) of this
+                                            section or the hourly heat input as determined
+                                            under paragraph (c)(3)(ii) of this section
+                                            (mmBtu).
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr />
+                            </li>
+                            <li>
+                                The quarterly CO<sub>2</sub> mass emissions
+                                (tons) for the low mass emissions unit
+                                shall be the sum of all of the hourly
+                                CO<sub>2</sub> mass emissions in the quarter, as
+                                determined under paragraph
+                                (c)(4)(iii)(A)of this section.
+                            </li>
+                            <li>
+                                The year-to-date cumulative CO<sub>2</sub>
+                                mass emissions (tons) for the low mass
+                                emissions unit shall be the sum of all
+                                of the quarterly CO<sub>2</sub> mass emissions, as
+                                determined under paragraph
+                                (c)(4)(iii)(B) of this section, for all of
+                                the calendar quarters in the year to
+                                date.
+                            </li>
+                            <li>
+                                Each unit that qualifies under
+                                this section to use the low mass emissions
+                                methodology must follow the record keeping
+                                and reporting requirements
+                                pertaining to low mass emissions units
+                                in subparts F and G of this part.
+                            </li>
+                            <li>
+                                The quality control and quality
+                                assurance requirements in <a href="~/Part75/75.21" style="text-decoration: none">§75.21</a> are
+                                not applicable to a low mass emissions
+                                unit for which the low mass emissions
+                                excepted methodology under paragraph
+                                (c) of this section is being used in lieu
+                                of a continuous emission monitoring
+                                system or an excepted monitoring system
+                                under appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> or <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> to this part,
+                                except for fuel flow meters used to meet
+                                the provisions in paragraph (c)(3)(ii) of
+                                this section. However, the owner or operator
+                                of a low mass emissions unit
+                                shall implement the following quality
+                                assurance and quality control provisions:
+                                <ol>
+                                    <li>
+                                        For low mass emission units or
+                                        groups of units which use the long
+                                        term fuel flow methodology under
+                                        paragraph (c)(3)(ii) of this section and
+                                        which use fuel billing records to determine
+                                        fuel usage, the owner or operator
+                                        shall keep, at the facility, for three
+                                        years, the records of the fuel billing
+                                        statements used for long term fuel flow
+                                        determinations.
+                                    </li>
+                                    <li>
+                                        For low mass emissions units or
+                                        groups of units which use the long
+                                        term fuel flow methodology under
+                                        paragraph (c)(3)(ii) of this section and
+                                        which use one of the methods specified
+                                        in paragraph (c)(3)(ii)(B)(2) of this section
+                                        to determine fuel usage, the owner
+                                        or operator shall keep, at the facility,
+                                        a copy of the standard used and shall
+                                        keep records, for three years, of all
+                                        measurements obtained for each quarter
+                                        using the methodology.
+                                    </li>
+                                    <li>
+                                        For low mass emission units or
+                                        groups of units which use the long
+                                        term fuel flow methodology under
+                                        paragraph (c)(3)(ii) of this section and
+                                        which use a certified fuel flow meter to
+                                        determine fuel usage, the owner or operator
+                                        shall comply with the quality
+                                        control quality assurance requirements
+                                        for a fuel flow meter under section <a href="~/Part75/AppD2.#2.1.6" style="text-decoration: none">2.1.6</a>
+                                        of appendix <a href="~/Part75/AppD.1" style="text-decoration: none">D</a> of this part.
+                                    </li>
+                                    <li>
+                                        For each low mass emissions unit
+                                        for which fuel-and-unit-specific NO<sub>x</sub>
+                                        emission rates are determined in accordance
+                                        with paragraph (c)(1)(iv) of
+                                        this section, the owner or operator
+                                        shall keep, at the facility, records
+                                        which document the results of all NO<sub>x</sub>
+                                        emission rate tests conducted according
+                                        to appendix <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> to this part. If CEMS
+                                        data are used to determine the fuel-and-
+                                        unit-specific NO<sub>x</sub> emission rates
+                                        under paragraph (c)(1)(iv)(G) of this
+                                        section, the owner or operator shall
+                                        keep, at the facility, records of the
+                                        CEMS data and the data analysis performed
+                                        to determine a fuel-and-unit-specific
+                                        NO<sub>x</sub> emission rate. The appendix
+                                        <a href="~/Part75/AppE.1" style="text-decoration: none">E</a> test records and historical CEMS
+                                        data records shall be kept until the
+                                        fuel and unit specific NO<sub>x</sub> emission
+                                        rates are re-determined.
+                                    </li>
+                                    <li>
+                                        For each low mass emissions unit
+                                        for which fuel-and-unit-specific NO<sub>x</sub>
+                                        emission rates are determined in accordance
+                                        with paragraph (c)(1)(iv) of
+                                        this section and which has add-on NO<sub>x</sub>
+                                        emission controls of any kind or uses
+                                        dry low-NO<sub>x</sub> technology, the owner or
+                                        operator shall develop and keep on-site
+                                        a quality assurance plan which explains
+                                        the procedures used to document
+                                        proper operation of the NO<sub>x</sub> emission
+                                        controls. The plan shall include the parameters
+                                        monitored (e.g., water-to-fuel
+                                        ratio) and the acceptable ranges for
+                                        each parameter used to determine
+                                        proper operation of the unit’s NO<sub>x</sub> controls.
+                                    </li>
+                                    <li>
+                                        For unmanned facilities, the
+                                        records required by paragraphs (e)(1),
+                                        (e)(2) and (e)(4) of this section may be
+                                        kept at a central location, rather than
+                                        at the facility.
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+</ol>
+<hr />
+<img class="img-thumbnail" src="~/Content/Images/Part7575.19.14.jpg" alt="Table LM-1 - SO2 Emission Factors (lb/mmBtu) for Various Fuel Types" title="Table LM-1 - SO2 Emission Factors (lb/mmBtu) for Various Fuel Types" />
+<hr />
+<img class="img-thumbnail" src="~/Content/Images/Part7575.19.15.jpg" alt="Table LM-2 - NOx EmissionRates (lb/mmBtu) for Various Boiler/Fuel Types" title="Table LM-1 - NOx EmissionRates (lb/mmBtu) for Various Boiler/Fuel Types" />
+<hr />
+<img class="img-thumbnail" src="~/Content/Images/Part7575.19.16.jpg" alt="Table LM-3 - CO2 Emission Factors (ton/mmBtu) for Gas and Oil" title="Table LM-1 - CO2 Emission Factors (ton/mmBtu) for Gas and Oil" />
+<hr />
+<img class="img-thumbnail" src="~/Content/Images/Part7575.19.17.jpg" alt="Table LM-4 - Identical Unit Testing Requirements" title="Table LM-1 - Identical Unit Testing Requirements" />
+<hr />
+<img class="img-thumbnail" src="~/Content/Images/Part7575.19.18.jpg" alt="Table LM-5 - Default Gross Calorific Values (GCVs) for Various Fuels" title="Table LM-1 - Default Gross Calorific Values (GCVs) for Various Fuels" />
+<hr />
+<img class="img-thumbnail" src="~/Content/Images/Part7575.19.19.jpg" alt="Table LM-6 - Default Specific Gravity Values for Fuel Oil" title="Table LM-1 - Default Specific Gravity Values for Fuel Oil" />
+<hr />
+<h4>Reference</h4>
+<p>
+    [63 FR 57500, Oct. 27, 1998, as amended at 64
+    FR 28592, May 26, 1999; 64 FR 37582, July 12,
+    1999; 67 FR 40424, 40425, June 12, 2002; 67 FR
+    53504, Aug. 16, 2002; 73 FR 4344, Jan. 24, 2008]
+</p>
